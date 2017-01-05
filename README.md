@@ -49,7 +49,7 @@ https://github.com/greenelab/tad_pathways
 
 Input this gene list directly into a
 [WebGestalt Pathway Analysis](http://http://www.webgestalt.org/). Skip now to
-the [WebGestalt Pathway Analysis](#webgestalt-pathway-analysis) step.
+the [WebGestalt step](#webgestalt-pathway-analysis).
 
 #### Custom
 
@@ -79,7 +79,7 @@ python scripts/build_custom_TAD_genelist.py \
        --output_file "custom_tad_genelist.tsv"
 ```
 
-Skip now to the the #WebGestalt Pathway Analysis step.
+Skip now to the the [WebGestalt step](#webgestalt-pathway-analysis).
 
 ### WebGestalt Pathway Analysis
 
