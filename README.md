@@ -49,7 +49,7 @@ https://github.com/greenelab/tad_pathways
 
 Input this gene list directly into a
 [WebGestalt Pathway Analysis](http://http://www.webgestalt.org/). Skip now to
-the #WebGestalt-Pathway-Analysis step.
+the [WebGestalt Pathway Analysis](#webgestalt-pathway-analysis) step.
 
 #### Custom
 
