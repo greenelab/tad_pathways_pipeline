@@ -1,6 +1,6 @@
 # TAD_Pathways
 
-## Leveraging TADs to identify candidate genes at GWAS
+## Leveraging TADs to identify candidate genes at GWAS signals
 
 **Gregory P. Way and Casey S. Greene - 2017**
 
@@ -14,7 +14,7 @@ impact gene function. We use TAD boundaries as defined by
 [Dixon et al. 2012](https://doi.org/10.1038/nature11082) and
 [hg19 Gencode genes](ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/)
 to identify which genes may be implicated. We then input this list into a
-[WebGestalt Pathways Analysis](http://http://www.webgestalt.org/) to output
+[WebGestalt Pathways Analysis](http://www.webgestalt.org/) to output
 significantly associated pathways implicated by the input TAD-defined geneset.
 
 
@@ -29,7 +29,6 @@ GWAS curation files and setup python environment:
 ```bash
 bash initialize.sh
 
-conda env create --quiet --force --file environment.yml
 source activate tad_pathways
 ```
 
@@ -42,7 +41,7 @@ There are two ways to implement a TAD_Pathways analysis:
 
 #### GWAS
 
-Browse the `data/gwas/` directory to select a GWAS of choice. Each file in this
+Browse the `data/gwas/` directory to select a GWAS file. Each file in this
 directory is a flat text file that includes a single column of genes that are
 located within TADs implicated by a significant GWAS association. For complete
 information on how these lists were constructed, refer to
@@ -50,7 +49,7 @@ https://github.com/greenelab/tad_pathways
 
 Input this gene list directly into a
 [WebGestalt Pathway Analysis](http://http://www.webgestalt.org/). Skip now to
-the **WebGestalt Pathway Analysis** step.
+the #WebGestalt-Pathway-Analysis step.
 
 #### Custom
 
@@ -80,7 +79,7 @@ python scripts/build_custom_TAD_genelist.py \
        --output_file "custom_tad_genelist.tsv"
 ```
 
-Skip now to the the **WebGestalt Pathway Analysis** step.
+Skip now to the the #WebGestalt Pathway Analysis step.
 
 ### WebGestalt Pathway Analysis
 
@@ -133,8 +132,8 @@ R --no-save --args 'tad_pathway/BMD_gene_evidence.csv' \
 
 ### Examples
 
-We implemented two examples as a proof of concept. After initializing the
-repository, to view these examples, run:
+We implemented two examples as a proof of concept. To view these examples,
+initialize the repository and run:
 
 ```bash
 # Bone Mineral Density GWAS
