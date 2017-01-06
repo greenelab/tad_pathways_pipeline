@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -o errexit
+
 # Download necessary index and curation files
 
 url=https://zenodo.org/record/232520/files/tad_pathways_data.tar.gz

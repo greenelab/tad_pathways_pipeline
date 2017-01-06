@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -o errexit
+
 # Example of a TAD_Pathways Analysis applied to a Custom SNP list
 # For this example, the custom SNP list is the GWAS findings for
 # Prostate Cancer. The the data is used as a custom input.

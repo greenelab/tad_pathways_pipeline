@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -o errexit
+
 # Example of a TAD_Pathways Analysis applied to Type 2 Diabetes GWAS
 
 # After saving WebGestalt tsv file, parse its contents
