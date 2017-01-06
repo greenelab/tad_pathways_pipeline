@@ -1,0 +1,7 @@
+name: tad_pathways
+dependencies:
+- python=3.5.2
+- pandas=0.18.0
+- numexpr=2.5.2
+- numpy=1.11.1
+- scipy=0.17.1
