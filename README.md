@@ -115,7 +115,7 @@ with the following parameters:
 | Minimum Number of Genes for a Category | *4* |
 
 Once the analysis is complete, click `Export TSV Only` and save the file as
-`data/gestalt/<INSERT_TRAIT_HERE>_gestalt.tsv`. 
+`gestalt/<INSERT_TRAIT_HERE>_gestalt.tsv`. 
 
 ### Curation
 
