@@ -14,7 +14,7 @@ impact gene function. We use TAD boundaries as defined by
 [Dixon et al. 2012](https://doi.org/10.1038/nature11082) and
 [hg19 Gencode genes](ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/)
 to identify which genes may be implicated. We then input this list into a
-[WebGestalt Pathways Analysis](http://www.webgestalt.org/) to output
+[WebGestalt Pathways Analysis](http://webgestalt.org/) to output
 significantly associated pathways implicated by the input TAD-defined geneset.
 
 
@@ -41,15 +41,15 @@ There are two ways to implement a TAD_Pathways analysis:
 
 #### GWAS
 
-Browse the `data/gwas/` directory to select a GWAS file. Each file in this
-directory is a flat text file that includes a single column of genes that are
-located within TADs implicated by a significant GWAS association. For complete
-information on how these lists were constructed, refer to
-https://github.com/greenelab/tad_pathways
+Browse the `data/gwas_tad_genes/` directory to select a GWAS file. Each file in
+this directory is a tab separated text file that includes information regarding
+each gene located within a signal TAD. The column `gene_name` is the comprehensive
+list of all implicated genes. For complete information on how these lists were
+constructed, refer to https://github.com/greenelab/tad_pathways. 
 
 Input this gene list directly into a
-[WebGestalt Pathway Analysis](http://http://www.webgestalt.org/). Skip now to
-the [WebGestalt step](#webgestalt-pathway-analysis).
+[WebGestalt Pathway Analysis](http://webgestalt.org/) and skip to the
+[WebGestalt step](#webgestalt-pathway-analysis).
 
 #### Custom
 
