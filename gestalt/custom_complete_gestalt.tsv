@@ -1,0 +1,579 @@
+symbol	name	entrez_id	ensemble_id	go_class	go_name	go_id	adjP
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	cellular component	MHC class II protein complex	GO:0042613	5.03e-09
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	cellular component	MHC class II protein complex	GO:0042613	5.03e-09
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	cellular component	MHC class II protein complex	GO:0042613	5.03e-09
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	cellular component	MHC class II protein complex	GO:0042613	5.03e-09
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	cellular component	MHC class II protein complex	GO:0042613	5.03e-09
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	cellular component	MHC class II protein complex	GO:0042613	5.03e-09
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	cellular component	MHC class II protein complex	GO:0042613	5.03e-09
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	cellular component	MHC class II protein complex	GO:0042613	5.03e-09
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	cellular component	MHC class II protein complex	GO:0042613	5.03e-09
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	cellular component	MHC class II protein complex	GO:0042613	5.03e-09
+MICA	MHC class I polypeptide-related sequence A	100507436	ENSG00000204520	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	cellular component	MHC protein complex	GO:0042611	5.03e-09
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	cellular component	integral to lumenal side of endoplasmic reticulum membrane	GO:0071556	2.9e-06
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	cellular component	integral to lumenal side of endoplasmic reticulum membrane	GO:0071556	2.9e-06
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	cellular component	integral to lumenal side of endoplasmic reticulum membrane	GO:0071556	2.9e-06
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	cellular component	integral to lumenal side of endoplasmic reticulum membrane	GO:0071556	2.9e-06
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	cellular component	integral to lumenal side of endoplasmic reticulum membrane	GO:0071556	2.9e-06
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	cellular component	integral to lumenal side of endoplasmic reticulum membrane	GO:0071556	2.9e-06
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	cellular component	integral to lumenal side of endoplasmic reticulum membrane	GO:0071556	2.9e-06
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	cellular component	integral to lumenal side of endoplasmic reticulum membrane	GO:0071556	2.9e-06
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	cellular component	integral to lumenal side of endoplasmic reticulum membrane	GO:0071556	2.9e-06
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	cellular component	integral to lumenal side of endoplasmic reticulum membrane	GO:0071556	2.9e-06
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	molecular function		GO:0032395	1.88e-05
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	molecular function		GO:0032395	1.88e-05
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	molecular function		GO:0032395	1.88e-05
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	molecular function		GO:0032395	1.88e-05
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	molecular function		GO:0032395	1.88e-05
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	molecular function		GO:0032395	1.88e-05
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	molecular function		GO:0032395	1.88e-05
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	cellular component	ER to Golgi transport vesicle membrane	GO:0012507	4.22e-05
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	cellular component	ER to Golgi transport vesicle membrane	GO:0012507	4.22e-05
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	cellular component	ER to Golgi transport vesicle membrane	GO:0012507	4.22e-05
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	cellular component	ER to Golgi transport vesicle membrane	GO:0012507	4.22e-05
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	cellular component	ER to Golgi transport vesicle membrane	GO:0012507	4.22e-05
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	cellular component	ER to Golgi transport vesicle membrane	GO:0012507	4.22e-05
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	cellular component	ER to Golgi transport vesicle membrane	GO:0012507	4.22e-05
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	cellular component	ER to Golgi transport vesicle membrane	GO:0012507	4.22e-05
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	cellular component	ER to Golgi transport vesicle membrane	GO:0012507	4.22e-05
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	cellular component	ER to Golgi transport vesicle membrane	GO:0012507	4.22e-05
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	cellular component	ER to Golgi transport vesicle	GO:0030134	9.47e-05
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	cellular component	ER to Golgi transport vesicle	GO:0030134	9.47e-05
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	cellular component	ER to Golgi transport vesicle	GO:0030134	9.47e-05
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	cellular component	ER to Golgi transport vesicle	GO:0030134	9.47e-05
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	cellular component	ER to Golgi transport vesicle	GO:0030134	9.47e-05
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	cellular component	ER to Golgi transport vesicle	GO:0030134	9.47e-05
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	cellular component	ER to Golgi transport vesicle	GO:0030134	9.47e-05
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	cellular component	ER to Golgi transport vesicle	GO:0030134	9.47e-05
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	cellular component	ER to Golgi transport vesicle	GO:0030134	9.47e-05
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	cellular component	ER to Golgi transport vesicle	GO:0030134	9.47e-05
+KLK10	kallikrein-related peptidase 10	5655	ENSG00000129451	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK12	kallikrein-related peptidase 12	43849	ENSG00000186474	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK8	kallikrein-related peptidase 8	11202	ENSG00000129455	molecular function	endopeptidase activity	GO:0004175	0.0004
+MMP20	matrix metallopeptidase 20	9313	ENSG00000137674	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK4	kallikrein-related peptidase 4	9622	ENSG00000167749	molecular function	endopeptidase activity	GO:0004175	0.0004
+MMP21	matrix metallopeptidase 21	118856	ENSG00000154485	molecular function	endopeptidase activity	GO:0004175	0.0004
+ADAM21	ADAM metallopeptidase domain 21	8747		molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK7	kallikrein-related peptidase 7	5650	ENSG00000169035	molecular function	endopeptidase activity	GO:0004175	0.0004
+CFB	complement factor B	629	ENSG00000243649	molecular function	endopeptidase activity	GO:0004175	0.0004
+ADAMTS3	ADAM metallopeptidase with thrombospondin type 1 motif, 3	9508	ENSG00000156140	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK9	kallikrein-related peptidase 9	284366	ENSG00000213022	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK11	kallikrein-related peptidase 11	11012	ENSG00000167757	molecular function	endopeptidase activity	GO:0004175	0.0004
+PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065	molecular function	endopeptidase activity	GO:0004175	0.0004
+CTSK	cathepsin K	1513	ENSG00000143387	molecular function	endopeptidase activity	GO:0004175	0.0004
+MMP27	matrix metallopeptidase 27	64066	ENSG00000137675	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK3	kallikrein-related peptidase 3	354	ENSG00000142515	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK13	kallikrein-related peptidase 13	26085	ENSG00000167759	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK1	kallikrein 1	3816	ENSG00000167748	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK6	kallikrein-related peptidase 6	5653	ENSG00000167755	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK14	kallikrein-related peptidase 14	43847	ENSG00000129437	molecular function	endopeptidase activity	GO:0004175	0.0004
+CTSS	cathepsin S	1520	ENSG00000163131	molecular function	endopeptidase activity	GO:0004175	0.0004
+APH1A	anterior pharynx defective 1 homolog A (C. elegans)	51107	ENSG00000117362	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK5	kallikrein-related peptidase 5	25818	ENSG00000167754	molecular function	endopeptidase activity	GO:0004175	0.0004
+ADAM17	ADAM metallopeptidase domain 17	6868	ENSG00000151694	molecular function	endopeptidase activity	GO:0004175	0.0004
+SENP1	SUMO1/sentrin specific peptidase 1	29843	ENSG00000079387	molecular function	endopeptidase activity	GO:0004175	0.0004
+C2	complement component 2	717	ENSG00000166278	molecular function	endopeptidase activity	GO:0004175	0.0004
+ADAM15	ADAM metallopeptidase domain 15	8751	ENSG00000143537	molecular function	endopeptidase activity	GO:0004175	0.0004
+LPA	lipoprotein, Lp(a)	4018	ENSG00000198670	molecular function	endopeptidase activity	GO:0004175	0.0004
+ADAM20	ADAM metallopeptidase domain 20	8748	ENSG00000134007	molecular function	endopeptidase activity	GO:0004175	0.0004
+MMP7	matrix metallopeptidase 7 (matrilysin, uterine)	4316	ENSG00000137673	molecular function	endopeptidase activity	GO:0004175	0.0004
+PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK2	kallikrein-related peptidase 2	3817	ENSG00000167751	molecular function	endopeptidase activity	GO:0004175	0.0004
+KLK15	kallikrein-related peptidase 15	55554	ENSG00000174562	molecular function	endopeptidase activity	GO:0004175	0.0004
+ADAMTSL4	ADAMTS-like 4	54507	ENSG00000143382	molecular function	endopeptidase activity	GO:0004175	0.0004
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	cellular component	trans-Golgi network membrane	GO:0032588	0.0005
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	cellular component	trans-Golgi network membrane	GO:0032588	0.0005
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	cellular component	trans-Golgi network membrane	GO:0032588	0.0005
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	cellular component	trans-Golgi network membrane	GO:0032588	0.0005
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	cellular component	trans-Golgi network membrane	GO:0032588	0.0005
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	cellular component	trans-Golgi network membrane	GO:0032588	0.0005
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	cellular component	trans-Golgi network membrane	GO:0032588	0.0005
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	cellular component	trans-Golgi network membrane	GO:0032588	0.0005
+CLTCL1	clathrin, heavy chain-like 1	8218	ENSG00000070371	cellular component	transport vesicle membrane	GO:0030658	0.0006
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	cellular component	transport vesicle membrane	GO:0030658	0.0006
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	cellular component	transport vesicle membrane	GO:0030658	0.0006
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	cellular component	transport vesicle membrane	GO:0030658	0.0006
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	cellular component	transport vesicle membrane	GO:0030658	0.0006
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	cellular component	transport vesicle membrane	GO:0030658	0.0006
+SYNRG	synergin, gamma	11276	ENSG00000006114	cellular component	transport vesicle membrane	GO:0030658	0.0006
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	cellular component	clathrin-coated endocytic vesicle membrane	GO:0030669	0.0006
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	cellular component	transport vesicle membrane	GO:0030658	0.0006
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	cellular component	clathrin-coated endocytic vesicle membrane	GO:0030669	0.0006
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	cellular component	clathrin-coated endocytic vesicle membrane	GO:0030669	0.0006
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	cellular component	clathrin-coated endocytic vesicle membrane	GO:0030669	0.0006
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	cellular component	clathrin-coated endocytic vesicle membrane	GO:0030669	0.0006
+APOB	apolipoprotein B (including Ag(x) antigen)	338	ENSG00000084674	cellular component	clathrin-coated endocytic vesicle membrane	GO:0030669	0.0006
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	cellular component	clathrin-coated endocytic vesicle membrane	GO:0030669	0.0006
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	cellular component	transport vesicle membrane	GO:0030658	0.0006
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	cellular component	transport vesicle membrane	GO:0030658	0.0006
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	cellular component	clathrin-coated endocytic vesicle membrane	GO:0030669	0.0006
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	cellular component	transport vesicle membrane	GO:0030658	0.0006
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	cellular component	transport vesicle membrane	GO:0030658	0.0006
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	cellular component	lysosomal membrane	GO:0005765	0.0006
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	cellular component	lysosomal membrane	GO:0005765	0.0006
+IGF2R	insulin-like growth factor 2 receptor	3482	ENSG00000197081	cellular component	lysosomal membrane	GO:0005765	0.0006
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	cellular component	lysosomal membrane	GO:0005765	0.0006
+TPCN2	two pore segment channel 2	219931	ENSG00000162341	cellular component	lysosomal membrane	GO:0005765	0.0006
+VAMP8	vesicle-associated membrane protein 8 (endobrevin)	8673	ENSG00000118640	cellular component	lysosomal membrane	GO:0005765	0.0006
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	cellular component	lysosomal membrane	GO:0005765	0.0006
+NEU1	sialidase 1 (lysosomal sialidase)	4758	ENSG00000204386	cellular component	lysosomal membrane	GO:0005765	0.0006
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	cellular component	lysosomal membrane	GO:0005765	0.0006
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	cellular component	lysosomal membrane	GO:0005765	0.0006
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	cellular component	lysosomal membrane	GO:0005765	0.0006
+TECPR1	tectonin beta-propeller repeat containing 1	25851	ENSG00000205356	cellular component	lysosomal membrane	GO:0005765	0.0006
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	cellular component	lysosomal membrane	GO:0005765	0.0006
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	cellular component	lysosomal membrane	GO:0005765	0.0006
+MARCH8	membrane-associated ring finger (C3HC4) 8, E3 ubiquitin protein ligase	220972	ENSG00000165406	cellular component	lysosomal membrane	GO:0005765	0.0006
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	cellular component	lysosomal membrane	GO:0005765	0.0006
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	cellular component	lysosomal membrane	GO:0005765	0.0006
+NOTCH4	notch 4	4855	ENSG00000204301	biological process	immune system process	GO:0002376	0.0012
+TREML2	triggering receptor expressed on myeloid cells-like 2	79865	ENSG00000112195	biological process	immune system process	GO:0002376	0.0012
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	biological process	immune system process	GO:0002376	0.0012
+LILRB4	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 4	11006	ENSG00000186818	biological process	immune system process	GO:0002376	0.0012
+TNF	tumor necrosis factor	7124	ENSG00000232810	biological process	immune system process	GO:0002376	0.0012
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	biological process	immune system process	GO:0002376	0.0012
+TREML1	triggering receptor expressed on myeloid cells-like 1	340205	ENSG00000161911	biological process	immune system process	GO:0002376	0.0012
+C4B	complement component 4B (Chido blood group)	721	ENSG00000224389	biological process	immune system process	GO:0002376	0.0012
+KIR2DL1	killer cell immunoglobulin-like receptor, two domains, long cytoplasmic tail, 1	3802	ENSG00000125498	biological process	immune system process	GO:0002376	0.0012
+PPBP	pro-platelet basic protein (chemokine (C-X-C motif) ligand 7)	5473	ENSG00000163736	biological process	immune system process	GO:0002376	0.0012
+ADAM17	ADAM metallopeptidase domain 17	6868	ENSG00000151694	biological process	immune system process	GO:0002376	0.0012
+IL6R	interleukin 6 receptor	3570	ENSG00000160712	biological process	immune system process	GO:0002376	0.0012
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	biological process	immune system process	GO:0002376	0.0012
+HSPA1B	heat shock 70kDa protein 1B	3304	ENSG00000204388	biological process	immune system process	GO:0002376	0.0012
+TFEB	transcription factor EB	7942	ENSG00000112561	biological process	immune system process	GO:0002376	0.0012
+MICA	MHC class I polypeptide-related sequence A	100507436	ENSG00000204520	biological process	immune system process	GO:0002376	0.0012
+LILRA1	leukocyte immunoglobulin-like receptor, subfamily A (with TM domain), member 1	11024	ENSG00000104974	biological process	immune system process	GO:0002376	0.0012
+GP6	glycoprotein VI (platelet)	51206	ENSG00000088053	biological process	immune system process	GO:0002376	0.0012
+ATP1B3	ATPase, Na+/K+ transporting, beta 3 polypeptide	483	ENSG00000069849	biological process	immune system process	GO:0002376	0.0012
+CFB	complement factor B	629	ENSG00000243649	biological process	immune system process	GO:0002376	0.0012
+KIR3DL2	killer cell immunoglobulin-like receptor, three domains, long cytoplasmic tail, 2	3812	ENSG00000240403	biological process	immune system process	GO:0002376	0.0012
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	biological process	immune system process	GO:0002376	0.0012
+NFKBIL1	nuclear factor of kappa light polypeptide gene enhancer in B-cells inhibitor-like 1	4795	ENSG00000204498	biological process	immune system process	GO:0002376	0.0012
+CDKN2A	cyclin-dependent kinase inhibitor 2A	1029	ENSG00000147889	biological process	immune system process	GO:0002376	0.0012
+PF4	platelet factor 4	5196	ENSG00000163737	biological process	immune system process	GO:0002376	0.0012
+CTSK	cathepsin K	1513	ENSG00000143387	biological process	immune system process	GO:0002376	0.0012
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	biological process	immune system process	GO:0002376	0.0012
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+MYC	v-myc myelocytomatosis viral oncogene homolog (avian)	4609	ENSG00000136997	biological process	immune system process	GO:0002376	0.0012
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+CTSS	cathepsin S	1520	ENSG00000163131	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+MARCH8	membrane-associated ring finger (C3HC4) 8, E3 ubiquitin protein ligase	220972	ENSG00000165406	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	biological process	antigen processing and presentation	GO:0019882	0.0012
+PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+CTSS	cathepsin S	1520	ENSG00000163131	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264	biological process	antigen processing and presentation of peptide antigen	GO:0048002	0.0012
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	biological process	antigen processing and presentation	GO:0019882	0.0012
+PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+CTSS	cathepsin S	1520	ENSG00000163131	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	biological process	antigen processing and presentation	GO:0019882	0.0012
+MICA	MHC class I polypeptide-related sequence A	100507436	ENSG00000204520	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	biological process	antigen processing and presentation	GO:0019882	0.0012
+PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519	biological process	antigen processing and presentation	GO:0019882	0.0012
+PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264	biological process	antigen processing and presentation	GO:0019882	0.0012
+CTSS	cathepsin S	1520	ENSG00000163131	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	biological process	antigen processing and presentation	GO:0019882	0.0012
+MARCH8	membrane-associated ring finger (C3HC4) 8, E3 ubiquitin protein ligase	220972	ENSG00000165406	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	biological process	antigen processing and presentation	GO:0019882	0.0012
+PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	biological process	antigen processing and presentation	GO:0019882	0.0012
+TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	biological process	antigen processing and presentation	GO:0019882	0.0012
+LILRB2	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 2	10288	ENSG00000131042	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	biological process	antigen processing and presentation	GO:0019882	0.0012
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478	0.0012
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	biological process	immune system process	GO:0002376	0.0012
+PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+ITGA6	integrin, alpha 6	3655	ENSG00000091409	biological process	immune system process	GO:0002376	0.0012
+CXCL3	chemokine (C-X-C motif) ligand 3	2921	ENSG00000163734	biological process	immune system process	GO:0002376	0.0012
+FGF10	fibroblast growth factor 10	2255	ENSG00000070193	biological process	immune system process	GO:0002376	0.0012
+LIME1	Lck interacting transmembrane adaptor 1	54923	ENSG00000203896	biological process	immune system process	GO:0002376	0.0012
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	biological process	immune system process	GO:0002376	0.0012
+CDKN2B	cyclin-dependent kinase inhibitor 2B (p15, inhibits CDK4)	1030	ENSG00000147883	biological process	immune system process	GO:0002376	0.0012
+TUBB	tubulin, beta class I	203068	ENSG00000196230	biological process	immune system process	GO:0002376	0.0012
+ARNT	aryl hydrocarbon receptor nuclear translocator	405	ENSG00000143437	biological process	immune system process	GO:0002376	0.0012
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	biological process	immune system process	GO:0002376	0.0012
+KIR2DL4	killer cell immunoglobulin-like receptor, two domains, long cytoplasmic tail, 4	3805	ENSG00000189013	biological process	immune system process	GO:0002376	0.0012
+LILRB3	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 3	11025	ENSG00000204577	biological process	immune system process	GO:0002376	0.0012
+LTA	lymphotoxin alpha (TNF superfamily, member 1)	4049	ENSG00000226979	biological process	immune system process	GO:0002376	0.0012
+CACNB3	calcium channel, voltage-dependent, beta 3 subunit	784	ENSG00000167535	biological process	immune system process	GO:0002376	0.0012
+CXCL1	chemokine (C-X-C motif) ligand 1 (melanoma growth stimulating activity, alpha)	2919	ENSG00000163739	biological process	immune system process	GO:0002376	0.0012
+IL8	interleukin 8	3576	ENSG00000169429	biological process	immune system process	GO:0002376	0.0012
+KLF4	Kruppel-like factor 4 (gut)	9314	ENSG00000136826	biological process	immune system process	GO:0002376	0.0012
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	biological process	immune system process	GO:0002376	0.0012
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	biological process	immune system process	GO:0002376	0.0012
+PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341	biological process	immune system process	GO:0002376	0.0012
+LTB	lymphotoxin beta (TNF superfamily, member 3)	4050	ENSG00000227507	biological process	immune system process	GO:0002376	0.0012
+TAX1BP1	Tax1 (human T-cell leukemia virus type I) binding protein 1	8887	ENSG00000106052	biological process	immune system process	GO:0002376	0.0012
+GATA2	GATA binding protein 2	2624	ENSG00000179348	biological process	immune system process	GO:0002376	0.0012
+ITGA3	integrin, alpha 3 (antigen CD49C, alpha 3 subunit of VLA-3 receptor)	3675	ENSG00000005884	biological process	immune system process	GO:0002376	0.0012
+TREM1	triggering receptor expressed on myeloid cells 1	54210	ENSG00000124731	biological process	immune system process	GO:0002376	0.0012
+CTSS	cathepsin S	1520	ENSG00000163131	biological process	immune system process	GO:0002376	0.0012
+SIX1	SIX homeobox 1	6495	ENSG00000126778	biological process	immune system process	GO:0002376	0.0012
+PDCD1	programmed cell death 1	5133	ENSG00000188389	biological process	immune system process	GO:0002376	0.0012
+MARCH8	membrane-associated ring finger (C3HC4) 8, E3 ubiquitin protein ligase	220972	ENSG00000165406	biological process	immune system process	GO:0002376	0.0012
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	biological process	immune system process	GO:0002376	0.0012
+PRKCH	protein kinase C, eta	5583	ENSG00000027075	biological process	immune system process	GO:0002376	0.0012
+FCAR	Fc fragment of IgA, receptor for	2204	ENSG00000186431	biological process	immune system process	GO:0002376	0.0012
+SIX4	SIX homeobox 4	51804	ENSG00000100625	biological process	immune system process	GO:0002376	0.0012
+FOXO3	forkhead box O3	2309	ENSG00000118689	biological process	immune system process	GO:0002376	0.0012
+APOB	apolipoprotein B (including Ag(x) antigen)	338	ENSG00000084674	biological process	immune system process	GO:0002376	0.0012
+IKBKAP	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase complex-associated protein	8518	ENSG00000070061	biological process	immune system process	GO:0002376	0.0012
+CXCL2	chemokine (C-X-C motif) ligand 2	2920	ENSG00000081041	biological process	immune system process	GO:0002376	0.0012
+ZFP36L1	zinc finger protein 36, C3H type-like 1	677	ENSG00000185650	biological process	immune system process	GO:0002376	0.0012
+CHRNB2	cholinergic receptor, nicotinic, beta 2 (neuronal)	1141	ENSG00000160716	biological process	immune system process	GO:0002376	0.0012
+SOX9	SRY (sex determining region Y)-box 9	6662	ENSG00000125398	biological process	immune system process	GO:0002376	0.0012
+TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+TBX1	T-box 1	6899	ENSG00000184058	biological process	immune system process	GO:0002376	0.0012
+PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519	biological process	immune system process	GO:0002376	0.0012
+SHC1	SHC (Src homology 2 domain containing) transforming protein 1	6464	ENSG00000160691	biological process	immune system process	GO:0002376	0.0012
+MMP7	matrix metallopeptidase 7 (matrilysin, uterine)	4316	ENSG00000137673	biological process	immune system process	GO:0002376	0.0012
+ECM1	extracellular matrix protein 1	1893	ENSG00000143369	biological process	immune system process	GO:0002376	0.0012
+PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264	biological process	immune system process	GO:0002376	0.0012
+LILRA5	leukocyte immunoglobulin-like receptor, subfamily A (with TM domain), member 5	353514	ENSG00000187116	biological process	immune system process	GO:0002376	0.0012
+BIRC2	baculoviral IAP repeat containing 2	329	ENSG00000110330	biological process	immune system process	GO:0002376	0.0012
+LILRB1	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 1	10859	ENSG00000104972	biological process	immune system process	GO:0002376	0.0012
+NCR1	natural cytotoxicity triggering receptor 1	9437	ENSG00000189430	biological process	immune system process	GO:0002376	0.0012
+TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394	biological process	immune system process	GO:0002376	0.0012
+SOD2	superoxide dismutase 2, mitochondrial	6648	ENSG00000112096	biological process	immune system process	GO:0002376	0.0012
+NCR3	natural cytotoxicity triggering receptor 3	259197	ENSG00000204475	biological process	immune system process	GO:0002376	0.0012
+C4A	complement component 4A (Rodgers blood group)	720	ENSG00000244731	biological process	immune system process	GO:0002376	0.0012
+TREM2	triggering receptor expressed on myeloid cells 2	54209	ENSG00000095970	biological process	immune system process	GO:0002376	0.0012
+LILRB2	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 2	10288	ENSG00000131042	biological process	immune system process	GO:0002376	0.0012
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	biological process	antigen processing and presentation of exogenous antigen	GO:0019884	0.0012
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	biological process	immune system process	GO:0002376	0.0012
+AIF1	allograft inflammatory factor 1	199	ENSG00000204472	biological process	immune system process	GO:0002376	0.0012
+TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264	biological process	immune system process	GO:0002376	0.0012
+TAC1	tachykinin, precursor 1	6863	ENSG00000006128	biological process	immune system process	GO:0002376	0.0012
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	biological process	immune system process	GO:0002376	0.0012
+SKIL	SKI-like oncogene	6498	ENSG00000136603	biological process	immune system process	GO:0002376	0.0012
+CXCL5	chemokine (C-X-C motif) ligand 5	6374	ENSG00000163735	biological process	immune system process	GO:0002376	0.0012
+LST1	leukocyte specific transcript 1	7940	ENSG00000204482	biological process	immune system process	GO:0002376	0.0012
+PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065	biological process	immune system process	GO:0002376	0.0012
+KIR3DL1	killer cell immunoglobulin-like receptor, three domains, long cytoplasmic tail, 1	3811	ENSG00000167633	biological process	immune system process	GO:0002376	0.0012
+GNL1	guanine nucleotide binding protein-like 1	2794	ENSG00000204590	biological process	immune system process	GO:0002376	0.0012
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	biological process	immune system process	GO:0002376	0.0012
+CXCL6	chemokine (C-X-C motif) ligand 6 (granulocyte chemotactic protein 2)	6372	ENSG00000124875	biological process	immune system process	GO:0002376	0.0012
+BNIP3L	BCL2/adenovirus E1B 19kDa interacting protein 3-like	665	ENSG00000104765	biological process	immune system process	GO:0002376	0.0012
+KIR2DL3	killer cell immunoglobulin-like receptor, two domains, long cytoplasmic tail, 3	3804	ENSG00000243772	biological process	immune system process	GO:0002376	0.0012
+COL1A1	collagen, type I, alpha 1	1277	ENSG00000108821	biological process	immune system process	GO:0002376	0.0012
+ZBTB16	zinc finger and BTB domain containing 16	7704	ENSG00000109906	biological process	immune system process	GO:0002376	0.0012
+BIRC3	baculoviral IAP repeat containing 3	330	ENSG00000023445	biological process	immune system process	GO:0002376	0.0012
+PF4V1	platelet factor 4 variant 1	5197	ENSG00000109272	biological process	immune system process	GO:0002376	0.0012
+TXNRD2	thioredoxin reductase 2	10587	ENSG00000184470	biological process	immune system process	GO:0002376	0.0012
+C2	complement component 2	717	ENSG00000166278	biological process	immune system process	GO:0002376	0.0012
+ADAR	adenosine deaminase, RNA-specific	103	ENSG00000160710	biological process	immune system process	GO:0002376	0.0012
+AGER	advanced glycosylation end product-specific receptor	177	ENSG00000204305	biological process	immune system process	GO:0002376	0.0012
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	biological process	hair follicle development	GO:0001942	0.0014
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	biological process	molting cycle process	GO:0022404	0.0014
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	biological process	exogen	GO:0042638	0.0014
+PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065	biological process	exogen	GO:0042638	0.0014
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	biological process	exogen	GO:0042638	0.0014
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	biological process	exogen	GO:0042638	0.0014
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	biological process	exogen	GO:0042638	0.0014
+CTSS	cathepsin S	1520	ENSG00000163131	biological process	exogen	GO:0042638	0.0014
+PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264	biological process	exogen	GO:0042638	0.0014
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	biological process	exogen	GO:0042638	0.0014
+PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519	biological process	exogen	GO:0042638	0.0014
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	biological process	exogen	GO:0042638	0.0014
+PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341	biological process	exogen	GO:0042638	0.0014
+TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264	biological process	exogen	GO:0042638	0.0014
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	biological process	exogen	GO:0042638	0.0014
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	biological process	exogen	GO:0042638	0.0014
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	biological process	exogen	GO:0042638	0.0014
+TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394	biological process	exogen	GO:0042638	0.0014
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	biological process	exogen	GO:0042638	0.0014
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	biological process	exogen	GO:0042638	0.0014
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	biological process	exogen	GO:0042638	0.0014
+NGFR	nerve growth factor receptor	4804	ENSG00000064300	biological process	epidermis development	GO:0008544	0.0014
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	biological process	epidermis development	GO:0008544	0.0014
+VDR	vitamin D (1,25- dihydroxyvitamin D3) receptor	7421	ENSG00000111424	biological process	epidermis development	GO:0008544	0.0014
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	biological process	epidermis development	GO:0008544	0.0014
+PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519	biological process	epidermis development	GO:0008544	0.0014
+PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341	biological process	epidermis development	GO:0008544	0.0014
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	biological process	epidermis development	GO:0008544	0.0014
+KLF4	Kruppel-like factor 4 (gut)	9314	ENSG00000136826	biological process	epidermis development	GO:0008544	0.0014
+SOX18	SRY (sex determining region Y)-box 18	54345	ENSG00000203883	biological process	epidermis development	GO:0008544	0.0014
+KLK7	kallikrein-related peptidase 7	5650	ENSG00000169035	biological process	epidermis development	GO:0008544	0.0014
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	biological process	epidermis development	GO:0008544	0.0014
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	biological process	epidermis development	GO:0008544	0.0014
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	biological process	epidermis development	GO:0008544	0.0014
+CDKN2A	cyclin-dependent kinase inhibitor 2A	1029	ENSG00000147889	biological process	epidermis development	GO:0008544	0.0014
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	biological process	exogen	GO:0042638	0.0014
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	biological process	exogen	GO:0042638	0.0014
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	biological process	hair cycle process	GO:0022405	0.0014
+TNF	tumor necrosis factor	7124	ENSG00000232810	biological process	hair cycle process	GO:0022405	0.0014
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	biological process	hair cycle process	GO:0022405	0.0014
+TNF	tumor necrosis factor	7124	ENSG00000232810	biological process	hair follicle development	GO:0001942	0.0014
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	biological process	hair follicle development	GO:0001942	0.0014
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	biological process	hair cycle process	GO:0022405	0.0014
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	biological process	hair cycle process	GO:0022405	0.0014
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	biological process	hair cycle process	GO:0022405	0.0014
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	biological process	hair cycle process	GO:0022405	0.0014
+TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264	biological process	hair cycle process	GO:0022405	0.0014
+SOX18	SRY (sex determining region Y)-box 18	54345	ENSG00000203883	biological process	hair cycle process	GO:0022405	0.0014
+PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341	biological process	hair cycle process	GO:0022405	0.0014
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	biological process	hair cycle process	GO:0022405	0.0014
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	biological process	hair cycle process	GO:0022405	0.0014
+PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519	biological process	hair cycle process	GO:0022405	0.0014
+PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264	biological process	hair cycle process	GO:0022405	0.0014
+CTSS	cathepsin S	1520	ENSG00000163131	biological process	hair cycle process	GO:0022405	0.0014
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	biological process	hair cycle process	GO:0022405	0.0014
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	biological process	hair follicle development	GO:0001942	0.0014
+FGF10	fibroblast growth factor 10	2255	ENSG00000070193	biological process	hair follicle development	GO:0001942	0.0014
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	biological process	hair follicle development	GO:0001942	0.0014
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	biological process	hair follicle development	GO:0001942	0.0014
+FGF10	fibroblast growth factor 10	2255	ENSG00000070193	biological process	hair cycle process	GO:0022405	0.0014
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	biological process	hair cycle process	GO:0022405	0.0014
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	biological process	hair cycle process	GO:0022405	0.0014
+SOX9	SRY (sex determining region Y)-box 9	6662	ENSG00000125398	biological process	hair cycle process	GO:0022405	0.0014
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	biological process	molting cycle process	GO:0022404	0.0014
+TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394	biological process	hair cycle process	GO:0022405	0.0014
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	biological process	hair cycle process	GO:0022405	0.0014
+PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065	biological process	epidermis development	GO:0008544	0.0014
+NGFR	nerve growth factor receptor	4804	ENSG00000064300	biological process	hair cycle process	GO:0022405	0.0014
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	biological process	hair follicle development	GO:0001942	0.0014
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	biological process	hair follicle development	GO:0001942	0.0014
+PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065	biological process	hair follicle development	GO:0001942	0.0014
+NGFR	nerve growth factor receptor	4804	ENSG00000064300	biological process	hair follicle development	GO:0001942	0.0014
+PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065	biological process	hair cycle process	GO:0022405	0.0014
+TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394	biological process	hair follicle development	GO:0001942	0.0014
+SOX9	SRY (sex determining region Y)-box 9	6662	ENSG00000125398	biological process	hair follicle development	GO:0001942	0.0014
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	biological process	hair follicle development	GO:0001942	0.0014
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	biological process	hair cycle process	GO:0022405	0.0014
+YAP1	Yes-associated protein 1	10413	ENSG00000137693	biological process	epidermis development	GO:0008544	0.0014
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	biological process	epidermis development	GO:0008544	0.0014
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	biological process	molting cycle process	GO:0022404	0.0014
+FGF10	fibroblast growth factor 10	2255	ENSG00000070193	biological process	molting cycle process	GO:0022404	0.0014
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	biological process	molting cycle process	GO:0022404	0.0014
+TNF	tumor necrosis factor	7124	ENSG00000232810	biological process	molting cycle process	GO:0022404	0.0014
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	biological process	molting cycle process	GO:0022404	0.0014
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	biological process	hair follicle development	GO:0001942	0.0014
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	biological process	hair follicle development	GO:0001942	0.0014
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	biological process	hair follicle development	GO:0001942	0.0014
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	biological process	hair follicle development	GO:0001942	0.0014
+TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264	biological process	hair follicle development	GO:0001942	0.0014
+SOX18	SRY (sex determining region Y)-box 18	54345	ENSG00000203883	biological process	hair follicle development	GO:0001942	0.0014
+PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341	biological process	hair follicle development	GO:0001942	0.0014
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	biological process	hair follicle development	GO:0001942	0.0014
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	biological process	hair follicle development	GO:0001942	0.0014
+PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519	biological process	hair follicle development	GO:0001942	0.0014
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	biological process	molting cycle process	GO:0022404	0.0014
+PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264	biological process	hair follicle development	GO:0001942	0.0014
+SOX9	SRY (sex determining region Y)-box 9	6662	ENSG00000125398	biological process	molting cycle process	GO:0022404	0.0014
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	biological process	molting cycle process	GO:0022404	0.0014
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	biological process	molting cycle process	GO:0022404	0.0014
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	biological process	molting cycle process	GO:0022404	0.0014
+TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264	biological process	molting cycle process	GO:0022404	0.0014
+SOX18	SRY (sex determining region Y)-box 18	54345	ENSG00000203883	biological process	molting cycle process	GO:0022404	0.0014
+PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341	biological process	molting cycle process	GO:0022404	0.0014
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	biological process	molting cycle process	GO:0022404	0.0014
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	biological process	molting cycle process	GO:0022404	0.0014
+PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519	biological process	molting cycle process	GO:0022404	0.0014
+PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264	biological process	molting cycle process	GO:0022404	0.0014
+CTSS	cathepsin S	1520	ENSG00000163131	biological process	molting cycle process	GO:0022404	0.0014
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	biological process	molting cycle process	GO:0022404	0.0014
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	biological process	molting cycle process	GO:0022404	0.0014
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	biological process	molting cycle process	GO:0022404	0.0014
+PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065	biological process	molting cycle process	GO:0022404	0.0014
+NGFR	nerve growth factor receptor	4804	ENSG00000064300	biological process	molting cycle process	GO:0022404	0.0014
+TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394	biological process	molting cycle process	GO:0022404	0.0014
+CTSS	cathepsin S	1520	ENSG00000163131	biological process	hair follicle development	GO:0001942	0.0014
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	biological process	hair cycle process	GO:0022405	0.0014
+CDSN	corneodesmosin	1041	ENSG00000204539	biological process	epidermis development	GO:0008544	0.0014
+KLK14	kallikrein-related peptidase 14	43847	ENSG00000129437	biological process	epidermis development	GO:0008544	0.0014
+FGF10	fibroblast growth factor 10	2255	ENSG00000070193	biological process	epidermis development	GO:0008544	0.0014
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	biological process	epidermis development	GO:0008544	0.0014
+SOX9	SRY (sex determining region Y)-box 9	6662	ENSG00000125398	biological process	epidermis development	GO:0008544	0.0014
+TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394	biological process	epidermis development	GO:0008544	0.0014
+DDR1	discoidin domain receptor tyrosine kinase 1	780	ENSG00000204580	biological process	epidermis development	GO:0008544	0.0014
+PRKCH	protein kinase C, eta	5583	ENSG00000027075	biological process	epidermis development	GO:0008544	0.0014
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	biological process	epidermis development	GO:0008544	0.0014
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	biological process	epidermis development	GO:0008544	0.0014
+PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264	biological process	epidermis development	GO:0008544	0.0014
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	biological process	epidermis development	GO:0008544	0.0014
+TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264	biological process	epidermis development	GO:0008544	0.0014
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	biological process	epidermis development	GO:0008544	0.0014
+TNF	tumor necrosis factor	7124	ENSG00000232810	biological process	epidermis development	GO:0008544	0.0014
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	biological process	epidermis development	GO:0008544	0.0014
+KLK5	kallikrein-related peptidase 5	25818	ENSG00000167754	biological process	epidermis development	GO:0008544	0.0014
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	biological process	epidermis development	GO:0008544	0.0014
+COL1A1	collagen, type I, alpha 1	1277	ENSG00000108821	biological process	epidermis development	GO:0008544	0.0014
+CTSS	cathepsin S	1520	ENSG00000163131	biological process	epidermis development	GO:0008544	0.0014
+LTB	lymphotoxin beta (TNF superfamily, member 3)	4050	ENSG00000227507	biological process	epidermis development	GO:0008544	0.0014
+HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629	cellular component	vacuolar membrane	GO:0005774	0.0015
+HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541	cellular component	vacuolar membrane	GO:0005774	0.0015
+IGF2R	insulin-like growth factor 2 receptor	3482	ENSG00000197081	cellular component	vacuolar membrane	GO:0005774	0.0015
+HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735	cellular component	vacuolar membrane	GO:0005774	0.0015
+TPCN2	two pore segment channel 2	219931	ENSG00000162341	cellular component	vacuolar membrane	GO:0005774	0.0015
+VAMP8	vesicle-associated membrane protein 8 (endobrevin)	8673	ENSG00000118640	cellular component	vacuolar membrane	GO:0005774	0.0015
+HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574	cellular component	vacuolar membrane	GO:0005774	0.0015
+NEU1	sialidase 1 (lysosomal sialidase)	4758	ENSG00000204386	cellular component	vacuolar membrane	GO:0005774	0.0015
+MARCH8	membrane-associated ring finger (C3HC4) 8, E3 ubiquitin protein ligase	220972	ENSG00000165406	cellular component	vacuolar membrane	GO:0005774	0.0015
+HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257	cellular component	vacuolar membrane	GO:0005774	0.0015
+HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126	cellular component	vacuolar membrane	GO:0005774	0.0015
+ENTPD4	ectonucleoside triphosphate diphosphohydrolase 4	9583	ENSG00000197217	cellular component	vacuolar membrane	GO:0005774	0.0015
+TECPR1	tectonin beta-propeller repeat containing 1	25851	ENSG00000205356	cellular component	vacuolar membrane	GO:0005774	0.0015
+HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344	cellular component	vacuolar membrane	GO:0005774	0.0015
+ATP6V1G2	ATPase, H+ transporting, lysosomal 13kDa, V1 subunit G2	534	ENSG00000213760	cellular component	vacuolar membrane	GO:0005774	0.0015
+HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287	cellular component	vacuolar membrane	GO:0005774	0.0015
+AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747	cellular component	vacuolar membrane	GO:0005774	0.0015
+HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502	cellular component	vacuolar membrane	GO:0005774	0.0015
+HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106	cellular component	vacuolar membrane	GO:0005774	0.0015
+C2	complement component 2	717	ENSG00000166278	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+CFB	complement factor B	629	ENSG00000243649	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK7	kallikrein-related peptidase 7	5650	ENSG00000169035	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK4	kallikrein-related peptidase 4	9622	ENSG00000167749	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK12	kallikrein-related peptidase 12	43849	ENSG00000186474	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+LPA	lipoprotein, Lp(a)	4018	ENSG00000198670	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK9	kallikrein-related peptidase 9	284366	ENSG00000213022	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK2	kallikrein-related peptidase 2	3817	ENSG00000167751	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK11	kallikrein-related peptidase 11	11012	ENSG00000167757	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK3	kallikrein-related peptidase 3	354	ENSG00000142515	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK6	kallikrein-related peptidase 6	5653	ENSG00000167755	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK13	kallikrein-related peptidase 13	26085	ENSG00000167759	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK14	kallikrein-related peptidase 14	43847	ENSG00000129437	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK1	kallikrein 1	3816	ENSG00000167748	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK10	kallikrein-related peptidase 10	5655	ENSG00000129451	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK5	kallikrein-related peptidase 5	25818	ENSG00000167754	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK8	kallikrein-related peptidase 8	11202	ENSG00000129455	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+KLK15	kallikrein-related peptidase 15	55554	ENSG00000174562	molecular function	serine-type endopeptidase activity	GO:0004252	0.0021
+HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745	molecular function	MHC class I receptor activity	GO:0032393	0.003
+HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592	molecular function	MHC class I receptor activity	GO:0032393	0.003
+KIR3DL1	killer cell immunoglobulin-like receptor, three domains, long cytoplasmic tail, 1	3811	ENSG00000167633	molecular function	MHC class I receptor activity	GO:0032393	0.003
+PPBP	pro-platelet basic protein (chemokine (C-X-C motif) ligand 7)	5473	ENSG00000163736	molecular function	chemokine activity	GO:0008009	0.003
+HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525	molecular function	MHC class I receptor activity	GO:0032393	0.003
+LILRB2	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 2	10288	ENSG00000131042	molecular function	MHC class I receptor activity	GO:0032393	0.003
+LILRB1	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 1	10859	ENSG00000104972	molecular function	MHC class I receptor activity	GO:0032393	0.003
+PF4	platelet factor 4	5196	ENSG00000163737	molecular function	chemokine activity	GO:0008009	0.003
+CXCL1	chemokine (C-X-C motif) ligand 1 (melanoma growth stimulating activity, alpha)	2919	ENSG00000163739	molecular function	chemokine activity	GO:0008009	0.003
+CXCL6	chemokine (C-X-C motif) ligand 6 (granulocyte chemotactic protein 2)	6372	ENSG00000124875	molecular function	chemokine activity	GO:0008009	0.003
+IL8	interleukin 8	3576	ENSG00000169429	molecular function	chemokine activity	GO:0008009	0.003
+PF4V1	platelet factor 4 variant 1	5197	ENSG00000109272	molecular function	chemokine activity	GO:0008009	0.003
+CXCL5	chemokine (C-X-C motif) ligand 5	6374	ENSG00000163735	molecular function	chemokine activity	GO:0008009	0.003
+CXCL2	chemokine (C-X-C motif) ligand 2	2920	ENSG00000081041	molecular function	chemokine activity	GO:0008009	0.003
+CXCL3	chemokine (C-X-C motif) ligand 3	2921	ENSG00000163734	molecular function	chemokine activity	GO:0008009	0.003
+TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394	molecular function	MHC class I protein binding	GO:0042288	0.0031
+LILRB1	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 1	10859	ENSG00000104972	molecular function	protein phosphatase 1 binding	GO:0008157	0.0031
+PPP1R9B	protein phosphatase 1, regulatory subunit 9B	84687		molecular function	protein phosphatase 1 binding	GO:0008157	0.0031
+LILRB2	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 2	10288	ENSG00000131042	molecular function	protein phosphatase 1 binding	GO:0008157	0.0031
+PPP1R10	protein phosphatase 1, regulatory subunit 10	5514	ENSG00000204569	molecular function	protein phosphatase 1 binding	GO:0008157	0.0031
+LILRB1	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 1	10859	ENSG00000104972	molecular function	MHC class I protein binding	GO:0042288	0.0031
+LILRB2	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 2	10288	ENSG00000131042	molecular function	MHC class I protein binding	GO:0042288	0.0031
+TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264	molecular function	MHC class I protein binding	GO:0042288	0.0031
+TUBB	tubulin, beta class I	203068	ENSG00000196230	molecular function	MHC class I protein binding	GO:0042288	0.0031
+KLK8	kallikrein-related peptidase 8	11202	ENSG00000129455	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK10	kallikrein-related peptidase 10	5655	ENSG00000129451	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+C2	complement component 2	717	ENSG00000166278	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+CFB	complement factor B	629	ENSG00000243649	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK7	kallikrein-related peptidase 7	5650	ENSG00000169035	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK4	kallikrein-related peptidase 4	9622	ENSG00000167749	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+LPA	lipoprotein, Lp(a)	4018	ENSG00000198670	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK11	kallikrein-related peptidase 11	11012	ENSG00000167757	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK5	kallikrein-related peptidase 5	25818	ENSG00000167754	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK9	kallikrein-related peptidase 9	284366	ENSG00000213022	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK15	kallikrein-related peptidase 15	55554	ENSG00000174562	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK3	kallikrein-related peptidase 3	354	ENSG00000142515	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK6	kallikrein-related peptidase 6	5653	ENSG00000167755	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK13	kallikrein-related peptidase 13	26085	ENSG00000167759	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK14	kallikrein-related peptidase 14	43847	ENSG00000129437	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK1	kallikrein 1	3816	ENSG00000167748	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK2	kallikrein-related peptidase 2	3817	ENSG00000167751	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+KLK12	kallikrein-related peptidase 12	43849	ENSG00000186474	molecular function	serine-type peptidase activity	GO:0008236	0.0031
+PPBP	pro-platelet basic protein (chemokine (C-X-C motif) ligand 7)	5473	ENSG00000163736	molecular function	chemokine receptor binding	GO:0042379	0.0045
+KLK5	kallikrein-related peptidase 5	25818	ENSG00000167754	molecular function	serine hydrolase activity	GO:0017171	0.0045
+PF4	platelet factor 4	5196	ENSG00000163737	molecular function	chemokine receptor binding	GO:0042379	0.0045
+CXCL2	chemokine (C-X-C motif) ligand 2	2920	ENSG00000081041	molecular function	chemokine receptor binding	GO:0042379	0.0045
+CXCL6	chemokine (C-X-C motif) ligand 6 (granulocyte chemotactic protein 2)	6372	ENSG00000124875	molecular function	chemokine receptor binding	GO:0042379	0.0045
+IL8	interleukin 8	3576	ENSG00000169429	molecular function	chemokine receptor binding	GO:0042379	0.0045
+CXCL3	chemokine (C-X-C motif) ligand 3	2921	ENSG00000163734	molecular function	chemokine receptor binding	GO:0042379	0.0045
+PF4V1	platelet factor 4 variant 1	5197	ENSG00000109272	molecular function	chemokine receptor binding	GO:0042379	0.0045
+CXCL5	chemokine (C-X-C motif) ligand 5	6374	ENSG00000163735	molecular function	chemokine receptor binding	GO:0042379	0.0045
+C2	complement component 2	717	ENSG00000166278	molecular function	serine hydrolase activity	GO:0017171	0.0045
+CFB	complement factor B	629	ENSG00000243649	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK7	kallikrein-related peptidase 7	5650	ENSG00000169035	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK4	kallikrein-related peptidase 4	9622	ENSG00000167749	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK12	kallikrein-related peptidase 12	43849	ENSG00000186474	molecular function	serine hydrolase activity	GO:0017171	0.0045
+LPA	lipoprotein, Lp(a)	4018	ENSG00000198670	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK11	kallikrein-related peptidase 11	11012	ENSG00000167757	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK9	kallikrein-related peptidase 9	284366	ENSG00000213022	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK2	kallikrein-related peptidase 2	3817	ENSG00000167751	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK15	kallikrein-related peptidase 15	55554	ENSG00000174562	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK3	kallikrein-related peptidase 3	354	ENSG00000142515	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK6	kallikrein-related peptidase 6	5653	ENSG00000167755	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK13	kallikrein-related peptidase 13	26085	ENSG00000167759	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK14	kallikrein-related peptidase 14	43847	ENSG00000129437	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK1	kallikrein 1	3816	ENSG00000167748	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK10	kallikrein-related peptidase 10	5655	ENSG00000129451	molecular function	serine hydrolase activity	GO:0017171	0.0045
+KLK8	kallikrein-related peptidase 8	11202	ENSG00000129455	molecular function	serine hydrolase activity	GO:0017171	0.0045
+CXCL1	chemokine (C-X-C motif) ligand 1 (melanoma growth stimulating activity, alpha)	2919	ENSG00000163739	molecular function	chemokine receptor binding	GO:0042379	0.0045

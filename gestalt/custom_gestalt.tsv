@@ -1,0 +1,1258 @@
+User file and parameters: User file: textAreaUpload.txt, Organism: hsapiens, Id Type: gene_symbol, Ref Set: entrezgene, Significance Level: Top10, Statistics Test: Hypergeometric, MTC: BH, Minimum: 4
+
+The results for each enriched GO category are listed in this table. For each GO category, the first row lists its sub-root
+(biological process, molecular function, or cellular component), category name, and corresponding GO ID. The second row lists
+number of reference genes in the category (C), number of genes in the gene set and also in the category (O), expected number in the
+category (E), Ratio of enrichment (R), p value from hypergeometric test (rawP), and p value adjusted by the multiple test adjustment (adjP).
+Finally, genes in the category are listed. For each gene, the table lists the user uploaded ID and value (optional), Entrez ID,
+Ensembl Gene Stable ID, Gene symbol, and description.
+
+
+biological process	antigen processing and presentation of exogenous peptide antigen	GO:0002478
+C=168;O=21;E=6.57;R=3.20;rawP=2.52e-06;adjP=0.0012
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+TAP1	NA	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+PSMB9	NA	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+CTSS	NA	CTSS	cathepsin S	1520	ENSG00000163131
+
+PSMB8	NA	PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+PSMC6	NA	PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+PSMD8	NA	PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341
+
+TAP2	NA	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+biological process	antigen processing and presentation	GO:0019882
+C=216;O=24;E=8.45;R=2.84;rawP=4.06e-06;adjP=0.0012
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+LILRB2	NA	LILRB2	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 2	10288	ENSG00000131042
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+TAP1	NA	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+PSMB9	NA	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+MARCH8	NA	MARCH8	membrane-associated ring finger (C3HC4) 8, E3 ubiquitin protein ligase	220972	ENSG00000165406
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+CTSS	NA	CTSS	cathepsin S	1520	ENSG00000163131
+
+PSMB8	NA	PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264
+
+PSMC6	NA	PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+MICA	NA	MICA	MHC class I polypeptide-related sequence A	100507436	ENSG00000204520
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+PSMD8	NA	PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341
+
+TAP2	NA	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+biological process	antigen processing and presentation of peptide antigen	GO:0048002
+C=186;O=22;E=7.27;R=3.03;rawP=3.68e-06;adjP=0.0012
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+TAP1	NA	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+PSMB9	NA	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+MARCH8	NA	MARCH8	membrane-associated ring finger (C3HC4) 8, E3 ubiquitin protein ligase	220972	ENSG00000165406
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+CTSS	NA	CTSS	cathepsin S	1520	ENSG00000163131
+
+PSMB8	NA	PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264
+
+PSMC6	NA	PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+PSMD8	NA	PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341
+
+TAP2	NA	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+biological process	antigen processing and presentation of exogenous antigen	GO:0019884
+C=170;O=21;E=6.65;R=3.16;rawP=3.05e-06;adjP=0.0012
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+TAP1	NA	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+PSMB9	NA	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+CTSS	NA	CTSS	cathepsin S	1520	ENSG00000163131
+
+PSMB8	NA	PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+PSMC6	NA	PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+PSMD8	NA	PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341
+
+TAP2	NA	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+biological process	immune system process	GO:0002376
+C=1792;O=107;E=70.06;R=1.53;rawP=3.80e-06;adjP=0.0012
+LILRB2	NA	LILRB2	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 2	10288	ENSG00000131042
+
+TREM2	NA	TREM2	triggering receptor expressed on myeloid cells 2	54209	ENSG00000095970
+
+C4A	NA	C4A	complement component 4A (Rodgers blood group)	720	ENSG00000244731
+
+NCR3	NA	NCR3	natural cytotoxicity triggering receptor 3	259197	ENSG00000204475
+
+SOD2	NA	SOD2	superoxide dismutase 2, mitochondrial	6648	ENSG00000112096
+
+TAP1	NA	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394
+
+NCR1	NA	NCR1	natural cytotoxicity triggering receptor 1	9437	ENSG00000189430
+
+LILRB1	NA	LILRB1	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 1	10859	ENSG00000104972
+
+BIRC2	NA	BIRC2	baculoviral IAP repeat containing 2	329	ENSG00000110330
+
+LILRA5	NA	LILRA5	leukocyte immunoglobulin-like receptor, subfamily A (with TM domain), member 5	353514	ENSG00000187116
+
+PSMB8	NA	PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264
+
+ECM1	NA	ECM1	extracellular matrix protein 1	1893	ENSG00000143369
+
+MMP7	NA	MMP7	matrix metallopeptidase 7 (matrilysin, uterine)	4316	ENSG00000137673
+
+SHC1	NA	SHC1	SHC (Src homology 2 domain containing) transforming protein 1	6464	ENSG00000160691
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+TAP2	NA	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264
+
+ADAR	NA	ADAR	adenosine deaminase, RNA-specific	103	ENSG00000160710
+
+TAC1	NA	TAC1	tachykinin, precursor 1	6863	ENSG00000006128
+
+C2	NA	C2	complement component 2	717	ENSG00000166278
+
+TXNRD2	NA	TXNRD2	thioredoxin reductase 2	10587	ENSG00000184470
+
+PF4V1	NA	PF4V1	platelet factor 4 variant 1	5197	ENSG00000109272
+
+BIRC3	NA	BIRC3	baculoviral IAP repeat containing 3	330	ENSG00000023445
+
+ZBTB16	NA	ZBTB16	zinc finger and BTB domain containing 16	7704	ENSG00000109906
+
+COL1A1	NA	COL1A1	collagen, type I, alpha 1	1277	ENSG00000108821
+
+KIR2DL3	NA	KIR2DL3	killer cell immunoglobulin-like receptor, two domains, long cytoplasmic tail, 3	3804	ENSG00000243772
+
+BNIP3L	NA	BNIP3L	BCL2/adenovirus E1B 19kDa interacting protein 3-like	665	ENSG00000104765
+
+CXCL6	NA	CXCL6	chemokine (C-X-C motif) ligand 6 (granulocyte chemotactic protein 2)	6372	ENSG00000124875
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+GNL1	NA	GNL1	guanine nucleotide binding protein-like 1	2794	ENSG00000204590
+
+KIR3DL1	NA	KIR3DL1	killer cell immunoglobulin-like receptor, three domains, long cytoplasmic tail, 1	3811	ENSG00000167633
+
+PSMB9	NA	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065
+
+LST1	NA	LST1	leukocyte specific transcript 1	7940	ENSG00000204482
+
+CXCL5	NA	CXCL5	chemokine (C-X-C motif) ligand 5	6374	ENSG00000163735
+
+SKIL	NA	SKIL	SKI-like oncogene	6498	ENSG00000136603
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+PSMC6	NA	PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519
+
+AIF1	NA	AIF1	allograft inflammatory factor 1	199	ENSG00000204472
+
+TBX1	NA	TBX1	T-box 1	6899	ENSG00000184058
+
+PSMD8	NA	PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+KLF4	NA	KLF4	Kruppel-like factor 4 (gut)	9314	ENSG00000136826
+
+IL8	NA	IL8	interleukin 8	3576	ENSG00000169429
+
+CXCL1	NA	CXCL1	chemokine (C-X-C motif) ligand 1 (melanoma growth stimulating activity, alpha)	2919	ENSG00000163739
+
+CACNB3	NA	CACNB3	calcium channel, voltage-dependent, beta 3 subunit	784	ENSG00000167535
+
+LTA	NA	LTA	lymphotoxin alpha (TNF superfamily, member 1)	4049	ENSG00000226979
+
+LILRB3	NA	LILRB3	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 3	11025	ENSG00000204577
+
+KIR2DL4	NA	KIR2DL4	killer cell immunoglobulin-like receptor, two domains, long cytoplasmic tail, 4	3805	ENSG00000189013
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+ARNT	NA	ARNT	aryl hydrocarbon receptor nuclear translocator	405	ENSG00000143437
+
+TUBB	NA	TUBB	tubulin, beta class I	203068	ENSG00000196230
+
+CDKN2B	NA	CDKN2B	cyclin-dependent kinase inhibitor 2B (p15, inhibits CDK4)	1030	ENSG00000147883
+
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+LIME1	NA	LIME1	Lck interacting transmembrane adaptor 1	54923	ENSG00000203896
+
+FGF10	NA	FGF10	fibroblast growth factor 10	2255	ENSG00000070193
+
+CXCL3	NA	CXCL3	chemokine (C-X-C motif) ligand 3	2921	ENSG00000163734
+
+ITGA6	NA	ITGA6	integrin, alpha 6	3655	ENSG00000091409
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+LTB	NA	LTB	lymphotoxin beta (TNF superfamily, member 3)	4050	ENSG00000227507
+
+SOX9	NA	SOX9	SRY (sex determining region Y)-box 9	6662	ENSG00000125398
+
+TAX1BP1	NA	TAX1BP1	Tax1 (human T-cell leukemia virus type I) binding protein 1	8887	ENSG00000106052
+
+CHRNB2	NA	CHRNB2	cholinergic receptor, nicotinic, beta 2 (neuronal)	1141	ENSG00000160716
+
+ZFP36L1	NA	ZFP36L1	zinc finger protein 36, C3H type-like 1	677	ENSG00000185650
+
+CXCL2	NA	CXCL2	chemokine (C-X-C motif) ligand 2	2920	ENSG00000081041
+
+IKBKAP	NA	IKBKAP	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase complex-associated protein	8518	ENSG00000070061
+
+APOB	NA	APOB	apolipoprotein B (including Ag(x) antigen)	338	ENSG00000084674
+
+FOXO3	NA	FOXO3	forkhead box O3	2309	ENSG00000118689
+
+SIX4	NA	SIX4	SIX homeobox 4	51804	ENSG00000100625
+
+FCAR	NA	FCAR	Fc fragment of IgA, receptor for	2204	ENSG00000186431
+
+PRKCH	NA	PRKCH	protein kinase C, eta	5583	ENSG00000027075
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+MARCH8	NA	MARCH8	membrane-associated ring finger (C3HC4) 8, E3 ubiquitin protein ligase	220972	ENSG00000165406
+
+PDCD1	NA	PDCD1	programmed cell death 1	5133	ENSG00000188389
+
+SIX1	NA	SIX1	SIX homeobox 1	6495	ENSG00000126778
+
+CTSS	NA	CTSS	cathepsin S	1520	ENSG00000163131
+
+TREM1	NA	TREM1	triggering receptor expressed on myeloid cells 1	54210	ENSG00000124731
+
+ITGA3	NA	ITGA3	integrin, alpha 3 (antigen CD49C, alpha 3 subunit of VLA-3 receptor)	3675	ENSG00000005884
+
+GATA2	NA	GATA2	GATA binding protein 2	2624	ENSG00000179348
+
+MYC	NA	MYC	v-myc myelocytomatosis viral oncogene homolog (avian)	4609	ENSG00000136997
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+AGER	NA	AGER	advanced glycosylation end product-specific receptor	177	ENSG00000204305
+
+PF4	NA	PF4	platelet factor 4	5196	ENSG00000163737
+
+PPBP	NA	PPBP	pro-platelet basic protein (chemokine (C-X-C motif) ligand 7)	5473	ENSG00000163736
+
+KIR2DL1	NA	KIR2DL1	killer cell immunoglobulin-like receptor, two domains, long cytoplasmic tail, 1	3802	ENSG00000125498
+
+C4B	NA	C4B	complement component 4B (Chido blood group)	721	ENSG00000224389
+
+TNF	NA	TNF	tumor necrosis factor	7124	ENSG00000232810
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+ADAM17	NA	ADAM17	ADAM metallopeptidase domain 17	6868	ENSG00000151694
+
+LILRB4	NA	LILRB4	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 4	11006	ENSG00000186818
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+TREML2	NA	TREML2	triggering receptor expressed on myeloid cells-like 2	79865	ENSG00000112195
+
+NOTCH4	NA	NOTCH4	notch 4	4855	ENSG00000204301
+
+TREML1	NA	TREML1	triggering receptor expressed on myeloid cells-like 1	340205	ENSG00000161911
+
+IL6R	NA	IL6R	interleukin 6 receptor	3570	ENSG00000160712
+
+CTSK	NA	CTSK	cathepsin K	1513	ENSG00000143387
+
+HSPA1B	NA	HSPA1B	heat shock 70kDa protein 1B	3304	ENSG00000204388
+
+TFEB	NA	TFEB	transcription factor EB	7942	ENSG00000112561
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+MICA	NA	MICA	MHC class I polypeptide-related sequence A	100507436	ENSG00000204520
+
+LILRA1	NA	LILRA1	leukocyte immunoglobulin-like receptor, subfamily A (with TM domain), member 1	11024	ENSG00000104974
+
+GP6	NA	GP6	glycoprotein VI (platelet)	51206	ENSG00000088053
+
+ATP1B3	NA	ATP1B3	ATPase, Na+/K+ transporting, beta 3 polypeptide	483	ENSG00000069849
+
+CFB	NA	CFB	complement factor B	629	ENSG00000243649
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+KIR3DL2	NA	KIR3DL2	killer cell immunoglobulin-like receptor, three domains, long cytoplasmic tail, 2	3812	ENSG00000240403
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+NFKBIL1	NA	NFKBIL1	nuclear factor of kappa light polypeptide gene enhancer in B-cells inhibitor-like 1	4795	ENSG00000204498
+
+CDKN2A	NA	CDKN2A	cyclin-dependent kinase inhibitor 2A	1029	ENSG00000147889
+
+
+biological process	epidermis development	GO:0008544
+C=455;O=38;E=17.79;R=2.14;rawP=8.92e-06;adjP=0.0014
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+FGF10	NA	FGF10	fibroblast growth factor 10	2255	ENSG00000070193
+
+CDSN	NA	CDSN	corneodesmosin	1041	ENSG00000204539
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+LTB	NA	LTB	lymphotoxin beta (TNF superfamily, member 3)	4050	ENSG00000227507
+
+SOX9	NA	SOX9	SRY (sex determining region Y)-box 9	6662	ENSG00000125398
+
+TAP1	NA	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394
+
+DDR1	NA	DDR1	discoidin domain receptor tyrosine kinase 1	780	ENSG00000204580
+
+PRKCH	NA	PRKCH	protein kinase C, eta	5583	ENSG00000027075
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+PSMB8	NA	PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264
+
+CTSS	NA	CTSS	cathepsin S	1520	ENSG00000163131
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+TAP2	NA	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+TNF	NA	TNF	tumor necrosis factor	7124	ENSG00000232810
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+KLK5	NA	KLK5	kallikrein-related peptidase 5	25818	ENSG00000167754
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+COL1A1	NA	COL1A1	collagen, type I, alpha 1	1277	ENSG00000108821
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+KLK14	NA	KLK14	kallikrein-related peptidase 14	43847	ENSG00000129437
+
+YAP1	NA	YAP1	Yes-associated protein 1	10413	ENSG00000137693
+
+PSMB9	NA	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065
+
+NGFR	NA	NGFR	nerve growth factor receptor	4804	ENSG00000064300
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+VDR	NA	VDR	vitamin D (1,25- dihydroxyvitamin D3) receptor	7421	ENSG00000111424
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+PSMC6	NA	PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519
+
+PSMD8	NA	PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+KLF4	NA	KLF4	Kruppel-like factor 4 (gut)	9314	ENSG00000136826
+
+SOX18	NA	SOX18	SRY (sex determining region Y)-box 18	54345	ENSG00000203883
+
+KLK7	NA	KLK7	kallikrein-related peptidase 7	5650	ENSG00000169035
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+CDKN2A	NA	CDKN2A	cyclin-dependent kinase inhibitor 2A	1029	ENSG00000147889
+
+
+biological process	exogen	GO:0042638
+C=179;O=21;E=7.00;R=3.00;rawP=6.93e-06;adjP=0.0014
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+TAP1	NA	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+PSMB9	NA	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+CTSS	NA	CTSS	cathepsin S	1520	ENSG00000163131
+
+PSMB8	NA	PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+PSMC6	NA	PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+PSMD8	NA	PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341
+
+TAP2	NA	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+biological process	hair cycle process	GO:0022405
+C=257;O=26;E=10.05;R=2.59;rawP=9.13e-06;adjP=0.0014
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+TNF	NA	TNF	tumor necrosis factor	7124	ENSG00000232810
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+FGF10	NA	FGF10	fibroblast growth factor 10	2255	ENSG00000070193
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+SOX9	NA	SOX9	SRY (sex determining region Y)-box 9	6662	ENSG00000125398
+
+TAP1	NA	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+NGFR	NA	NGFR	nerve growth factor receptor	4804	ENSG00000064300
+
+PSMB9	NA	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+CTSS	NA	CTSS	cathepsin S	1520	ENSG00000163131
+
+PSMB8	NA	PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264
+
+PSMC6	NA	PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+PSMD8	NA	PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341
+
+SOX18	NA	SOX18	SRY (sex determining region Y)-box 18	54345	ENSG00000203883
+
+TAP2	NA	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+
+biological process	hair follicle development	GO:0001942
+C=257;O=26;E=10.05;R=2.59;rawP=9.13e-06;adjP=0.0014
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+TNF	NA	TNF	tumor necrosis factor	7124	ENSG00000232810
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+FGF10	NA	FGF10	fibroblast growth factor 10	2255	ENSG00000070193
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+SOX9	NA	SOX9	SRY (sex determining region Y)-box 9	6662	ENSG00000125398
+
+TAP1	NA	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+NGFR	NA	NGFR	nerve growth factor receptor	4804	ENSG00000064300
+
+PSMB9	NA	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+CTSS	NA	CTSS	cathepsin S	1520	ENSG00000163131
+
+PSMB8	NA	PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264
+
+PSMC6	NA	PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+PSMD8	NA	PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341
+
+SOX18	NA	SOX18	SRY (sex determining region Y)-box 18	54345	ENSG00000203883
+
+TAP2	NA	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+
+biological process	molting cycle process	GO:0022404
+C=257;O=26;E=10.05;R=2.59;rawP=9.13e-06;adjP=0.0014
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+TNF	NA	TNF	tumor necrosis factor	7124	ENSG00000232810
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+FGF10	NA	FGF10	fibroblast growth factor 10	2255	ENSG00000070193
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+SOX9	NA	SOX9	SRY (sex determining region Y)-box 9	6662	ENSG00000125398
+
+TAP1	NA	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+NGFR	NA	NGFR	nerve growth factor receptor	4804	ENSG00000064300
+
+PSMB9	NA	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+CTSS	NA	CTSS	cathepsin S	1520	ENSG00000163131
+
+PSMB8	NA	PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264
+
+PSMC6	NA	PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	5706	ENSG00000100519
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+PSMD8	NA	PSMD8	proteasome (prosome, macropain) 26S subunit, non-ATPase, 8	5714	ENSG00000099341
+
+SOX18	NA	SOX18	SRY (sex determining region Y)-box 18	54345	ENSG00000203883
+
+TAP2	NA	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+
+molecular function		GO:0032395
+C=12;O=7;E=0.46;R=15.29;rawP=7.60e-08;adjP=1.88e-05
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+
+molecular function	endopeptidase activity	GO:0004175
+C=377;O=34;E=14.38;R=2.36;rawP=3.10e-06;adjP=0.0004
+KLK8	NA	KLK8	kallikrein-related peptidase 8	11202	ENSG00000129455
+
+KLK10	NA	KLK10	kallikrein-related peptidase 10	5655	ENSG00000129451
+
+MMP20	NA	MMP20	matrix metallopeptidase 20	9313	ENSG00000137674
+
+KLK1	NA	KLK1	kallikrein 1	3816	ENSG00000167748
+
+MMP21	NA	MMP21	matrix metallopeptidase 21	118856	ENSG00000154485
+
+ADAMTSL4	NA	ADAMTSL4	ADAMTS-like 4	54507	ENSG00000143382
+
+KLK15	NA	KLK15	kallikrein-related peptidase 15	55554	ENSG00000174562
+
+KLK2	NA	KLK2	kallikrein-related peptidase 2	3817	ENSG00000167751
+
+PSMB8	NA	PSMB8	proteasome (prosome, macropain) subunit, beta type, 8 (large multifunctional peptidase 7)	5696	ENSG00000204264
+
+MMP7	NA	MMP7	matrix metallopeptidase 7 (matrilysin, uterine)	4316	ENSG00000137673
+
+CTSS	NA	CTSS	cathepsin S	1520	ENSG00000163131
+
+LPA	NA	LPA	lipoprotein, Lp(a)	4018	ENSG00000198670
+
+ADAM15	NA	ADAM15	ADAM metallopeptidase domain 15	8751	ENSG00000143537
+
+C2	NA	C2	complement component 2	717	ENSG00000166278
+
+SENP1	NA	SENP1	SUMO1/sentrin specific peptidase 1	29843	ENSG00000079387
+
+ADAM17	NA	ADAM17	ADAM metallopeptidase domain 17	6868	ENSG00000151694
+
+KLK5	NA	KLK5	kallikrein-related peptidase 5	25818	ENSG00000167754
+
+APH1A	NA	APH1A	anterior pharynx defective 1 homolog A (C. elegans)	51107	ENSG00000117362
+
+ADAM20	NA	ADAM20	ADAM metallopeptidase domain 20	8748	ENSG00000134007
+
+KLK14	NA	KLK14	kallikrein-related peptidase 14	43847	ENSG00000129437
+
+KLK6	NA	KLK6	kallikrein-related peptidase 6	5653	ENSG00000167755
+
+KLK13	NA	KLK13	kallikrein-related peptidase 13	26085	ENSG00000167759
+
+KLK3	NA	KLK3	kallikrein-related peptidase 3	354	ENSG00000142515
+
+MMP27	NA	MMP27	matrix metallopeptidase 27	64066	ENSG00000137675
+
+CTSK	NA	CTSK	cathepsin K	1513	ENSG00000143387
+
+PSMB9	NA	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	5698	ENSG00000240065
+
+KLK11	NA	KLK11	kallikrein-related peptidase 11	11012	ENSG00000167757
+
+KLK9	NA	KLK9	kallikrein-related peptidase 9	284366	ENSG00000213022
+
+ADAMTS3	NA	ADAMTS3	ADAM metallopeptidase with thrombospondin type 1 motif, 3	9508	ENSG00000156140
+
+KLK12	NA	KLK12	kallikrein-related peptidase 12	43849	ENSG00000186474
+
+KLK4	NA	KLK4	kallikrein-related peptidase 4	9622	ENSG00000167749
+
+ADAM21	NA	ADAM21	ADAM metallopeptidase domain 21	8747	NULL
+
+KLK7	NA	KLK7	kallikrein-related peptidase 7	5650	ENSG00000169035
+
+CFB	NA	CFB	complement factor B	629	ENSG00000243649
+
+
+molecular function	serine-type endopeptidase activity	GO:0004252
+C=155;O=18;E=5.91;R=3.04;rawP=2.59e-05;adjP=0.0021
+KLK8	NA	KLK8	kallikrein-related peptidase 8	11202	ENSG00000129455
+
+KLK5	NA	KLK5	kallikrein-related peptidase 5	25818	ENSG00000167754
+
+KLK10	NA	KLK10	kallikrein-related peptidase 10	5655	ENSG00000129451
+
+KLK1	NA	KLK1	kallikrein 1	3816	ENSG00000167748
+
+KLK14	NA	KLK14	kallikrein-related peptidase 14	43847	ENSG00000129437
+
+KLK13	NA	KLK13	kallikrein-related peptidase 13	26085	ENSG00000167759
+
+KLK6	NA	KLK6	kallikrein-related peptidase 6	5653	ENSG00000167755
+
+KLK3	NA	KLK3	kallikrein-related peptidase 3	354	ENSG00000142515
+
+KLK15	NA	KLK15	kallikrein-related peptidase 15	55554	ENSG00000174562
+
+KLK2	NA	KLK2	kallikrein-related peptidase 2	3817	ENSG00000167751
+
+KLK9	NA	KLK9	kallikrein-related peptidase 9	284366	ENSG00000213022
+
+KLK11	NA	KLK11	kallikrein-related peptidase 11	11012	ENSG00000167757
+
+LPA	NA	LPA	lipoprotein, Lp(a)	4018	ENSG00000198670
+
+KLK12	NA	KLK12	kallikrein-related peptidase 12	43849	ENSG00000186474
+
+KLK4	NA	KLK4	kallikrein-related peptidase 4	9622	ENSG00000167749
+
+KLK7	NA	KLK7	kallikrein-related peptidase 7	5650	ENSG00000169035
+
+CFB	NA	CFB	complement factor B	629	ENSG00000243649
+
+C2	NA	C2	complement component 2	717	ENSG00000166278
+
+
+molecular function	chemokine activity	GO:0008009
+C=47;O=9;E=1.79;R=5.02;rawP=5.98e-05;adjP=0.0030
+CXCL5	NA	CXCL5	chemokine (C-X-C motif) ligand 5	6374	ENSG00000163735
+
+PF4V1	NA	PF4V1	platelet factor 4 variant 1	5197	ENSG00000109272
+
+CXCL3	NA	CXCL3	chemokine (C-X-C motif) ligand 3	2921	ENSG00000163734
+
+IL8	NA	IL8	interleukin 8	3576	ENSG00000169429
+
+CXCL6	NA	CXCL6	chemokine (C-X-C motif) ligand 6 (granulocyte chemotactic protein 2)	6372	ENSG00000124875
+
+CXCL1	NA	CXCL1	chemokine (C-X-C motif) ligand 1 (melanoma growth stimulating activity, alpha)	2919	ENSG00000163739
+
+CXCL2	NA	CXCL2	chemokine (C-X-C motif) ligand 2	2920	ENSG00000081041
+
+PF4	NA	PF4	platelet factor 4	5196	ENSG00000163737
+
+PPBP	NA	PPBP	pro-platelet basic protein (chemokine (C-X-C motif) ligand 7)	5473	ENSG00000163736
+
+
+molecular function	MHC class I receptor activity	GO:0032393
+C=19;O=6;E=0.72;R=8.28;rawP=5.32e-05;adjP=0.0030
+LILRB1	NA	LILRB1	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 1	10859	ENSG00000104972
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+LILRB2	NA	LILRB2	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 2	10288	ENSG00000131042
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+KIR3DL1	NA	KIR3DL1	killer cell immunoglobulin-like receptor, three domains, long cytoplasmic tail, 1	3811	ENSG00000167633
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+
+molecular function	protein phosphatase 1 binding	GO:0008157
+C=8;O=4;E=0.31;R=13.11;rawP=0.0001;adjP=0.0031
+LILRB1	NA	LILRB1	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 1	10859	ENSG00000104972
+
+PPP1R9B	NA	PPP1R9B	protein phosphatase 1, regulatory subunit 9B	84687	NULL
+
+LILRB2	NA	LILRB2	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 2	10288	ENSG00000131042
+
+PPP1R10	NA	PPP1R10	protein phosphatase 1, regulatory subunit 10	5514	ENSG00000204569
+
+
+molecular function	MHC class I protein binding	GO:0042288
+C=14;O=5;E=0.53;R=9.36;rawP=0.0001;adjP=0.0031
+LILRB1	NA	LILRB1	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 1	10859	ENSG00000104972
+
+LILRB2	NA	LILRB2	leukocyte immunoglobulin-like receptor, subfamily B (with TM and ITIM domains), member 2	10288	ENSG00000131042
+
+TAP2	NA	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	6891	ENSG00000204267,ENSG00000250264
+
+TUBB	NA	TUBB	tubulin, beta class I	203068	ENSG00000196230
+
+TAP1	NA	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	6890	ENSG00000168394
+
+
+molecular function	serine-type peptidase activity	GO:0008236
+C=177;O=18;E=6.75;R=2.67;rawP=0.0001;adjP=0.0031
+KLK8	NA	KLK8	kallikrein-related peptidase 8	11202	ENSG00000129455
+
+KLK5	NA	KLK5	kallikrein-related peptidase 5	25818	ENSG00000167754
+
+KLK10	NA	KLK10	kallikrein-related peptidase 10	5655	ENSG00000129451
+
+KLK1	NA	KLK1	kallikrein 1	3816	ENSG00000167748
+
+KLK14	NA	KLK14	kallikrein-related peptidase 14	43847	ENSG00000129437
+
+KLK13	NA	KLK13	kallikrein-related peptidase 13	26085	ENSG00000167759
+
+KLK6	NA	KLK6	kallikrein-related peptidase 6	5653	ENSG00000167755
+
+KLK3	NA	KLK3	kallikrein-related peptidase 3	354	ENSG00000142515
+
+KLK15	NA	KLK15	kallikrein-related peptidase 15	55554	ENSG00000174562
+
+KLK2	NA	KLK2	kallikrein-related peptidase 2	3817	ENSG00000167751
+
+KLK9	NA	KLK9	kallikrein-related peptidase 9	284366	ENSG00000213022
+
+KLK11	NA	KLK11	kallikrein-related peptidase 11	11012	ENSG00000167757
+
+LPA	NA	LPA	lipoprotein, Lp(a)	4018	ENSG00000198670
+
+KLK12	NA	KLK12	kallikrein-related peptidase 12	43849	ENSG00000186474
+
+KLK4	NA	KLK4	kallikrein-related peptidase 4	9622	ENSG00000167749
+
+KLK7	NA	KLK7	kallikrein-related peptidase 7	5650	ENSG00000169035
+
+CFB	NA	CFB	complement factor B	629	ENSG00000243649
+
+C2	NA	C2	complement component 2	717	ENSG00000166278
+
+
+molecular function	serine hydrolase activity	GO:0017171
+C=179;O=18;E=6.83;R=2.64;rawP=0.0002;adjP=0.0045
+KLK8	NA	KLK8	kallikrein-related peptidase 8	11202	ENSG00000129455
+
+KLK5	NA	KLK5	kallikrein-related peptidase 5	25818	ENSG00000167754
+
+KLK10	NA	KLK10	kallikrein-related peptidase 10	5655	ENSG00000129451
+
+KLK1	NA	KLK1	kallikrein 1	3816	ENSG00000167748
+
+KLK14	NA	KLK14	kallikrein-related peptidase 14	43847	ENSG00000129437
+
+KLK13	NA	KLK13	kallikrein-related peptidase 13	26085	ENSG00000167759
+
+KLK6	NA	KLK6	kallikrein-related peptidase 6	5653	ENSG00000167755
+
+KLK3	NA	KLK3	kallikrein-related peptidase 3	354	ENSG00000142515
+
+KLK15	NA	KLK15	kallikrein-related peptidase 15	55554	ENSG00000174562
+
+KLK2	NA	KLK2	kallikrein-related peptidase 2	3817	ENSG00000167751
+
+KLK9	NA	KLK9	kallikrein-related peptidase 9	284366	ENSG00000213022
+
+KLK11	NA	KLK11	kallikrein-related peptidase 11	11012	ENSG00000167757
+
+LPA	NA	LPA	lipoprotein, Lp(a)	4018	ENSG00000198670
+
+KLK12	NA	KLK12	kallikrein-related peptidase 12	43849	ENSG00000186474
+
+KLK4	NA	KLK4	kallikrein-related peptidase 4	9622	ENSG00000167749
+
+KLK7	NA	KLK7	kallikrein-related peptidase 7	5650	ENSG00000169035
+
+CFB	NA	CFB	complement factor B	629	ENSG00000243649
+
+C2	NA	C2	complement component 2	717	ENSG00000166278
+
+
+molecular function	chemokine receptor binding	GO:0042379
+C=56;O=9;E=2.14;R=4.21;rawP=0.0002;adjP=0.0045
+CXCL5	NA	CXCL5	chemokine (C-X-C motif) ligand 5	6374	ENSG00000163735
+
+PF4V1	NA	PF4V1	platelet factor 4 variant 1	5197	ENSG00000109272
+
+CXCL3	NA	CXCL3	chemokine (C-X-C motif) ligand 3	2921	ENSG00000163734
+
+IL8	NA	IL8	interleukin 8	3576	ENSG00000169429
+
+CXCL6	NA	CXCL6	chemokine (C-X-C motif) ligand 6 (granulocyte chemotactic protein 2)	6372	ENSG00000124875
+
+CXCL1	NA	CXCL1	chemokine (C-X-C motif) ligand 1 (melanoma growth stimulating activity, alpha)	2919	ENSG00000163739
+
+CXCL2	NA	CXCL2	chemokine (C-X-C motif) ligand 2	2920	ENSG00000081041
+
+PF4	NA	PF4	platelet factor 4	5196	ENSG00000163737
+
+PPBP	NA	PPBP	pro-platelet basic protein (chemokine (C-X-C motif) ligand 7)	5473	ENSG00000163736
+
+
+cellular component	MHC class II protein complex	GO:0042613
+C=16;O=10;E=0.61;R=16.40;rawP=3.94e-11;adjP=5.03e-09
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+cellular component	MHC protein complex	GO:0042611
+C=38;O=14;E=1.45;R=9.67;rawP=4.93e-11;adjP=5.03e-09
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+MICA	NA	MICA	MHC class I polypeptide-related sequence A	100507436	ENSG00000204520
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+cellular component	integral to lumenal side of endoplasmic reticulum membrane	GO:0071556
+C=28;O=10;E=1.07;R=9.37;rawP=4.26e-08;adjP=2.90e-06
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+cellular component	ER to Golgi transport vesicle membrane	GO:0012507
+C=37;O=10;E=1.41;R=7.09;rawP=8.28e-07;adjP=4.22e-05
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+cellular component	ER to Golgi transport vesicle	GO:0030134
+C=41;O=10;E=1.56;R=6.40;rawP=2.32e-06;adjP=9.47e-05
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+cellular component	trans-Golgi network membrane	GO:0032588
+C=31;O=8;E=1.18;R=6.77;rawP=1.55e-05;adjP=0.0005
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+cellular component	lysosomal membrane	GO:0005765
+C=140;O=17;E=5.34;R=3.19;rawP=2.43e-05;adjP=0.0006
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+IGF2R	NA	IGF2R	insulin-like growth factor 2 receptor	3482	ENSG00000197081
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+TPCN2	NA	TPCN2	two pore segment channel 2	219931	ENSG00000162341
+
+VAMP8	NA	VAMP8	vesicle-associated membrane protein 8 (endobrevin)	8673	ENSG00000118640
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+NEU1	NA	NEU1	sialidase 1 (lysosomal sialidase)	4758	ENSG00000204386
+
+MARCH8	NA	MARCH8	membrane-associated ring finger (C3HC4) 8, E3 ubiquitin protein ligase	220972	ENSG00000165406
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+TECPR1	NA	TECPR1	tectonin beta-propeller repeat containing 1	25851	ENSG00000205356
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+cellular component	transport vesicle membrane	GO:0030658
+C=76;O=12;E=2.90;R=4.14;rawP=2.82e-05;adjP=0.0006
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-B	NA	HLA-B	major histocompatibility complex, class I, B	3106	ENSG00000234745
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+CLTCL1	NA	CLTCL1	clathrin, heavy chain-like 1	8218	ENSG00000070371
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-E	NA	HLA-E	major histocompatibility complex, class I, E	3133	ENSG00000204592
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+HLA-C	NA	HLA-C	major histocompatibility complex, class I, C	3107	ENSG00000204525
+
+SYNRG	NA	SYNRG	synergin, gamma	11276	ENSG00000006114
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+cellular component	clathrin-coated endocytic vesicle membrane	GO:0030669
+C=33;O=8;E=1.26;R=6.36;rawP=2.54e-05;adjP=0.0006
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+APOB	NA	APOB	apolipoprotein B (including Ag(x) antigen)	338	ENSG00000084674
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+cellular component	vacuolar membrane	GO:0005774
+C=184;O=19;E=7.01;R=2.71;rawP=8.01e-05;adjP=0.0015
+HLA-DRA	NA	HLA-DRA	major histocompatibility complex, class II, DR alpha	3122	ENSG00000204287
+
+HLA-DQA2	NA	HLA-DQA2	major histocompatibility complex, class II, DQ alpha 2	3118	ENSG00000237541
+
+IGF2R	NA	IGF2R	insulin-like growth factor 2 receptor	3482	ENSG00000197081
+
+HLA-DQA1	NA	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	3117	ENSG00000196735
+
+TPCN2	NA	TPCN2	two pore segment channel 2	219931	ENSG00000162341
+
+VAMP8	NA	VAMP8	vesicle-associated membrane protein 8 (endobrevin)	8673	ENSG00000118640
+
+HLA-DMB	NA	HLA-DMB	major histocompatibility complex, class II, DM beta	3109	ENSG00000242574
+
+NEU1	NA	NEU1	sialidase 1 (lysosomal sialidase)	4758	ENSG00000204386
+
+MARCH8	NA	MARCH8	membrane-associated ring finger (C3HC4) 8, E3 ubiquitin protein ligase	220972	ENSG00000165406
+
+HLA-DMA	NA	HLA-DMA	major histocompatibility complex, class II, DM alpha	3108	ENSG00000204257
+
+HLA-DRB1	NA	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	3123	ENSG00000196126
+
+ENTPD4	NA	ENTPD4	ectonucleoside triphosphate diphosphohydrolase 4	9583	ENSG00000197217
+
+TECPR1	NA	TECPR1	tectonin beta-propeller repeat containing 1	25851	ENSG00000205356
+
+HLA-DQB1	NA	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	3119	ENSG00000179344
+
+ATP6V1G2	NA	ATP6V1G2	ATPase, H+ transporting, lysosomal 13kDa, V1 subunit G2	534	ENSG00000213760
+
+HLA-DQB2	NA	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	3120	ENSG00000232629
+
+AP1G1	NA	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	164	ENSG00000166747
+
+HLA-DOB	NA	HLA-DOB	major histocompatibility complex, class II, DO beta	3112	ENSG00000241106
+
+HLA-DRB5	NA	HLA-DRB5	major histocompatibility complex, class II, DR beta 5	3127	ENSG00000198502
+
+
+
+
