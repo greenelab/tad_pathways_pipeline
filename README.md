@@ -8,6 +8,7 @@
 
 The repository contains data and instructions to implement a "TAD_Pathways"
 analysis for over 300 different trait/disease GWAS or custom SNP lists.
+
 TAD_Pathways uses the principles of topologically association domains (TADs) to
 define where an association signal (typically a GWAS signal) can most likely
 impact gene function. We use TAD boundaries as defined by
@@ -17,14 +18,13 @@ to identify which genes may be implicated. We then input this list into a
 [WebGestalt Pathways Analysis](http://webgestalt.org/) to output
 significantly associated pathways implicated by the input TAD-defined geneset.
 
-
 For more specific details about the method, refer to our
 [preprint](https://doi.org/10.1101/087718).
 
 ### Setup
 
-Before you begin, download the necessary TAD based index files and
-GWAS curation files and setup python environment:
+Before you begin, download the necessary TAD based index files and GWAS
+curation files and setup python environment:
 
 ```bash
 bash initialize.sh
@@ -32,7 +32,23 @@ bash initialize.sh
 source activate tad_pathways
 ```
 
-### Usage
+### Examples
+
+We provide three different examples for a TAD pathways analysis pipeline. To run
+each of the analyses:
+
+```bash
+# Example using Bone Mineral Density GWAS
+bash example_pipeline_bmd.sh
+
+# Example using Type 2 Diabetes GWAS
+bash example_pipeline_t2d.sh
+
+# Example using custom input SNPs
+bash example_pipeline_custom.sh
+```
+
+### General Usage
 
 There are two ways to implement a TAD_Pathways analysis:
 
@@ -43,9 +59,10 @@ There are two ways to implement a TAD_Pathways analysis:
 
 Browse the `data/gwas_tad_genes/` directory to select a GWAS file. Each file in
 this directory is a tab separated text file that includes information regarding
-each gene located within a signal TAD. The column `gene_name` is the comprehensive
-list of all implicated genes. For complete information on how these lists were
-constructed, refer to https://github.com/greenelab/tad_pathways. 
+each gene located within a signal TAD. The column `gene_name` is the
+comprehensive list of all implicated genes. For complete information on how
+these lists were constructed, refer to
+https://github.com/greenelab/tad_pathways. 
 
 Input this gene list directly into a
 [WebGestalt Pathway Analysis](http://webgestalt.org/) and skip to the
@@ -90,7 +107,7 @@ with the following parameters:
 | --------- | ----- |
 | Select gene ID type | *hsapiens__gene_symbol* |
 | Enrichment Analysis | *GO Analysis* |
-| GO Slim Classification | Yes |
+| GO Slim Classification | *Yes* |
 | Reference Set | *hsapiens__genome* |
 | Statistical Method | *Hypergeometric* |
 | Multiple Test Adjustment | *BH* |
@@ -104,42 +121,35 @@ Once the analysis is complete, click `Export TSV Only` and save the file as
 
 Clean and tidy the output files and summarize into convenient lists of
 candidate genes. These genes may or may not be the nearest gene to the GWAS
-signal and all require experimental validation.
+signal and will require experimental validation.
 
 ```bash
-# Process WebGestalt Output
-# `INSERT_TRAIT_HERE` is a string indicating the name of the file
-# saved in `data/gestalt/<INSERT_TRAIT_HERE>_gestalt.tsv`
-python scripts/parse_gestalt.py --trait 'INSERT_TRAIT_HERE' --process
+# An example for Bone Mineral Density (see `example_pipeline_bmd.sh` as well)
+
+# Process WebGestalt Output saved in `data/gestalt/bmd_gestalt.tsv`
+python scripts/parse_gestalt.py --trait 'bmd' --process
 
 # Output evidence tables
 python scripts/construct_evidence.py \
-        --trait 'BMD' \
-        --eqtl 'data/eqtl/eqtl_BMD_genelist.tsv' \
+        --trait 'bmd' \
         --genelist 'data/gwas_catalog/Bone_mineral_density_hg19.tsv' \
         --pathway 'skeletal system development'
 
 # Summarize evidence
 python scripts/assign_evidence_to_TADs.py \
-        --evidence 'tad_pathway/BMD_gene_evidence.csv' \
-        --snps 'data/gwas_TAD_location/Bone_mineral_density_hg19_SNPs.tsv' \
-        --output_file 'tad_pathway/BMD_evidence_summary.tsv'
+        --evidence 'results/bmd_gene_evidence.csv' \
+        --snps 'data/gwas_tad_genes/Bone_mineral_density_hg19_SNPs.tsv' \
+        --output_file 'results/BMD_evidence_summary.tsv'
 
-# Output venn diagrams and gene lists
-R --no-save --args 'tad_pathway/BMD_gene_evidence.csv' \
+# Output venn diagram
+R --no-save --args 'results/bmd_gene_evidence.csv' \
         'BMD' < scripts/integrative_summary.R
 ```
 
-### Examples
+### Contact
 
-We implemented two examples as a proof of concept. To view these examples,
-initialize the repository and run:
+For all questions and bug reporting please file a
+[GitHub issue](https://github.com/greenelab/tad_pathways/issues)
 
-```bash
-# Bone Mineral Density GWAS
-bash bmd_example_pipeline.sh
-
-# Type 2 Diabetes GWAS
-bash t2d_example_pipeline.sh
-```
-
+For all other questions contact Casey Greene at csgreene@mail.med.upenn.edu or
+Struan Grant at grants@email.chop.edu
