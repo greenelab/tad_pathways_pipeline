@@ -19,7 +19,7 @@ to identify which genes may be implicated. We then input this list into a
 significantly associated pathways implicated by the input TAD-defined geneset.
 
 For more specific details about the method, refer to our
-[preprint](https://doi.org/10.1101/087718).
+[preprint](https://doi.org/10.1101/087718 "Determining causal genes from GWAS signals using topologically associating domains").
 
 ### Setup
 
