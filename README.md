@@ -2,7 +2,9 @@
 
 ## Leveraging TADs to identify candidate genes at GWAS signals
 
-**Gregory P. Way and Casey S. Greene - 2017**
+**Gregory P. Way, Casey S. Greene, and Struan F.A. Grant - 2017**
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.254190.svg)](https://doi.org/10.5281/zenodo.254190)
 
 ### Summary
 
