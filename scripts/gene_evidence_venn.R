@@ -11,6 +11,8 @@
 # Output:
 # Venn diagram of BMD gene aggregation methods summary
 
+library(dplyr)
+
 # File names
 bmd_snps_file <- file.path("data", "gwas_tad_snps",
                            "Bone_mineral_density_hg19_SNPs.tsv")
@@ -34,15 +36,15 @@ for (gene in bmd_genes) {
 bmd_nearest_genes <- unique(bmd_nearest_genes)
 
 # TAD based genelist
-tad_genes_df <- readr::read_tsv(tad_genes_file)
-tad_genes_df <- tad_genes_df[tad_genes_df$gene_type == "protein_coding", ]
-tad_genes_df <- tad_genes_df[tad_genes_df$db == "HAVANA", ]
+tad_genes_df <- readr::read_tsv(tad_genes_file) %>%
+  dplyr::filter(gene_type == "protein_coding") %>%
+  dplyr::filter(db == "HAVANA")
 tad_genes <- unique(tad_genes_df$gene_name)
 
 # LD based genelist
-ld_genes_df <- readr::read_tsv(ld_genes_file)
-ld_genes_df <- ld_genes_df[ld_genes_df$gene_type == "protein_coding", ]
-ld_genes_df <- ld_genes_df[ld_genes_df$db == "HAVANA", ]
+ld_genes_df <- readr::read_tsv(ld_genes_file) %>%
+  dplyr::filter(gene_type == "protein_coding") %>%
+  dplyr::filter(db == "HAVANA")
 ld_genes <- unique(ld_genes_df$gene_name)
 
 # Make a Venn diagram of intersecting genes
