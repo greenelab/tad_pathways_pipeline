@@ -31,6 +31,7 @@ curation files and setup python environment:
 ```bash
 bash initialize.sh
 
+conda env create --force --file environment.yml
 source activate tad_pathways
 ```
 
