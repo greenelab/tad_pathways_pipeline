@@ -13,7 +13,7 @@ Command line: python scripts/construct_evidence.py
 
       --trait       a string of how the gestalt summary file was saved
       --gwas        the location of the GWAS nearest gene results
-      --group            The group to subset the SNP file (optional)
+      --group       The group to subset the SNP file (optional)
       --pathway     a string of pathways to summarize (options are in the
                     gestalt summary files). To investigate multiple pathways
                     input a comma separated string.
