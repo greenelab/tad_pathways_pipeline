@@ -101,8 +101,13 @@ for group in snp_df.group.unique():
             # Find the minimum distance and the index of a protein coding gene
             near_gene_idx = dist_df[dist_df ==
                                     dist_df.min().min()].dropna(thresh=1).index
-            near_gene_idx = near_gene_idx.tolist()[0]
-            nearest_gene = tad_assignment.ix[near_gene_idx].gene_name
+
+            # If gene falls in TAD without protein coding gene return empty
+            if len(near_gene_idx) == 0:
+                nearest_gene = ''
+            else:
+                near_gene_idx = near_gene_idx.tolist()[0]
+                nearest_gene = tad_assignment.ix[near_gene_idx].gene_name
 
             # Append to nearest_gene_df
             nearest_gene_return = pd.DataFrame([nearest_gene,
