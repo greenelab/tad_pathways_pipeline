@@ -14,6 +14,7 @@ With the following flags:
 
      --evidence         The location of the evidence file
      --snps             The location of TAD based SNP file
+     --group            The group to subset the SNP file (optional)
      --output_file      Where to save the final output
 
 Output:
@@ -30,12 +31,15 @@ import csv
 parser = argparse.ArgumentParser()
 parser.add_argument("-e", "--evidence", help="Location of evidence file")
 parser.add_argument("-s", "--snps", help="location of TAD mapped SNPs")
+parser.add_argument("-g", "--group", help="Group to subset evidence file",
+                    default=None)
 parser.add_argument("-o", "--output_file", help="location to write results")
 args = parser.parse_args()
 
 # Load Constants
 evidence_file = args.evidence
 snp_file = args.snps
+snp_group = args.group
 output_file = args.output_file
 
 # Load data
@@ -47,6 +51,9 @@ evidence_df = pd.read_csv(evidence_file)
 tad_gwas_df = pd.read_csv(snp_file, sep='\t')
 tad_gwas_df = tad_gwas_df.dropna(subset=['TADidx'])
 tad_gwas_df = tad_gwas_df.reset_index(drop=True)
+if snp_group:
+    tad_gwas_df = tad_gwas_df[tad_gwas_df['group'] == snp_group]
+    tad_gwas_df = tad_gwas_df.reset_index(drop=True)
 
 
 def buildTADkey(gwas_snp):
@@ -56,7 +63,11 @@ def buildTADkey(gwas_snp):
     output - The lookup info in the TAD gene dictionary
     i.e. [(Chromosome, TAD_ID:TAD_Start-TAD_End)
     """
-    chrom = gwas_snp['chrom'][3:]
+    try:
+        chrom = int(gwas_snp['chrom'])
+    except:
+        chrom = gwas_snp['chrom'][3:]
+
     start = int(gwas_snp['TADStart'])
     end = int(gwas_snp['TADEnd'])
     tad_num = int(gwas_snp['TADidx'])
