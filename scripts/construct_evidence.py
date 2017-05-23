@@ -46,10 +46,10 @@ gwas_group = args.group
 try:
     pathway_df = pd.read_table(args.pathway)
     pathway = pathway_df[pathway_df['adjP'] < 0.05]['go_name'].tolist()
-except ValueError:
-    pathway = pathway.split(',')
+except:
+    pathway = args.pathway.split(',')
 
-trait_file = os.path.join('gestalt', '{}_complete_gestalt.tsv'.format(trait))
+trait_file = os.path.join('gestalt', '{}_gestalt.tsv'.format(trait))
 output_file = os.path.join('results', '{}_gene_evidence.csv'.format(trait))
 
 # Load Data

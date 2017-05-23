@@ -16,12 +16,12 @@ define where an association signal (typically a GWAS signal) can most likely
 impact gene function. We use TAD boundaries as defined by
 [Dixon et al. 2012](https://doi.org/10.1038/nature11082) and
 [hg19 Gencode genes](ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/)
-to identify which genes may be implicated. We then input this list into a
-[WebGestalt Pathways Analysis](http://webgestalt.org/) to output
-significantly associated pathways implicated by the input TAD-defined geneset.
+to identify which genes may be implicated. We then perform an overrepresentation
+pathway analysis to identify significantly associated pathways implicated by the
+input TAD-defined geneset.
 
 For more specific details about the method, refer to our
-[preprint](https://doi.org/10.1101/087718 "Determining causal genes from GWAS signals using topologically associating domains").
+[preprint](https://doi.org/10.1101/087718 "Implicating candidate genes at GWAS signals by leveraging topologically associating domains").
 
 ### Setup
 
@@ -67,10 +67,6 @@ comprehensive list of all implicated genes. For complete information on how
 these lists were constructed, refer to
 https://github.com/greenelab/tad_pathways. 
 
-Input this gene list directly into a
-[WebGestalt Pathway Analysis](http://webgestalt.org/) and skip to the
-[WebGestalt step](#webgestalt-pathway-analysis).
-
 #### Custom
 
 Create a comma separated file where the first row of each column names the list
@@ -99,55 +95,9 @@ python scripts/build_custom_TAD_genelist.py \
        --output_file "custom_tad_genelist.tsv"
 ```
 
-Skip now to the the [WebGestalt step](#webgestalt-pathway-analysis).
-
-### WebGestalt Pathway Analysis
-
-Insert either the GWAS curated genelist or a column from the custom genelist
-with the following parameters:
-
-| Parameter | Input |
-| --------- | ----- |
-| Select gene ID type | *hsapiens__gene_symbol* |
-| Enrichment Analysis | *GO Analysis* |
-| GO Slim Classification | *Yes* |
-| Reference Set | *hsapiens__genome* |
-| Statistical Method | *Hypergeometric* |
-| Multiple Test Adjustment | *BH* |
-| Significance Level | *Top10* |
-| Minimum Number of Genes for a Category | *4* |
-
-Once the analysis is complete, click `Export TSV Only` and save the file as
-`gestalt/<INSERT_TRAIT_HERE>_gestalt.tsv`. 
-
-### Curation
-
-Clean and tidy the output files and summarize into convenient lists of
-candidate genes. These genes may or may not be the nearest gene to the GWAS
-signal and will require experimental validation.
-
-```bash
-# An example for Bone Mineral Density (see `example_pipeline_bmd.sh` as well)
-
-# Process WebGestalt Output saved in `data/gestalt/bmd_gestalt.tsv`
-python scripts/parse_gestalt.py --trait 'bmd' --process
-
-# Output evidence tables
-python scripts/construct_evidence.py \
-        --trait 'bmd' \
-        --genelist 'data/gwas_catalog/Bone_mineral_density_hg19.tsv' \
-        --pathway 'skeletal system development'
-
-# Summarize evidence
-python scripts/assign_evidence_to_TADs.py \
-        --evidence 'results/bmd_gene_evidence.csv' \
-        --snps 'data/gwas_tad_genes/Bone_mineral_density_hg19_SNPs.tsv' \
-        --output_file 'results/BMD_evidence_summary.tsv'
-
-# Output venn diagram
-R --no-save --args 'results/bmd_gene_evidence.csv' \
-        'BMD' < scripts/integrative_summary.R
-```
+The output of these steps are Group specific text files with all genes in TADs
+harboring an input SNP. See
+`[example_pipeline_custom.sh](example_pipeline_custom.sh)` for more details.
 
 ### Contact
 
