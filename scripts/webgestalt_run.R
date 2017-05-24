@@ -65,6 +65,7 @@ p_val <- p_val[!duplicated(p_val), ]
 colnames(webgestalt_output) <- c("go_id", "go_name", "link", "count",
                                  "observed", "expected", "R", "pval",
                                  "adjP", "overlapGene", "symbol")
+colnames(p_val) <- c("go_name", "adjP")
 
-write.table(p_val, output_pval_file, sep = "\t")
+write.table(p_val, output_pval_file, sep = "\t", row.names = FALSE)
 write.table(webgestalt_output, output_path_file, sep = "\t", row.names = FALSE)
