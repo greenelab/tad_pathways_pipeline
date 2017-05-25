@@ -124,7 +124,7 @@ for group in snp_df.group.unique():
 # Output results
 nearest_gene_df.columns = ['MAPPED_GENE', 'snp', 'group']
 results_df.columns = ['TADEnd', 'TADidx', 'TADStart', 'chrom', 'custom_snp',
-                      'db', 'gene', 'gene_type', 'group', 'start', 'stop',
+                      'db', 'gene_name', 'gene_type', 'group', 'start', 'stop',
                       'strand', 'type']
 results_df.to_csv(output_file, sep='\t', index=False)
 nearest_gene_df.to_csv(output_nearest_gene_file, sep='\t')
