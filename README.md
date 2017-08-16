@@ -20,10 +20,22 @@ to identify which genes may be implicated. We then perform an overrepresentation
 pathway analysis to identify significantly associated pathways implicated by the
 input TAD-defined geneset.
 
-For more specific details about the method, refer to our
-[preprint](https://doi.org/10.1101/087718 "Implicating candidate genes at GWAS signals by leveraging topologically associating domains").
+For more specific details about our method, refer to our
+[short report](https://doi.org/10.1038/ejhg.2017.108 "Implicating candidate genes at GWAS signals by leveraging topologically associating domains")
+at the European Journal of Human Genetics.
+
+We also present a 6 minute video introducing the method and discussing the
+experimental validation at
+[EJHG-tube](http://www.nature.com/ejhg/videos/index.html).
 
 ### Setup
+
+First, clone the repository and navigate into the top directory:
+
+```bash
+git clone git@github.com:greenelab/tad_pathways_pipeline.git
+cd tad_pathways_pipeline
+```
 
 Before you begin, download the necessary TAD based index files and GWAS
 curation files and setup python environment:
@@ -35,6 +47,10 @@ conda env create --force --file environment.yml
 source activate tad_pathways
 ```
 
+Now, a Tad_pathways analysis can proceed. Follow an example pipeline to work
+from existing GWAS or the custom pipeline example for insight on how to run
+Tad_pathways on user curated SNPs.
+ 
 ### Examples
 
 We provide three different examples for a TAD pathways analysis pipeline. To run
@@ -97,7 +113,7 @@ python scripts/build_custom_TAD_genelist.py \
 
 The output of these steps are Group specific text files with all genes in TADs
 harboring an input SNP. See
-`[example_pipeline_custom.sh](example_pipeline_custom.sh)` for more details.
+[`example_pipeline_custom.sh`](example_pipeline_custom.sh) for more details.
 
 ### Contact
 
