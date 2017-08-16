@@ -97,7 +97,7 @@ separated text file. The first row of the text file should have group names and
 subsequent rows should list the rs numbers of interest. There can be many
 columns with variable length rows.
 
-E.g.: `custom_example.csv`
+E.g.: [`custom_example.csv`](custom_example.csv)
 
 | Group 1 | Group 2 |
 | ------- | ------- |
