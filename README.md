@@ -56,6 +56,8 @@ We provide three different examples for a TAD pathways analysis pipeline. To run
 each of the analyses:
 
 ```bash
+source activate tad_pathways
+
 # Example using Bone Mineral Density GWAS
 bash example_pipeline_bmd.sh
 
@@ -108,6 +110,8 @@ E.g.: [`custom_example.csv`](custom_example.csv)
 Then, perform the following steps:
 
 ```bash
+source activate tad_pathways
+
 # Map custom SNPs to genomic locations
 Rscript --vanilla scripts/build_snp_list.R \
         --snp_file "custom_example.csv" \
