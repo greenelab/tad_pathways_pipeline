@@ -15,10 +15,10 @@ attached base packages:
 [8] base     
 
 other attached packages:
- [1] biomaRt_2.30.0       BiocInstaller_1.24.0 WebGestaltR_0.1.1   
- [4] optparse_1.3.2       gridExtra_2.2.1      tidyr_0.6.3         
- [7] dplyr_0.5.0          VennDiagram_1.6.17   futile.logger_1.4.3 
-[10] readr_1.1.1          checkpoint_0.4.0    
+ [1] biomaRt_2.30.0      WebGestaltR_0.1.1   optparse_1.3.2     
+ [4] gridExtra_2.2.1     tidyr_0.6.3         dplyr_0.5.0        
+ [7] VennDiagram_1.6.17  futile.logger_1.4.3 readr_1.1.1        
+[10] checkpoint_0.4.1   
 
 loaded via a namespace (and not attached):
  [1] Rcpp_0.12.10         futile.options_1.0.0 bitops_1.0-6        

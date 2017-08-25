@@ -21,7 +21,7 @@
 # A tab separated file of rsIDs mapped to genomic coordinates
 
 library(checkpoint)
-suppressMessages(checkpoint("2016-02-25"))
+suppressMessages(checkpoint("2017-05-22"))
 
 library(dplyr)
 

@@ -22,10 +22,6 @@ library("tidyr")
 library("gridExtra")
 library("optparse")
 library("WebGestaltR")
-
-source("https://bioconductor.org/biocLite.R")
-biocLite("biomaRt", suppressUpdates = TRUE)
-
 library("biomaRt")
 
 sink("sessionInfo.txt")
