@@ -12,4 +12,6 @@ tar -zxvf tad_pathways_data.tar.gz
 
 # Stabilize computing environments in Python and R
 conda env create --quiet --force --file environment.yml
+source activate tad_pathways
+
 Rscript scripts/install.R
