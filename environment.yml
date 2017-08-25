@@ -1,7 +1,10 @@
 name: tad_pathways
 dependencies:
-- python=3.5.2
-- pandas=0.18.0
-- numexpr=2.5.2
-- numpy=1.11.1
-- scipy=0.17.1
+- anaconda::python=3.5.2
+- anaconda::pandas=0.18.0
+- anaconda::numexpr=2.5.2
+- anaconda::numpy=1.11.1
+- anaconda::scipy=0.17.1
+- conda-forge::r-codetools=0.2-15
+- bioconda::bioconductor-biomart=2.30.0
+
