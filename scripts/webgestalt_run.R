@@ -15,7 +15,7 @@
 #         --output_name             <FILENAME_ABBREVIATION>
 
 # Output:
-# A tab separated file of rsIDs mapped to genomic coordinates
+# Significantly overrepresented pathways from a WebGestalt Analysis
 
 library(checkpoint)
 suppressMessages(checkpoint("2017-05-22"))
