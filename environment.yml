@@ -1,10 +1,19 @@
 name: tad_pathways
+channels:
+- conda-forge
+- bioconda
 dependencies:
-- anaconda::python=3.5.2
-- anaconda::pandas=0.18.0
-- anaconda::numexpr=2.5.2
-- anaconda::numpy=1.11.1
-- anaconda::scipy=0.17.1
+- conda-forge::python=3.5.2
+- conda-forge::pandas=0.18.0
+- conda-forge::numexpr=2.5.2
+- conda-forge::numpy=1.11.1
+- conda-forge::scipy=0.17.1
+- conda-forge::r-base=3.4.1
+- conda-forge::r-essentials=3.4.1
 - conda-forge::r-codetools=0.2-15
+- conda-forge::readline=6.2
+- conda-forge::r-readr=1.1.1
+- conda-forge::r-gridextra=2.2.1
+- conda-forge::r-optparse=1.4.4
 - bioconda::bioconductor-biomart=2.30.0
 

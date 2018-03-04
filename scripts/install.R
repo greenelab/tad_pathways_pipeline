@@ -7,13 +7,10 @@
 # Usage:
 # Run once before implementing pipeline: "Rscript scripts/install.R"
 
-library("methods")
-
 mirror <- "http://cran.us.r-project.org"
-install.packages("checkpoint", repos = mirror)
 
-library("checkpoint")
-checkpoint("2017-05-22")
+install.packages("VennDiagram", repos = mirror)
+install.packages("WebGestaltR", repos = mirror)
 
 library("readr")
 library("VennDiagram")
