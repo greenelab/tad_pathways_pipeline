@@ -64,10 +64,7 @@ def buildTADkey(gwas_snp):
     i.e. [(Chromosome, TAD_ID:TAD_Start-TAD_End)
     """
 
-    try:
-        chrom = int(gwas_snp['chrom'])
-    except:
-        chrom = gwas_snp['chrom'].replace('chr', '') 
+    chrom = gwas_snp['chrom'].replace('chr', '') 
 
     start = int(gwas_snp['TADStart'])
     end = int(gwas_snp['TADEnd'])
@@ -100,7 +97,7 @@ for tad_row in range(len(tad_gwas_df)):
 
     # Build the key to lookup TAD in dict and lookup
     e_key = buildTADkey(snp_info)
-
+    print(e_key)
     if e_key not in evidence_dict.keys():
         evidence_dict[e_key] = []
 
