@@ -97,7 +97,7 @@ for tad_row in range(len(tad_gwas_df)):
 
     # Build the key to lookup TAD in dict and lookup
     e_key = buildTADkey(snp_info)
-    print(e_key)
+
     if e_key not in evidence_dict.keys():
         evidence_dict[e_key] = []
 
