@@ -63,10 +63,8 @@ def buildTADkey(gwas_snp):
     output - The lookup info in the TAD gene dictionary
     i.e. [(Chromosome, TAD_ID:TAD_Start-TAD_End)
     """
-    try:
-        chrom = int(gwas_snp['chrom'])
-    except:
-        chrom = gwas_snp['chrom'][3:]
+
+    chrom = gwas_snp['chrom'].replace('chr', '') 
 
     start = int(gwas_snp['TADStart'])
     end = int(gwas_snp['TADEnd'])
