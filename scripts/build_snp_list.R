@@ -20,9 +20,6 @@
 # Output:
 # A tab separated file of rsIDs mapped to genomic coordinates
 
-library(checkpoint)
-suppressMessages(checkpoint("2017-05-22"))
-
 library(dplyr)
 
 # Load in command arguments

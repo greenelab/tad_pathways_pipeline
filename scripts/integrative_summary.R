@@ -13,9 +13,6 @@
 # Output:
 # Venn diagram of trait specific evidence overlaps
 
-library("checkpoint")
-checkpoint("2017-05-22")
-
 # Load in command arguments
 args <- commandArgs(trailingOnly = T)
 

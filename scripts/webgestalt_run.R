@@ -17,9 +17,6 @@
 # Output:
 # Significantly overrepresented pathways from a WebGestalt Analysis
 
-library(checkpoint)
-suppressMessages(checkpoint("2017-05-22"))
-
 library(WebGestaltR)
 library(tidyr)
 library(dplyr)
