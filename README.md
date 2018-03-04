@@ -43,7 +43,8 @@ curation files and setup python environment:
 ```bash
 bash initialize.sh
 
-source activate tad_pathways
+# Using conda version 4.4.11
+conda activate tad_pathways
 ```
 
 Now, a `TAD_Pathways` analysis can proceed. Follow an example pipeline to work
