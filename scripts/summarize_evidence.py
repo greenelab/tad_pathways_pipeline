@@ -8,7 +8,7 @@ Takes in genes and evidence support and assigns each gene to the TAD
 Usage:
 Command line:
 
-     python scripts/assign_evidence_to_TADs.py
+     python scripts/summarize_evidence.py
 
 With the following flags:
 
@@ -63,8 +63,10 @@ def buildTADkey(gwas_snp):
     output - The lookup info in the TAD gene dictionary
     i.e. [(Chromosome, TAD_ID:TAD_Start-TAD_End)
     """
-
-    chrom = gwas_snp['chrom'].replace('chr', '') 
+    try:
+        chrom = gwas_snp['chrom'].replace('chr', '')
+    except:
+        chrom = gwas_snp['chrom']
 
     start = int(gwas_snp['TADStart'])
     end = int(gwas_snp['TADEnd'])
@@ -97,7 +99,6 @@ for tad_row in range(len(tad_gwas_df)):
 
     # Build the key to lookup TAD in dict and lookup
     e_key = buildTADkey(snp_info)
-
     if e_key not in evidence_dict.keys():
         evidence_dict[e_key] = []
 
