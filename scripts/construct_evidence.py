@@ -22,6 +22,11 @@ Command line: python scripts/construct_evidence.py
                     --pathway 'skeletal system development'
                     --pathway 'skeletal system development,ossification'
 
+    And the following optional flags:
+
+      --results_directory       the directory of where to save results
+      --gestalt_directory       the directory to load gestalt results from
+
 Output:
 a .csv evidence file (two columns: [gene, type of evidence])
 """
@@ -37,6 +42,10 @@ parser.add_argument("-g", "--gwas", help="location of gwas genelist")
 parser.add_argument("-r", "--group", help="Group to subset evidence file",
                     default=None)
 parser.add_argument("-p", "--pathway", help="pathway of interest")
+parser.add_argument("-d", "--results_directory", help="where to save results",
+                    default="results")
+parser.add_argument("-e", "--gestalt_directory",
+                    help="location of gestalt results", default="gestalt")
 args = parser.parse_args()
 
 # Load Constants
@@ -49,8 +58,11 @@ try:
 except:
     pathway = args.pathway.split(',')
 
-trait_file = os.path.join('gestalt', '{}_gestalt.tsv'.format(trait))
-output_file = os.path.join('results', '{}_gene_evidence.csv'.format(trait))
+results_dir = args.results_directory
+gestalt_dir = args.gestalt_directory
+
+trait_file = os.path.join(gestalt_dir, '{}_gestalt.tsv'.format(trait))
+output_file = os.path.join(results_dir, '{}_gene_evidence.csv'.format(trait))
 
 # Load Data
 pathway_genes = pd.read_csv(trait_file, delimiter='\t')
