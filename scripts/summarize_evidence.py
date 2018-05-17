@@ -25,7 +25,6 @@ in signal TADs
 import os
 import argparse
 import pandas as pd
-import csv
 
 # Load Command Arguments
 parser = argparse.ArgumentParser()
@@ -48,11 +47,15 @@ gene_df = pd.read_table(gene_index, index_col=0)
 
 evidence_df = pd.read_csv(evidence_file)
 
-tad_gwas_df = pd.read_csv(snp_file, sep='\t')
-tad_gwas_df = tad_gwas_df.dropna(subset=['TADidx'])
-tad_gwas_df = tad_gwas_df.reset_index(drop=True)
+tad_gwas_df = (
+    pd.read_csv(snp_file, sep='\t')
+    .dropna(subset=['TADidx'])
+    .reset_index(drop=True)
+    .drop_duplicates('custom_snp')
+    )
+
 if snp_group:
-    tad_gwas_df = tad_gwas_df[tad_gwas_df['group'] == snp_group]
+    tad_gwas_df = tad_gwas_df.query('group == @snp_group')
     tad_gwas_df = tad_gwas_df.reset_index(drop=True)
 
 
@@ -93,38 +96,54 @@ def parse_ev_key(tadkey):
     return [ID, chrom, start, end, ucsc]
 
 # Investigate each significant TADs
-evidence_dict = {}
-for tad_row in range(len(tad_gwas_df)):
-    snp_info = tad_gwas_df.ix[tad_row, :]
+# Investigate each significant TADs
+evidence_list = []
+for tad_row in range(tad_gwas_df.shape[0]):
+    # Extract the SNP information
+    snp_info = tad_gwas_df.iloc[tad_row, :]
 
-    # Build the key to lookup TAD in dict and lookup
-    e_key = buildTADkey(snp_info)
-    if e_key not in evidence_dict.keys():
-        evidence_dict[e_key] = []
+    # Build the key to lookup TAD in dict
+    tad_key = buildTADkey(snp_info)
 
-    tad_index = int(snp_info['TADidx'])
-    tad_subset_info = gene_df.ix[gene_df['TAD_id'] == str(tad_index), :]
-    tad_genes = tad_subset_info['gene_name'].tolist()
+    # Parse the tad key for saving info
+    ID, chrom, start, end, ucsc = parse_ev_key(tad_key)
+
+    # Lookup the TAD and extract TAD based genes
+    tad_subset_info = gene_df.query('TAD_id == @ID')
+    tad_genes = tad_subset_info['gene_name']
 
     # Subset the evidence dataframe to TAD based genes
-    evidence_sub = evidence_df.ix[evidence_df['gene'].isin(tad_genes), :]
+    evidence_sub = evidence_df.query('gene in @tad_genes')
 
-    # Loop over each of the rows
-    TAD_gene_evidence = []
-    for ev in range(0, evidence_sub.shape[0]):
-        gene = evidence_sub['gene'].tolist()[ev]
-        ev_type = evidence_sub['evidence'].tolist()[ev]
-        TAD_gene_evidence.append([gene, ev_type])
+    if evidence_sub.shape[0] == 0:
+        continue
 
-    evidence_dict[e_key].append(TAD_gene_evidence)
+    # What SNP(s) are associating this TAD?
+    snp = '|'.join(set(evidence_sub['snp'].dropna().tolist()))
+    evidence_sub['snp'] = snp
+    evidence_sub = evidence_sub.drop_duplicates()
+
+    # Assign group(s) are we considering
+    group = '|'.join(set(evidence_sub['group'].dropna().tolist()))
+    evidence_sub['group'] = group
+
+    # Assign the remaining info to this evidence dataframe
+    evidence_sub = evidence_sub.assign(TAD_ID=int(ID))
+    evidence_sub = evidence_sub.assign(chromosome=chrom)
+    evidence_sub = evidence_sub.assign(TAD_Start=start)
+    evidence_sub = evidence_sub.assign(TAD_End=end)
+    evidence_sub = evidence_sub.assign(TAD_UCSC=ucsc)
+
+    evidence_list.append(evidence_sub)
 
 # Write out results to file
-with open(output_file, 'w') as out_fh:
-    tadwriter = csv.writer(out_fh, delimiter='\t')
-    tadwriter.writerow(['gene', 'evidence', 'TAD ID', 'chromosome',
-                        'TAD Start', 'TAD End', 'UCSC'])
-    for tadkey in evidence_dict.keys():
-        ID, chrom, start, end, ucsc = parse_ev_key(tadkey)
-        for gene_evidence_list in evidence_dict[tadkey][0]:
-            gene, evidence = gene_evidence_list
-            tadwriter.writerow([gene, evidence, ID, chrom, start, end, ucsc])
+all_evidence_df = pd.concat(evidence_list, axis='rows')
+
+col = ['gene', 'snp', 'evidence', 'group', 'TAD_ID', 'chromosome', 'TAD_Start',
+       'TAD_End', 'TAD_UCSC', 'go_id', 'go_name', 'pval', 'adjP']
+
+(all_evidence_df
+    .reindex(col, axis='columns')
+    .sort_values(by=['TAD_ID', 'evidence', 'gene'])
+    .drop_duplicates()
+    .to_csv(output_file, sep='\t', index=False))
