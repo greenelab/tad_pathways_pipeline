@@ -76,7 +76,7 @@ tad_genes_df = pd.read_table(os.path.join('data',
                              index_col=0)
 # The SNP DataFrame has the columns [RSid, database source, chromosome,
 # genomic position, minor allele, and group]
-snp_df = pd.read_csv(snp_data_file, sep="\t|,", engine='python')
+snp_df = pd.read_csv(snp_data_file, sep=",")
 
 # Initialize empty DataFrames that will store all TAD results and nearest genes
 # "group" is specified by the input file to "scripts/tad_util/build_snp_list.R"
