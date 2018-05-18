@@ -128,12 +128,9 @@ for tad_row in range(tad_gwas_df.shape[0]):
     evidence_sub['group'] = group
 
     # Assign the remaining info to this evidence dataframe
-    evidence_sub = evidence_sub.assign(TAD_ID=int(ID))
-    evidence_sub = evidence_sub.assign(chromosome=chrom)
-    evidence_sub = evidence_sub.assign(TAD_Start=start)
-    evidence_sub = evidence_sub.assign(TAD_End=end)
-    evidence_sub = evidence_sub.assign(TAD_UCSC=ucsc)
-
+    evidence_sub = evidence_sub.assign(TAD_ID=int(ID), chromosome=chrom,
+                                       TAD_Start=start, TAD_END=end,
+                                       TAD_UCSC=ucsc)
     evidence_list.append(evidence_sub)
 
 # Write out results to file
