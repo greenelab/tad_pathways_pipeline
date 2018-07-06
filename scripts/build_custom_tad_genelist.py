@@ -61,6 +61,7 @@ def assign_custom_snp_to_tad(snp_signal, tad_boundary):
 # Load Constants
 snp_data_file = args.snp_data_file
 output_file = args.output_file
+tad_cell = args.TAD_Boundary
 output_nearest_gene_file = '{}_nearest_gene.tsv'.format(
     os.path.splitext(output_file)[0])
 
