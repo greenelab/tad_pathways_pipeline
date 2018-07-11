@@ -67,7 +67,7 @@ output_nearest_gene_file = '{}_nearest_gene.tsv'.format(
 
 # Load data
 index_file = "GENE_index_hg19_" + tad_cell + ".tsv.bz2"
-tad_genes_df = pd.read_table(os.path.join('data',index_file),
+tad_genes_df = pd.read_table(os.path.join('index',index_file),
                              index_col=0)
 # The SNP DataFrame has the columns [RSid, database source, chromosome,
 # genomic position, minor allele, and group]
