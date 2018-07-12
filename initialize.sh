@@ -4,7 +4,7 @@ set -o errexit
 
 # Download necessary index and curation files
 
-url=https://zenodo.org/record/232520/files/tad_pathways_data.tar.gz
+url=https://zenodo.org/record/1311211/files/tad_pathways_data.tar.gz
 wget $url
 
 # Extract data
