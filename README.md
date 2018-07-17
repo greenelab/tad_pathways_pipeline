@@ -83,11 +83,11 @@ subsequent rows should list the rs numbers of interest. There can be manycolumns
 
    E.g.: [`custom_example.csv`](custom_example.csv)
 
-| Group 1 | Group 2 |
-| ------- | ------- |
-| rs12345 | rs67891 |
-| rs19876 | rs54321 |
-| ...     | ...     |
+   | Group 1 | Group 2 |
+   | ------- | ------- |
+   | rs12345 | rs67891 |
+   | rs19876 | rs54321 |
+   | ...     | ...     |
 
 Then, perform the following steps:
 
