@@ -64,7 +64,32 @@ bash example_pipeline_custom.sh
 
 ### General Usage
 
-To perform a `TAD_Pathways` analysis on a list of custom SNPs, generate a comma
+To perform a `TAD_Pathways` analysis, uses need to spicify 3 inputs:
+
+1. name of the tad cell:
+
+E.g.: 'hESC'
+
+2. path to the TAD domain file:
+
+The TAD domain file is a 3-column tab-separated bed file. The first column is the chromsome number. The second column is the start position of the tad. And the third position is the end position of the tad.
+
+E.g.: [`hESC_domains_hg19.bed`](hESC_domains_hg19.bed)
+
+chr1	770137	1250137
+chr1	1250137	1850140
+chr1	1850140	2330140
+chr1	2330140	3650140
+chr1	4660140	6077413
+chr1	6077413	6277413
+chr1	6277413	6517413
+chr1	6517413	7277413
+chr1	7277413	7717413
+chr1	7717413	7997413
+
+
+
+on a list of custom SNPs, generate a comma
 separated text file. The first row of the text file should have group names and
 subsequent rows should list the rs numbers of interest. There can be many
 columns with variable length rows.
