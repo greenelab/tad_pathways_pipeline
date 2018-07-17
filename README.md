@@ -68,20 +68,20 @@ To perform a `TAD_Pathways` analysis, uses need to spicify 3 inputs:
 
 1. name of the tad cell:
 
- E.g.: 'hESC'
+   E.g.: 'hESC'
 
 2. path to the TAD domain file:
 
- The TAD domain file is a 3-column tab-separated bed file. The first column is the chromsome number. The second column is the  start position of the tad. And the third position is the end position of the tad.
+   The TAD domain file is a 3-column tab-separated bed file. The first column is the chromsome number. The second column is the  start position of the tad. And the third position is the end position of the tad.
 
- E.g.: [`hESC_domains_hg19.bed`](hESC_domains_hg19.bed)
+   E.g.: [`hESC_domains_hg19.bed`](hESC_domains_hg19.bed)
 
 3. path to the SNPs file
 
- The SNPs file is a comma separated text file. The first row of the text file should have group names and
+   The SNPs file is a comma separated text file. The first row of the text file should have group names and
 subsequent rows should list the rs numbers of interest. There can be manycolumns with variable length rows.
 
- E.g.: [`custom_example.csv`](custom_example.csv)
+   E.g.: [`custom_example.csv`](custom_example.csv)
 
 | Group 1 | Group 2 |
 | ------- | ------- |
@@ -94,7 +94,9 @@ Then, perform the following steps:
 ```bash
 source activate tad_pathways
 
-bash run_pipeline.sh --TAD-Boundary hESC --TAD-File hESC_domains_hg19.bed --SNP-File custom_example.csv
+bash run_pipeline.sh --TAD-Boundary hESC \
+                     --TAD-File hESC_domains_hg19.bed \
+                     --SNP-File custom_example.csv
 ```
 
 The output of these steps are Group specific text files with all genes in TADs
