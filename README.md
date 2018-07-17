@@ -53,47 +53,16 @@ from an existing GWAS or the custom pipeline example for insight on how to run
  
 ### Examples
 
-We provide three different examples for a TAD pathways analysis pipeline. To run
-each of the analyses:
+We provide an example for a TAD pathways analysis pipeline. To run this example:
 
 ```bash
 source activate tad_pathways
-
-# Example using Bone Mineral Density GWAS
-bash example_pipeline_bmd.sh
-
-# Example using Type 2 Diabetes GWAS
-bash example_pipeline_t2d.sh
 
 # Example using custom input SNPs
 bash example_pipeline_custom.sh
 ```
 
 ### General Usage
-
-There are two ways to implement a TAD_Pathways analysis:
-
-1. GWAS
-2. Custom
-
-#### GWAS
-
-To perform a `TAD_Pathways` analysis on publicly available GWAS results, simply
-browse the `data/gwas_catalog/` directory to select a valid GWAS file. These
-files contain a curation of all significant SNPs mapped to specific traits as
-distributed by the [NHGRI-EBI GWAS Catalog](https://www.ebi.ac.uk/gwas/).
-
-Each file in this directory is a tab separated text file of genome-wide
-significant SNPs and their genomic location along with their reported nearest
-gene and associated PUBMED id. For complete information on how these files were
-constructed, refer to https://github.com/greenelab/tad_pathways.
-
-Each GWAS has 3 associated files, including files in `data/gwas_catalog/`. The
-other files are located in `data/gwas_tad_snps/` and `data/gwas_tad_genes/`.
-All files are important for performing a `TAD_Pathways` analysis. See the
-GWAS example files for instructions on how to implement the necessary scripts.
-
-#### Custom
 
 To perform a `TAD_Pathways` analysis on a list of custom SNPs, generate a comma
 separated text file. The first row of the text file should have group names and
