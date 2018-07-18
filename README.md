@@ -33,7 +33,7 @@ experimental validation at
 First, clone the repository and navigate into the top directory:
 
 ```bash
-git clone git@github.com:greenelab/tad_pathways_pipeline.git
+git clone https://github.com/marislab/tad_pathways_pipeline.git
 cd tad_pathways_pipeline
 ```
 
