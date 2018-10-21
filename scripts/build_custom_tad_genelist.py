@@ -82,7 +82,7 @@ snp_df = pd.read_csv(snp_data_file, sep="\t")
 # "group" is specified by the input file to "scripts/tad_util/build_snp_list.R"
 # We allow mulitple group queries to build separate TAD based genelists.
 results_df = pd.DataFrame(columns=tad_genes_df.columns.tolist() + ['group'])
-nearest_gene_df = pd.DataFrame(columns=['gene', 'snp', 'group'])
+nearest_gene_list = []
 for group in snp_df.group.unique():
     snp_sub_df = snp_df.query('group == @group')
     # Loop over each group specific SNP
@@ -141,10 +141,7 @@ for group in snp_df.group.unique():
             nearest_gene_return = (
                 pd.DataFrame([nearest_gene, snp_series.snp, group]).T
                 )
-            nearest_gene_return.columns = ['gene', 'snp', 'group']
-            nearest_gene_df = nearest_gene_df.append(nearest_gene_return,
-                                                     ignore_index=True,
-                                                     sort=True)
+            nearest_gene_list.append(nearest_gene_return)
 
             # Assign new columns to each TAD assignment for the RSid and group
             tad_assign = tad_assign.assign(custom_snp=snp_series.snp,
@@ -154,7 +151,9 @@ for group in snp_df.group.unique():
                                            sort=True)
 
 # Output results
-nearest_gene_df.columns = ['MAPPED_GENE', 'snp', 'group']
+nearest_columns = ['MAPPED_GENE', 'snp', 'group']
+nearest_gene_df = pd.concat(nearest_gene_list)
+nearest_gene_df.columns = nearest_columns
 results_df.columns = ['TADEnd', 'TADidx', 'TADStart', 'chrom', 'custom_snp',
                       'db', 'gene_name', 'gene_type', 'group', 'start', 'stop',
                       'strand', 'type']
