@@ -86,13 +86,9 @@ def parse_ev_key(tadkey):
     output - Information stored in the evidence key
     i.e. [ID, Chromosome, Start, End, UCSC lookup]
     """
-    chrom = tadkey.split(':')
-    ID = chrom[1]
-    start = chrom[2].split('-')
-    end = start[1]
-    start = start[0]
-    chrom = chrom[0]
-    ucsc = chrom + ':' + start + '-' + end
+    chrom, ID, coord = tadkey.split(':')
+    start, end = coord.split('-')
+    ucsc = '{}:{}-{}'.format(chrom, start, end)
     return [ID, chrom, start, end, ucsc]
 
 # Investigate each significant TADs
@@ -128,8 +124,10 @@ for tad_row in range(tad_gwas_df.shape[0]):
     evidence_sub['group'] = group
 
     # Assign the remaining info to this evidence dataframe
-    evidence_sub = evidence_sub.assign(TAD_ID=int(ID), chromosome=chrom,
-                                       TAD_Start=start, TAD_END=end,
+    evidence_sub = evidence_sub.assign(TAD_ID=int(ID),
+                                       chromosome=chrom,
+                                       TAD_Start=start,
+                                       TAD_End=end,
                                        TAD_UCSC=ucsc)
     evidence_list.append(evidence_sub)
 
