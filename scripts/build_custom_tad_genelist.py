@@ -67,16 +67,19 @@ snp_data_file = args.snp_data_file
 output_file = args.output_file
 remove_hla_tad = args.remove_hla_tad
 
+print(snp_data_file)
+print(output_file)
+print(remove_hla_tad)
 output_nearest_gene_file = '{}_nearest_gene.tsv'.format(
     os.path.splitext(output_file)[0])
 
 # Load data
-tad_genes_df = pd.read_table(os.path.join('data',
-                                          'GENE_index_hg19_hESC.tsv.bz2'),
-                             index_col=0)
+file = os.path.join('data', 'GENE_index_hg19_hESC.tsv.bz2')
+tad_genes_df = pd.read_table(file, index_col=0)
+
 # The SNP DataFrame has the columns [RSid, database source, chromosome,
 # genomic position, minor allele, and group]
-snp_df = pd.read_csv(snp_data_file, sep=",")
+snp_df = pd.read_csv(snp_data_file, sep="\t")
 
 # Initialize empty DataFrames that will store all TAD results and nearest genes
 # "group" is specified by the input file to "scripts/tad_util/build_snp_list.R"
