@@ -116,12 +116,12 @@ for tad_row in range(tad_gwas_df.shape[0]):
 
     # What SNP(s) are associating this TAD?
     snp = '|'.join(set(evidence_sub['snp'].dropna().tolist()))
-    evidence_sub['snp'] = snp
-    evidence_sub = evidence_sub.drop_duplicates()
 
     # Assign group(s) are we considering
     group = '|'.join(set(evidence_sub['group'].dropna().tolist()))
-    evidence_sub['group'] = group
+
+    # Make sure the SNPs and Groups populate
+    evidence_sub = evidence_sub.fillna({'snp': snp, 'group': group})
 
     # Assign the remaining info to this evidence dataframe
     evidence_sub = evidence_sub.assign(TAD_ID=int(ID),
