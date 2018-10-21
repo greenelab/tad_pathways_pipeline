@@ -125,6 +125,6 @@ if not all_pathways:
     evidence_df
     .merge(gwas_genes_df, how='left', left_on='gene', right_on='MAPPED_GENE')
     .set_index('gene')
-    .drop(['Unnamed: 0', 'MAPPED_GENE', 'symbol'], axis='columns')
+    .drop(['MAPPED_GENE', 'symbol'], axis='columns')
     .to_csv(output_file, sep=',', index=True)
 )
