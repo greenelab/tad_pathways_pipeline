@@ -19,8 +19,9 @@ dependencies:
 - conda-forge::r-codetools=0.2-15
 - conda-forge::readline=6.2
 - conda-forge::r-readr=1.1.1
-- conda-forge::r-gridextra=2.2.1
-- conda-forge::r-optparse=1.4.4
+- conda-forge::r-gridextra=2.3
+- conda-forge::r-optparse=1.6.0
 - conda-forge::r-dplyr=0.7.6
-- bioconda::bioconductor-biomart=2.30.0
+- conda-forge::r-tidyr=0.8.1
+- bioconda::bioconductor-biomart=2.36.1
 - bioconda::gseapy=0.9.8
