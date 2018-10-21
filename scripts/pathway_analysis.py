@@ -1,6 +1,6 @@
 """
 2018 Gregory Way
-scripts/gsea_run.py
+scripts/pathway_analysis.py
 
 Description:
 Runs pathway analysis on Input genelist
