@@ -1,195 +1,180 @@
-gene,evidence,go_id,go_name,pval,adjP,snp,group
-ABCB5,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-AC007461.1,gwas,,,,,rs1859962,prostate_cancer
-ACACA,tad,GO:0044259,multicellular organismal macromolecule metabolic process,0.000152836401294043,0.0463415329936099,,
-ADAM15,tad,GO:0030574,collagen catabolic process,1.66624983428676e-05,0.0250465120923871,,
-ADAM17,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-ADAMTS3,tad,GO:0030574,collagen catabolic process,1.66624983428676e-05,0.0250465120923871,,
-AFM,gwas,,,,,rs1894292,prostate_cancer
-AFP,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-AGER,tad,GO:0050921,positive regulation of chemotaxis,5.56268394962256e-05,0.0358356046726042,,
-AIF1,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-ALB,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-ANKRD17,tad,GO:0032103,positive regulation of response to external stimulus,0.000103061315629871,0.0413620196800897,,
-AP1G1,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-AR,gwas_tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,rs5919432,prostate_cancer
-ARMC2,gwas,,,,,rs2273669,prostate_cancer
-ARNT,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-ASNS,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-BHLHA15,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-BIK,gwas_tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,rs5759167,prostate_cancer
-BIRC2,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-BMPR1B,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-BOD1,gwas,,,,,rs6869841,prostate_cancer
-BOK,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-C2,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-C2orf43,gwas,,,,,rs13385191,prostate_cancer
-CCHCR1,gwas,,,,,rs130067,prostate_cancer
-CCND1,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-CDKN2B,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-CHMP2B,gwas,,,,,rs17181170,prostate_cancer
-CLDN11,gwas,,,,,rs10936632,prostate_cancer
-COL1A1,tad,GO:0030574,collagen catabolic process,1.66624983428676e-05,0.0250465120923871,,
-COL2A1,tad,GO:0030574,collagen catabolic process,1.66624983428676e-05,0.0250465120923871,,
-COL6A3,tad,GO:0030574,collagen catabolic process,1.66624983428676e-05,0.0250465120923871,,
-COMT,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-COX18,gwas,,,,,rs10009409,prostate_cancer
-CPEB4,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-CTSK,tad,GO:0030574,collagen catabolic process,1.66624983428676e-05,0.0250465120923871,,
-CTSS,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-CXCL1,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-CXCL2,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-CXCL3,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-CXCL5,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-CXCL6,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-CXorf67,gwas,,,,,rs1327301,prostate_cancer
-DFFA,gwas,,,,,rs636291,prostate_cancer
-DHH,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-DHODH,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-DLX3,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-EBF2,gwas,,,,,rs11135910,prostate_cancer
-EEFSEC,gwas,,,,,rs10934853,prostate_cancer
-EHBP1,gwas,,,,,rs721048,prostate_cancer
-EHMT2,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-ENSA,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-FERMT2,gwas,,,,,rs8008270,prostate_cancer
-FGF10,gwas_tad,GO:0060602,branch elongation of an epithelium,4.21291227645781e-05,0.0313470097665871,rs2121875,prostate_cancer
-FOXO3,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-FOXO4,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-FOXP4,gwas,,,,,rs1983891,prostate_cancer
-GATA2,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-GDF7,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-GIP,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-GNB1L,gwas,,,,,rs2238776,prostate_cancer
-GOLPH3L,gwas,,,,,rs17599629,prostate_cancer
-GPSM3,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-GRHL1,gwas,,,,,rs11902236,prostate_cancer
-HLA-DMB,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-HLA-DOB,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-HLA-DQA1,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-HLA-DQA2,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-HLA-DQB1,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-HLA-DQB2,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-HLA-DRA,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-HLA-DRB1,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-HLA-DRB5,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-HLA-E,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-HNF1B,gwas_tad,GO:0060602,branch elongation of an epithelium,4.21291227645781e-05,0.0313470097665871,rs4430796,prostate_cancer
-HNF1B,gwas_tad,GO:0060602,branch elongation of an epithelium,4.21291227645781e-05,0.0313470097665871,rs7501939,prostate_cancer
-HSPA1A,tad,GO:1901099,negative regulation of signal transduction in absence of ligand,8.905057279751109e-05,0.0382451007647977,,
-HTR3B,gwas,,,,,rs11214775,prostate_cancer
-IL6R,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-IRX4,gwas,,,,,rs12653946,prostate_cancer
-ITGA6,gwas_tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,rs12621278,prostate_cancer
-KCNN3,gwas,,,,,rs1218582,prostate_cancer
-KIF4A,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-KLF5,gwas,,,,,rs9600079,prostate_cancer
-KLK2,gwas,,,,,rs2735839,prostate_cancer
-KLK5,tad,GO:0032103,positive regulation of response to external stimulus,0.000103061315629871,0.0413620196800897,,
-KLK6,tad,GO:0030574,collagen catabolic process,1.66624983428676e-05,0.0250465120923871,,
-KLK7,tad,GO:0032103,positive regulation of response to external stimulus,0.000103061315629871,0.0413620196800897,,
-LHX1,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-LILRA3,gwas,,,,,rs103294,prostate_cancer
-LIME1,gwas,,,,,rs6062509,prostate_cancer
-LMTK2,gwas,,,,,rs6465657,prostate_cancer
-LTA,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-MARCH8,gwas,,,,,rs76934034,prostate_cancer
-MAS1,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-MCL1,tad,GO:1901099,negative regulation of signal transduction in absence of ligand,8.905057279751109e-05,0.0382451007647977,,
-MDFI,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-MDM4,gwas,,,,,rs4245739,prostate_cancer
-MED12,tad,GO:0003401,axis elongation,7.168513973643259e-05,0.0382451007647977,,
-MICA,tad,GO:0019882,antigen processing and presentation,5.89952059071308e-06,0.0133019440519103,,
-MLPH,gwas,,,,,rs7584330,prostate_cancer
-MMP20,tad,GO:0030574,collagen catabolic process,1.66624983428676e-05,0.0250465120923871,,
-MMP27,tad,GO:0030574,collagen catabolic process,1.66624983428676e-05,0.0250465120923871,,
-MMP7,gwas_tad,GO:0030574,collagen catabolic process,1.66624983428676e-05,0.0250465120923871,rs11568818,prostate_cancer
-MSMB,gwas,,,,,rs3123078,prostate_cancer
-MSMB,gwas,,,,,rs10993994,prostate_cancer
-MYEOV,gwas,,,,,rs11228565,prostate_cancer
-MYEOV,gwas,,,,,rs7931342,prostate_cancer
-MYEOV,gwas,,,,,rs10896449,prostate_cancer
-MYEOV,gwas,,,,,rs7130881,prostate_cancer
-NCOA4,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-NDUFS6,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-NEDD9,gwas,,,,,rs4713266,prostate_cancer
-NKX3-1,gwas_tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,rs1512268,prostate_cancer
-NLGN3,gwas,,,,,rs4844289,prostate_cancer
-NOL10,gwas,,,,,rs9287719,prostate_cancer
-NOTCH4,gwas,,,,,rs3096702,prostate_cancer
-NUAK2,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-OGT,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-OPRM1,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-PDK2,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-PDLIM5,gwas,,,,,rs12500426,prostate_cancer
-PDLIM5,gwas,,,,,rs17021918,prostate_cancer
-PF4,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-PF4V1,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-PHB,tad,GO:0002922,positive regulation of humoral immune response,0.000108241008191179,0.0413620196800897,,
-PHLPP2,gwas,,,,,rs12051443,prostate_cancer
-PIK3C2B,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-POU5F1B,gwas,,,,,rs1016343,prostate_cancer
-POU5F1B,gwas,,,,,rs1456315,prostate_cancer
-POU5F1B,gwas,,,,,rs16901979,prostate_cancer
-POU5F1B,gwas,,,,,rs188140481,prostate_cancer
-POU5F1B,gwas,,,,,rs6983267,prostate_cancer
-POU5F1B,gwas,,,,,rs1447295,prostate_cancer
-POU5F1B,gwas,,,,,rs4242382,prostate_cancer
-POU5F1B,gwas,,,,,rs7837688,prostate_cancer
-PPBP,tad,GO:0002690,positive regulation of leukocyte chemotaxis,1.57417103148205e-05,0.0250465120923871,,
-PPP1R9B,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-PRLH,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-PSMB8,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-PSMB9,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-PSMC6,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-PSMD8,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-RAD23B,gwas,,,,,rs817826,prostate_cancer
-RAD51B,gwas,,,,,rs7141529,prostate_cancer
-RFX6,gwas,,,,,rs339331,prostate_cancer
-RGS17,gwas,,,,,rs1933488,prostate_cancer
-RP1-228P16.5,gwas,,,,,rs80130819,prostate_cancer
-RP11-145E5.5,gwas,,,,,rs17694493,prostate_cancer
-SALL3,gwas,,,,,rs7241993,prostate_cancer
-SETDB1,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-SHROOM2,gwas,,,,,rs2405942,prostate_cancer
-SIDT1,gwas,,,,,rs7611694,prostate_cancer
-SIX1,gwas_tad,GO:0060602,branch elongation of an epithelium,4.21291227645781e-05,0.0313470097665871,rs7153648,prostate_cancer
-SIX4,tad,GO:0060602,branch elongation of an epithelium,4.21291227645781e-05,0.0313470097665871,,
-SLC22A1,gwas,,,,,rs651164,prostate_cancer
-SLC22A3,gwas_tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,rs9364554,prostate_cancer
-SLC6A19,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-SLC7A3,gwas,,,,,rs6625711,prostate_cancer
-SOX9,tad,GO:0060602,branch elongation of an epithelium,4.21291227645781e-05,0.0313470097665871,,
-SP8,gwas,,,,,rs12155172,prostate_cancer
-SPINT2,gwas_tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,rs8102476,prostate_cancer
-STC2,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-STK25,gwas,,,,,rs3771570,prostate_cancer
-TAC1,tad,GO:0032103,positive regulation of response to external stimulus,0.000103061315629871,0.0413620196800897,,
-TAP1,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-TAP2,tad,GO:0002478,antigen processing and presentation of exogenous peptide antigen,4.812130587339421e-07,0.00254666230762379,,
-TAX1BP1,gwas,,,,,rs10486567,prostate_cancer
-TBX5,gwas,,,,,rs1270884,prostate_cancer
-TERT,gwas_tad,GO:1901099,negative regulation of signal transduction in absence of ligand,8.905057279751109e-05,0.0382451007647977,rs2242652,prostate_cancer
-TEX11,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-TFEB,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-TNF,tad,GO:0002687,positive regulation of leukocyte migration,8.7666758988636e-05,0.0382451007647977,,
-TNS3,gwas,,,,,rs56232506,prostate_cancer
-TNXB,tad,GO:0044259,multicellular organismal macromolecule metabolic process,0.000152836401294043,0.0463415329936099,,
-TPCN2,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-TREM2,tad,GO:0048002,antigen processing and presentation of peptide antigen,5.64732743679741e-07,0.00254666230762379,,
-TRIM8,gwas,,,,,rs3850699,prostate_cancer
-TTC9,gwas,,,,,rs8014671,prostate_cancer
-TUBA1C,gwas,,,,,rs10875943,prostate_cancer
-UBE2Q1,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-VAMP8,gwas_tad,GO:0032103,positive regulation of response to external stimulus,0.000103061315629871,0.0413620196800897,rs10187424,prostate_cancer
-VDR,tad,GO:0009991,response to extracellular stimulus,3.15562941608505e-05,0.0274958147877621,,
-VGLL3,gwas,,,,,rs2660753,prostate_cancer
-VGLL3,gwas,,,,,rs9284813,prostate_cancer
-XAGE3,gwas,,,,,rs2807031,prostate_cancer
-YAP1,tad,GO:0060602,branch elongation of an epithelium,4.21291227645781e-05,0.0313470097665871,,
-ZBTB38,gwas,,,,,rs6763931,prostate_cancer
-ZFP36L1,tad,GO:0061458,reproductive system development,0.00012071618280406999,0.0418745866426889,,
-ZFP36L2,gwas,,,,,rs1465618,prostate_cancer
-ZNF652,gwas,,,,,rs11650494,prostate_cancer
-ZNF652,gwas,,,,,rs7210100,prostate_cancer
-ZRANB1,gwas,,,,,rs4962416,prostate_cancer
+gene,evidence
+TNS3,gwas
+TUBA1C,gwas
+RAD23B,gwas
+ZNF652,gwas
+HLA-DMB,tad
+MICA,tad
+CPEB4,tad
+DHH,tad
+GOLPH3L,gwas
+COL2A1,tad
+HLA-DOB,tad
+OPRM1,tad
+PHLPP2,gwas
+DFFA,gwas
+SP8,gwas
+ASNS,tad
+SIX4,tad
+CLDN11,gwas
+ADAM15,tad
+TPCN2,tad
+FGF10,gwas_tad
+HLA-E,tad
+HSPA1A,tad
+AIF1,tad
+ADAM17,tad
+COL1A1,tad
+PSMC6,tad
+KIF4A,tad
+HLA-DQA2,tad
+PF4,tad
+CXorf67,gwas
+AP1G1,tad
+RGS17,gwas
+CCND1,tad
+PSMB9,tad
+STC2,tad
+TREM2,tad
+RP11-145E5.5,gwas
+EBF2,gwas
+PSMB8,tad
+IRX4,gwas
+COMT,tad
+COL6A3,tad
+HLA-DQB2,tad
+PDK2,tad
+ZBTB38,gwas
+RFX6,gwas
+CXCL5,tad
+LTA,tad
+PRLH,tad
+GRHL1,gwas
+FERMT2,gwas
+YAP1,tad
+ZFP36L1,tad
+NOL10,gwas
+TAP2,tad
+KLF5,gwas
+ALB,tad
+SLC22A1,gwas
+ANKRD17,tad
+TERT,gwas_tad
+MLPH,gwas
+PHB,tad
+SHROOM2,gwas
+SETDB1,tad
+UBE2Q1,tad
+RP1-228P16.5,gwas
+MDFI,tad
+MARCH8,gwas
+NKX3-1,gwas_tad
+BHLHA15,tad
+TRIM8,gwas
+GNB1L,gwas
+SIDT1,gwas
+TAX1BP1,gwas
+TAC1,tad
+EEFSEC,gwas
+MCL1,tad
+AR,gwas_tad
+PPBP,tad
+SLC7A3,gwas
+NCOA4,tad
+AC007461.1,gwas
+MDM4,gwas
+GPSM3,tad
+GATA2,tad
+NDUFS6,tad
+COX18,gwas
+NUAK2,tad
+LILRA3,gwas
+VGLL3,gwas
+ACACA,tad
+GIP,tad
+PIK3C2B,tad
+MED12,tad
+POU5F1B,gwas
+LMTK2,gwas
+PF4V1,tad
+ADAMTS3,tad
+GDF7,tad
+TBX5,gwas
+STK25,gwas
+C2orf43,gwas
+TAP1,tad
+XAGE3,gwas
+DLX3,tad
+MYEOV,gwas
+SLC6A19,tad
+ZFP36L2,gwas
+HLA-DQA1,tad
+BIRC2,tad
+BOD1,gwas
+LIME1,gwas
+NEDD9,gwas
+FOXP4,gwas
+MSMB,gwas
+SPINT2,gwas_tad
+EHBP1,gwas
+CTSK,tad
+VAMP8,gwas_tad
+C2,tad
+ZRANB1,gwas
+CXCL1,tad
+AFP,tad
+LHX1,tad
+HTR3B,gwas
+HLA-DRA,tad
+SLC22A3,gwas_tad
+AFM,gwas
+BIK,gwas_tad
+PDLIM5,gwas
+SOX9,tad
+PPP1R9B,tad
+EHMT2,tad
+MMP20,tad
+TTC9,gwas
+ARMC2,gwas
+MMP27,tad
+BMPR1B,tad
+KLK5,tad
+CHMP2B,gwas
+KCNN3,gwas
+KLK7,tad
+TNXB,tad
+DHODH,tad
+FOXO4,tad
+KLK6,tad
+CCHCR1,gwas
+CDKN2B,tad
+ARNT,tad
+MAS1,tad
+FOXO3,tad
+HLA-DRB1,tad
+CXCL3,tad
+VDR,tad
+ENSA,tad
+TEX11,tad
+ITGA6,gwas_tad
+TFEB,tad
+SALL3,gwas
+TNF,tad
+NLGN3,gwas
+IL6R,tad
+CXCL2,tad
+RAD51B,gwas
+CTSS,tad
+HLA-DRB5,tad
+BOK,tad
+PSMD8,tad
+NOTCH4,gwas
+HLA-DQB1,tad
+SIX1,gwas_tad
+MMP7,gwas_tad
+AGER,tad
+KLK2,gwas
+OGT,tad
+ABCB5,tad
+HNF1B,gwas_tad
+CXCL6,tad
