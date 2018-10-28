@@ -1,5 +1,5 @@
 """
-2016 Gregory Way
+Gregory Way 2018
 scripts/construct_evidence.py
 
 Description:
@@ -11,26 +11,27 @@ Command line: python scripts/construct_evidence.py
 
     With the following required flags:
 
-      --trait       a string of how the gestalt summary file was saved
-      --gwas        the location of the GWAS nearest gene results
-      --group       The group to subset the SNP file (optional)
-      --pathway     a string of pathways to summarize (options are in the
-                    gestalt summary files). To investigate multiple pathways
-                    input a comma separated string.
-
-                    For example:
-                    --pathway 'skeletal system development'
-                    --pathway 'skeletal system development,ossification'
+      --trait          a string of how the gestalt summary file was saved
+      --gwas_file      the location of the GWAS nearest gene results
+      --pathway_file   the location of the results of the GSEA analysis
 
     And the following optional flags:
 
-      --results_directory       the directory of where to save results
-      --gestalt_directory       the directory to load gestalt results from
-      --all_pathways            will subset to all significant pathways
+      --pathway                 a string of pathways to summarize.
+                                To investigate multiple pathways input a comma
+                                separated string. Defaults to "top".
+                        For example:
+                        --pathway 'skeletal system development'
+                        --pathway 'skeletal system development,ossification'
+      --gwas_group              The group to subset the SNP file
+      --all_sig_pathways        will subset to all significant pathways
                                 and not just consider the top pathway
+      --pathway_sig_cutoff      the alpha value to consider pathway significant
+      --output_directory        the directory of where to save results
 
 Output:
-a .csv evidence file (two columns: [gene, type of evidence])
+a .csv evidence file determining if the gene is located in the TAD or is the
+nearest gene in a GWAS analysis
 """
 
 import os
@@ -40,46 +41,61 @@ import pandas as pd
 # Load Command Arguments
 parser = argparse.ArgumentParser()
 parser.add_argument('-t', '--trait', help='symbol for trait data')
-parser.add_argument("-g", "--gwas", help="location of gwas genelist")
-parser.add_argument("-r", "--group", help="Group to subset evidence file",
+parser.add_argument("-g", "--gwas_file", help="location of gwas genelist")
+parser.add_argument("-r", "--gwas_group", help="Group to subset evidence file",
                     default=None)
-parser.add_argument("-p", "--pathway", help="pathway of interest")
-parser.add_argument("-d", "--results_directory", help="where to save results",
+parser.add_argument("-f", "--pathway_file",
+                    help="file storing results of the pathway analysis")
+parser.add_argument("-p", "--pathway", help="pathway of interest",
+                    default='top')
+parser.add_argument("-a", "--all_sig_pathways", action='store_true',
+                    help="consider all significant pathways in evidence")
+parser.add_argument("-c", "--pathway_sig_cutoff", default=0.05,
+                    help="Adjusted p-value cutoff for enrichment significance")
+parser.add_argument("-o", "--output_directory", help="where to save results",
                     default="results")
-parser.add_argument("-e", "--gestalt_directory",
-                    help="location of gestalt results", default="gestalt")
-parser.add_argument("-a", "--all_pathways", action='store_true',
-                    help="consider all pathways in evidence")
 args = parser.parse_args()
 
 # Load Constants
 trait = args.trait
-gwas_file = args.gwas
-gwas_group = args.group
-all_pathways = args.all_pathways
-try:
-    pathway_df = pd.read_table(args.pathway)
-    pathway = pathway_df.query('adjP < 0.05').loc[:, 'go_name'].tolist()
-except:
-    pathway = args.pathway.split(',')
+gwas_file = args.gwas_file
+gwas_group = args.gwas_group
+pathway_file = args.pathway_file
+pathway = args.pathway
+all_sig_pathways = args.pathway
+cutoff = args.pathway_sig_cutoff
+output_dir = args.output_directory
 
-results_dir = args.results_directory
-gestalt_dir = args.gestalt_directory
-
-trait_file = os.path.join(gestalt_dir, '{}_gestalt.tsv'.format(trait))
-if all_pathways:
+# Load pathway analysis results data and subset based on target pathway(s)
+pathway_results_df = pd.read_table(pathway_file)
+if all_sig_pathways:
+    pathway_results_df = (
+        pathway_results_df[pathway_results_df['Adjusted P-value'] < cutoff]
+        )
     trait = '{}_all-sig-pathways'.format(trait)
-output_file = os.path.join(results_dir, '{}_gene_evidence.csv'.format(trait))
+elif pathway == 'top':
+    pathway_results_df = pathway_results_df.iloc[0, :]
+    trait = '{}_top-pathway'.format(trait)
+else:
+    pathway_results_df = pathway_results_df.query("Term == @pathway")
+    trait = '{}_{}'.format(trait, pathway)
 
-# Load Data
-drop_col = ['link', 'count', 'observed', 'expected', 'R', 'overlapGene']
-pathway_genes_df = (
-    pd.read_csv(trait_file, delimiter='\t')
-    .query('go_name in @pathway')
-    .drop(drop_col, axis='columns')
+# Setup ouput files
+output_file = os.path.join(output_dir, '{}_gene_evidence.csv'.format(trait))
+
+# Get all the pathway genes of interest
+pathway_gene_series = (
+    pathway_results_df['Genes']
+    .str
+    .split(';')
+    .apply(pd.Series, 1)
+    .stack()
     )
 
-pathway_genes = pathway_genes_df.loc[:, 'symbol'].tolist()
+pathway_gene_series.index = pathway_gene_series.index.droplevel(-1)
+pathway_gene_series.name = 'Gene'
+pathway_results_df = pathway_results_df.join(pathway_gene_series)
+pathway_genes = pathway_results_df.Gene.tolist()
 
 gwas_genes_df = pd.read_table(gwas_file)
 if gwas_group:
@@ -109,22 +125,26 @@ for gene in all_genes:
 evidence_df = pd.DataFrame([all_genes, all_assignments]).T
 evidence_df.columns = ['gene', 'evidence']
 
-# Write output to file
-evidence_df = evidence_df.merge(pathway_genes_df, how='left', left_on='gene',
-                                right_on='symbol')
-
-if not all_pathways:
-    evidence_df = (
-        evidence_df
-        .sort_values(by='pval')
-        .groupby('gene', as_index=False)
-        .first()
-        )
+# Collect output and write to file
+evidence_df = (
+    evidence_df
+    .merge(pathway_results_df,
+           how='left',
+           left_on='gene',
+           right_on='Gene')
+    .merge(gwas_genes_df,
+           how='left',
+           left_on='gene',
+           right_on='MAPPED_GENE')
+    .set_index('gene')
+    .drop(['MAPPED_GENE'], axis='columns')
+    )
 
 (
     evidence_df
-    .merge(gwas_genes_df, how='left', left_on='gene', right_on='MAPPED_GENE')
-    .set_index('gene')
-    .drop(['MAPPED_GENE', 'symbol'], axis='columns')
+    .assign(group=evidence_df['group_x']
+                  .fillna(evidence_df['group_y']))
+    .drop(['group_x', 'group_y', 'Gene'], axis='columns')
+    .sort_index()
     .to_csv(output_file, sep=',', index=True)
 )
