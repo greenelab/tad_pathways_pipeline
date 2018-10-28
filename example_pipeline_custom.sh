@@ -12,7 +12,7 @@ candidate_snp_tad_file='results/custom_example_tad_results.tsv'
 nearest_gene_file='results/custom_example_tad_results_nearest_gene.tsv'
 trait='custom'
 evidence_file='results/custom_gene_evidence.csv'
-pathway_p_values_file='gestalt/custom_pvals.tsv'
+pathway_file='pathway_results/custom_enrichr_results.tsv'
 
 # Map SNPs to genomic location
 Rscript --vanilla scripts/build_snp_list.R \
@@ -24,16 +24,19 @@ python scripts/build_custom_tad_genelist.py \
         --snp_data_file $candidate_snp_location_file \
         --output_file $candidate_snp_tad_file
 
-# Perform WebGestalt pathway analysis and parse results
-Rscript --vanilla scripts/webgestalt_run.R \
+# Perform pathway analysis using gseapy
+python scripts/pathway_analysis.py \
         --tad_genelist_file $candidate_snp_tad_file \
-        --output_name $trait
+        --output_name $trait \
+        --output_directory "pathway_results" \
+        --gene_sets "KEGG_2016"
 
 # Construct an evidence file - Nearest gene to gwas or not
 python scripts/construct_evidence.py \
             --trait $trait \
-            --gwas $nearest_gene_file \
-            --pathway $pathway_p_values_file
+            --gwas_file $nearest_gene_file \
+            --pathway_file $pathway_file \
+            --all_sig_pathways
 
 # Summarize the evidence file
 python scripts/summarize_evidence.py \
