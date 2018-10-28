@@ -49,7 +49,7 @@
 "rs2427345"	"dbSNP"	"chr20"	61015611	61015611	"T"	"prostate_cancer"
 "rs6062509"	"dbSNP"	"chr20"	62362563	62362563	"G"	"prostate_cancer"
 "rs1041449"	"dbSNP"	"chr21"	42901421	42901421	"G"	"prostate_cancer"
-"rs2238776"	"dbSNP"	"chr22"	19757892	19757892	"A"	"prostate_cancer"
+"rs2238776"	"dbSNP"	"chr22"	19757892	19757892	"T"	"prostate_cancer"
 "rs5759167"	"dbSNP"	"chr22"	43500212	43500212	"T"	"prostate_cancer"
 "rs2660753"	"dbSNP"	"chr3"	87110674	87110674	"T"	"prostate_cancer"
 "rs9284813"	"dbSNP"	"chr3"	87152169	87152169	"G"	"prostate_cancer"

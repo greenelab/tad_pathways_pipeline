@@ -2,7 +2,7 @@
 
 # Example of a TAD_Pathways Analysis applied to a Custom SNP list
 # For this example, the custom SNP list is the GWAS findings for
-# Prostate Cancer. The data is used as a custom input.
+# Prostate Cancer. The the data is used as a custom input.
 set -o errexit
 
 # Define filenames
@@ -43,4 +43,5 @@ python scripts/summarize_evidence.py \
 
 # Visualize overlap in TAD pathways curation
 R --no-save --args $evidence_file \
-                < scripts/integrative_summary.R
+                < scripts/integrative_summary.R 
+
