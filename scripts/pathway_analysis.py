@@ -1,6 +1,6 @@
 """
 2018 Gregory Way
-scripts/gsea_run.py
+scripts/pathway_analysis.py
 
 Description:
 Runs pathway analysis on Input genelist
@@ -48,7 +48,6 @@ tad_gene_file = args.tad_genelist_file
 output_name = args.output_name
 output_dir = args.output_directory
 gene_sets = args.gene_sets
-print(gene_sets)
 
 # Save output file locations
 out_dir = os.path.join(output_dir, output_name)
