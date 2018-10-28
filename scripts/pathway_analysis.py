@@ -54,16 +54,33 @@ out_dir = os.path.join(output_dir, output_name)
 
 # Load data
 gene_df = pd.read_table(tad_gene_file)
-genes = gene_df.gene_name
 output_results_file = "{}_enrichr_results.tsv".format(out_dir)
 
-# Perform the enrichment analysis
-enr = gp.enrichr(gene_list=genes,
-                 description=output_name,
-                 gene_sets=gene_sets,
-                 outdir=out_dir,
-                 cutoff=0.5)
+trait_groups = gene_df.group.unique()
+
+# Perform enrichment analysis on each trait group independently
+enr_list = []
+for trait_group in trait_groups:
+    gene_subset_df = gene_df.query("group == @trait_group")
+    genes = gene_subset_df.gene_name
+
+    # Perform the enrichment analysis
+    enr = gp.enrichr(gene_list=genes,
+                     description=output_name,
+                     gene_sets=gene_sets,
+                     outdir=out_dir,
+                     cutoff=0.5)
+
+    # Add group information and append to list
+    enr_df = (
+        enr.results
+        .assign(group=trait_group)
+        .sort_values(by='Combined Score', ascending=False)
+        )
+
+    # Append to enr results list
+    enr_list.append(enr_df)
 
 # Output results
-results_df = enr.results.sort_values(by='Combined Score', ascending=False)
+results_df = pd.concat(enr_list)
 results_df.to_csv(output_results_file, sep='\t', index=False)
