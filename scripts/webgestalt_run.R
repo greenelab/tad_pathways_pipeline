@@ -37,7 +37,7 @@ option_list <- list(
                         default = "geneontology_Biological_Process",
                         help = "pathway to consider"),
   optparse::make_option(c("-u", "--topten"),
-                        action = "store_true"
+                        action = "store_true",
                         help = "output top pathways without significance cut"),
   optparse::make_option(c("-d", "--output_directory"),
                         type = "character",
