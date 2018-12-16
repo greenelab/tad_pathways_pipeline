@@ -1,4 +1,4 @@
-"go_id"	"go_name"	"link"	"count"	"observed"	"expected"	"R"	"pval"	"adjP"	"overlapGene"	"symbol"
+"id"	"term"	"link"	"count"	"observed"	"expected"	"R"	"pval"	"adjP"	"overlapGene"	"symbol"
 "GO:0002478"	"antigen processing and presentation of exogenous peptide antigen"	"http://amigo.geneontology.org/amigo/term/GO:0002478"	157	20	5.41745602165088	3.69176970151118	4.81213058733942e-07	0.00254666230762379	"164"	"CTSS"
 "GO:0002478"	"antigen processing and presentation of exogenous peptide antigen"	"http://amigo.geneontology.org/amigo/term/GO:0002478"	157	20	5.41745602165088	3.69176970151118	4.81213058733942e-07	0.00254666230762379	"1520"	"AP1G1"
 "GO:0002478"	"antigen processing and presentation of exogenous peptide antigen"	"http://amigo.geneontology.org/amigo/term/GO:0002478"	157	20	5.41745602165088	3.69176970151118	4.81213058733942e-07	0.00254666230762379	"3109"	"KIF4A"
