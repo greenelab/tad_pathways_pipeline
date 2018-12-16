@@ -91,8 +91,8 @@ def parse_ev_key(tadkey):
     ucsc = '{}:{}-{}'.format(chrom, start, end)
     return [ID, chrom, start, end, ucsc]
 
-# Investigate each significant TADs
-# Investigate each significant TADs
+
+# Investigate each significant TAD
 evidence_list = []
 for tad_row in range(tad_gwas_df.shape[0]):
     # Extract the SNP information

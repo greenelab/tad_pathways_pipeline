@@ -40,15 +40,14 @@ import pandas as pd
 
 # Load Command Arguments
 parser = argparse.ArgumentParser()
-parser.add_argument('-t', '--trait', help='symbol for trait data')
+parser.add_argument("-t", "--trait", help="symbol for trait data")
 parser.add_argument("-g", "--gwas_file", help="location of gwas genelist")
 parser.add_argument("-r", "--gwas_group", help="Group to subset evidence file",
                     default=None)
 parser.add_argument("-f", "--pathway_file",
                     help="file storing results of the pathway analysis")
-parser.add_argument("-p", "--pathway", help="pathway of interest",
-                    default='top')
-parser.add_argument("-a", "--all_sig_pathways", action='store_true',
+parser.add_argument("-p", "--pathway", help="pathway of interest", default="top")
+parser.add_argument("-a", "--all_sig_pathways", action="store_true",
                     help="consider all significant pathways in evidence")
 parser.add_argument("-c", "--pathway_sig_cutoff", default=0.05,
                     help="Adjusted p-value cutoff for enrichment significance")
@@ -69,43 +68,36 @@ output_dir = args.output_directory
 # Load pathway analysis results data and subset based on target pathway(s)
 pathway_results_df = pd.read_table(pathway_file)
 if all_sig_pathways:
-    pathway_results_df = (
-        pathway_results_df[pathway_results_df['Adjusted P-value'] < cutoff]
-        )
-    trait = '{}_all-sig-pathways'.format(trait)
-elif pathway == 'top':
-    pathway_results_df = pathway_results_df.iloc[0, :]
-    trait = '{}_top-pathway'.format(trait)
+    pathway_results_df = pathway_results_df[
+        pathway_results_df["adjP"] < cutoff
+    ]
+    trait = "{}_all-sig-pathways".format(trait)
+elif pathway == "top":
+    pathway_results_df = pathway_results_df.sort_values(by='adjP', ascending=True)
+    top_pathway = pathway_results_df.id.tolist()[0]
+    pathway_results_df = pathway_results_df.query("id == @top_pathway")
+    trait = "{}_top-pathway".format(trait)
+elif pathway == "all":
+    next
 else:
-    pathway_results_df = pathway_results_df.query("Term == @pathway")
-    trait = '{}_{}'.format(trait, pathway)
+    pathway_results_df = pathway_results_df.query("term == @pathway")
+    trait = "{}_{}".format(trait, pathway)
 
 # Setup ouput files
-output_file = os.path.join(output_dir, '{}_gene_evidence.csv'.format(trait))
+output_file = os.path.join(output_dir, "{}_gene_evidence.csv".format(trait))
 
 # Get all the pathway genes of interest
-pathway_gene_series = (
-    pathway_results_df['Genes']
-    .str
-    .split(';')
-    .apply(pd.Series, 1)
-    .stack()
-    )
-
-pathway_gene_series.index = pathway_gene_series.index.droplevel(-1)
-pathway_gene_series.name = 'Gene'
-pathway_results_df = pathway_results_df.join(pathway_gene_series)
-pathway_genes = pathway_results_df.Gene.tolist()
+pathway_genes = pathway_results_df.symbol.tolist()
 
 gwas_genes_df = pd.read_table(gwas_file)
 if gwas_group:
-    gwas_genes_df = gwas_genes_df.query('group == @gwas_group')
+    gwas_genes_df = gwas_genes_df.query("group == @gwas_group")
 gwas_genes = gwas_genes_df.MAPPED_GENE
 
 # Process GWAS genes
 full_gwas_genes = []
 for gene in gwas_genes:
-    gene = str(gene).replace(' - ', ', ').split(', ')
+    gene = str(gene).replace(" - ", ", ").split(", ")
     full_gwas_genes += gene
 
 # Process all genes
@@ -115,36 +107,22 @@ all_genes = set(full_gwas_genes + pathway_genes)
 all_assignments = []
 for gene in all_genes:
     if gene in full_gwas_genes:
-        assignment = 'gwas'
+        assignment = "gwas"
         if gene in pathway_genes:
-            assignment = '{}_tad'.format(assignment)
+            assignment = "{}_tad".format(assignment)
     else:
-        assignment = 'tad'
+        assignment = "tad"
     all_assignments.append(assignment)
 
 evidence_df = pd.DataFrame([all_genes, all_assignments]).T
-evidence_df.columns = ['gene', 'evidence']
+evidence_df.columns = ["gene", "evidence"]
 
 # Collect output and write to file
 evidence_df = (
-    evidence_df
-    .merge(pathway_results_df,
-           how='left',
-           left_on='gene',
-           right_on='Gene')
-    .merge(gwas_genes_df,
-           how='left',
-           left_on='gene',
-           right_on='MAPPED_GENE')
-    .set_index('gene')
-    .drop(['MAPPED_GENE'], axis='columns')
-    )
-
-(
-    evidence_df
-    .assign(group=evidence_df['group_x']
-                  .fillna(evidence_df['group_y']))
-    .drop(['group_x', 'group_y', 'Gene'], axis='columns')
+    evidence_df.merge(pathway_results_df, how="left", left_on="gene", right_on="symbol")
+    .merge(gwas_genes_df, how="left", left_on="gene", right_on="MAPPED_GENE")
+    .set_index("gene")
+    .drop(["MAPPED_GENE"], axis="columns")
     .sort_index()
-    .to_csv(output_file, sep=',', index=True)
+    .to_csv(output_file, sep=",", index=True)
 )
