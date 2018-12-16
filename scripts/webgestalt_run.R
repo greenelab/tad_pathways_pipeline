@@ -38,6 +38,7 @@ option_list <- list(
                         help = "pathway to consider"),
   optparse::make_option(c("-u", "--topten"),
                         action = "store_true",
+                        default = FALSE,
                         help = "output top pathways without significance cut"),
   optparse::make_option(c("-d", "--output_directory"),
                         type = "character",
@@ -87,10 +88,10 @@ if (!is.null(webgestalt_output)) {
   p_val <- webgestalt_output %>% dplyr::select(description, PValue, FDR)
   p_val <- p_val[!duplicated(p_val), ]
 
-  colnames(webgestalt_output) <- c("go_id", "go_name", "link", "count",
+  colnames(webgestalt_output) <- c("id", "term", "link", "count",
                                    "observed", "expected", "R", "pval",
                                    "adjP", "overlapGene", "symbol")
-  colnames(p_val) <- c("go_name", "pval", "adjP")
+  colnames(p_val) <- c("id", "pval", "adjP")
 
   write.table(p_val, output_pval_file, sep = "\t", row.names = FALSE)
   write.table(webgestalt_output, output_path_file, sep = "\t", row.names = FALSE)
