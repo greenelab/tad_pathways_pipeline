@@ -1,7 +1,7 @@
 # 2016 Gregory Way
 # scripts/integrative_summary.R
 
-# Description: 
+# Description:
 # Take as input the genes identified by the TAD pathway analysis and the
 # nearest gene GWAS to determine evidence overlaps
 
@@ -18,7 +18,7 @@ args <- commandArgs(trailingOnly = T)
 
 # Parse command argumentsx
 evidence_file <- args[1]
-trait <- unlist(strsplit(basename(evidence_file), "_"))[1]
+trait <- args[2]
 venn_output_file <- file.path("results", paste0("venn_", trait, ".tiff"))
 
 # Read in Data
