@@ -129,13 +129,14 @@ for tad_row in range(tad_gwas_df.shape[0]):
                                        TAD_Start=start,
                                        TAD_End=end,
                                        TAD_UCSC=ucsc)
+
     evidence_list.append(evidence_sub)
 
 # Write out results to file
 all_evidence_df = pd.concat(evidence_list, axis='rows')
 
 col = ['gene', 'snp', 'evidence', 'group', 'TAD_ID', 'chromosome', 'TAD_Start',
-       'TAD_End', 'TAD_UCSC', 'go_id', 'go_name', 'pval', 'adjP']
+       'TAD_End', 'TAD_UCSC', 'id', 'term', 'pval', 'adjP']
 
 (all_evidence_df
     .reindex(col, axis='columns')

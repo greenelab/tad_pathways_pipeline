@@ -47,8 +47,6 @@ parser.add_argument("-r", "--gwas_group", help="Group to subset evidence file",
 parser.add_argument("-f", "--pathway_file",
                     help="file storing results of the pathway analysis")
 parser.add_argument("-p", "--pathway", help="pathway of interest", default="top")
-parser.add_argument("-a", "--all_sig_pathways", action="store_true",
-                    help="consider all significant pathways in evidence")
 parser.add_argument("-c", "--pathway_sig_cutoff", default=0.05,
                     help="Adjusted p-value cutoff for enrichment significance")
 parser.add_argument("-o", "--output_directory", help="where to save results",
@@ -61,13 +59,12 @@ gwas_file = args.gwas_file
 gwas_group = args.gwas_group
 pathway_file = args.pathway_file
 pathway = args.pathway
-all_sig_pathways = args.pathway
 cutoff = args.pathway_sig_cutoff
 output_dir = args.output_directory
 
 # Load pathway analysis results data and subset based on target pathway(s)
 pathway_results_df = pd.read_table(pathway_file)
-if all_sig_pathways:
+if pathway == "significant":
     pathway_results_df = pathway_results_df[
         pathway_results_df["adjP"] < cutoff
     ]
