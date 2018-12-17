@@ -29,5 +29,5 @@ python scripts/summarize_evidence.py \
         --output_file 'results/t2d_gene_evidence_summary.tsv'
 
 # Visualize overlap in TAD pathways curation
-R --no-save --args $evidence_file \
+R --no-save --args $evidence_file $trait\
         < scripts/integrative_summary.R 
