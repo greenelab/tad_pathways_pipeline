@@ -6,6 +6,7 @@
 set -o errexit
 
 # Define filenames
+tad_file='data/hESC_domains_hg19.bed'
 candidate_snp_file='custom_example.csv'
 candidate_snp_location_file='results/custom_example_location.tsv'
 candidate_snp_tad_file='results/custom_example_tad_results.tsv'
@@ -13,6 +14,16 @@ nearest_gene_file='results/custom_example_tad_results_nearest_gene.tsv'
 trait='custom'
 evidence_file='results/custom_gene_evidence.csv'
 pathway_p_values_file='gestalt/custom_pvals.tsv'
+
+# Generate index files (maps to TAD identifiers to enable fast lookup)
+# 1000G SNP / genes / repeat elements
+python scripts/generate_index_files.py --TAD-Boundary 'hESC' --TAD-File $tad_file
+
+# Visualize SNPs and Genes in TADs
+# Output histograms and line graphs of SNP/Gene/Repeat locations in TADs
+# and gc content distribution across human and mouse tads
+python scripts/visualize_genomic_elements.py --TAD-Boundary 'hESC' 
+python scripts/visualize_gc_and_divergence.py --TAD-Boundary 'hESC' --TAD-File $tad_file
 
 # Map SNPs to genomic location
 Rscript --vanilla scripts/build_snp_list.R \
@@ -22,7 +33,8 @@ Rscript --vanilla scripts/build_snp_list.R \
 # Build a customized genelist based on SNP locations
 python scripts/build_custom_tad_genelist.py \
         --snp_data_file $candidate_snp_location_file \
-        --output_file $candidate_snp_tad_file
+        --output_file $candidate_snp_tad_file \
+        --TAD-Boundary 'hESC'
 
 # Perform WebGestalt pathway analysis and parse results
 Rscript --vanilla scripts/webgestalt_run.R \

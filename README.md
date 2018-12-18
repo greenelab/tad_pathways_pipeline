@@ -33,7 +33,7 @@ experimental validation at
 First, clone the repository and navigate into the top directory:
 
 ```bash
-git clone git@github.com:greenelab/tad_pathways_pipeline.git
+git clone https://github.com/marislab/tad_pathways_pipeline.git
 cd tad_pathways_pipeline
 ```
 
@@ -53,17 +53,10 @@ from an existing GWAS or the custom pipeline example for insight on how to run
  
 ### Examples
 
-We provide three different examples for a TAD pathways analysis pipeline. To run
-each of the analyses:
+We provide an example for a TAD pathways analysis pipeline. To run this example:
 
 ```bash
 source activate tad_pathways
-
-# Example using Bone Mineral Density GWAS
-bash example_pipeline_bmd.sh
-
-# Example using Type 2 Diabetes GWAS
-bash example_pipeline_t2d.sh
 
 # Example using custom input SNPs
 bash example_pipeline_custom.sh
@@ -71,57 +64,39 @@ bash example_pipeline_custom.sh
 
 ### General Usage
 
-There are two ways to implement a TAD_Pathways analysis:
+To perform a `TAD_Pathways` analysis, uses need to spicify 3 inputs:
 
-1. GWAS
-2. Custom
+1. name of the tad cell:
 
-#### GWAS
+   E.g.: 'hESC'
 
-To perform a `TAD_Pathways` analysis on publicly available GWAS results, simply
-browse the `data/gwas_catalog/` directory to select a valid GWAS file. These
-files contain a curation of all significant SNPs mapped to specific traits as
-distributed by the [NHGRI-EBI GWAS Catalog](https://www.ebi.ac.uk/gwas/).
+2. path to the TAD domain file:
 
-Each file in this directory is a tab separated text file of genome-wide
-significant SNPs and their genomic location along with their reported nearest
-gene and associated PUBMED id. For complete information on how these files were
-constructed, refer to https://github.com/greenelab/tad_pathways.
+   The TAD domain file is a 3-column tab-separated bed file. The first column is the chromsome number. The second column is the  start position of the tad. And the third position is the end position of the tad.
 
-Each GWAS has 3 associated files, including files in `data/gwas_catalog/`. The
-other files are located in `data/gwas_tad_snps/` and `data/gwas_tad_genes/`.
-All files are important for performing a `TAD_Pathways` analysis. See the
-GWAS example files for instructions on how to implement the necessary scripts.
+   E.g.: [`hESC_domains_hg19.bed`](hESC_domains_hg19.bed)
 
-#### Custom
+3. path to the SNPs file
 
-To perform a `TAD_Pathways` analysis on a list of custom SNPs, generate a comma
-separated text file. The first row of the text file should have group names and
-subsequent rows should list the rs numbers of interest. There can be many
-columns with variable length rows.
+   The SNPs file is a comma separated text file. The first row of the text file should have group names and
+subsequent rows should list the rs numbers of interest. There can be manycolumns with variable length rows.
 
-E.g.: [`custom_example.csv`](custom_example.csv)
+   E.g.: [`custom_example.csv`](custom_example.csv)
 
-| Group 1 | Group 2 |
-| ------- | ------- |
-| rs12345 | rs67891 |
-| rs19876 | rs54321 |
-| ...     | ...     |
+   | Group 1 | Group 2 |
+   | ------- | ------- |
+   | rs12345 | rs67891 |
+   | rs19876 | rs54321 |
+   | ...     | ...     |
 
 Then, perform the following steps:
 
 ```bash
 source activate tad_pathways
 
-# Map custom SNPs to genomic locations
-Rscript --vanilla scripts/build_snp_list.R \
-        --snp_file "custom_example.csv" \
-        --output_file "mapped_results.tsv"
-
-# Build TAD based genelists for each group
-python scripts/build_custom_TAD_genelist.py \
-       --snp_data_file "mapped_results.tsv" \
-       --output_file "custom_tad_genelist.tsv"
+bash run_pipeline.sh --TAD-Boundary hESC \
+                     --TAD-File hESC_domains_hg19.bed \
+                     --SNP-File custom_example.csv
 ```
 
 The output of these steps are Group specific text files with all genes in TADs
