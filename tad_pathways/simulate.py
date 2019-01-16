@@ -141,7 +141,8 @@ def draw_random_tad(similarity_matrix_df, tad_id, p=0.2):
     return random_tad.index[0]
 
 
-def simulate_tad_list(tad_list, similarity_matrix_df, p=0.2, with_replacement=False):
+def simulate_tad_list(tad_list, similarity_matrix_df, p=0.2, with_replacement=False,
+                      restrict_list="None"):
     """
     Randomly sample similarity matched TADs. Makes repeated calls to `draw_random_tad()`
 
@@ -157,20 +158,35 @@ def simulate_tad_list(tad_list, similarity_matrix_df, p=0.2, with_replacement=Fa
     with_replacement - a boolean indicating if TADs should be sampled with or without
                        replacement. Sampling with replacement means TADs can be
                        sampled more than once.
+    restrict_list - a list of TADs that cannot be selected to sample
 
     Output:
     A list of similarity matched TAD ids
     """
     simulated_tad_list = []
+    pass_restrict = True
+
     for tad in tad_list:
-        random_tad_id = draw_random_tad(
-            similarity_matrix_df=similarity_matrix_df, tad_id=tad, p=p
-        )
+
+        while pass_restrict:
+
+            random_tad_id = draw_random_tad(
+                similarity_matrix_df=similarity_matrix_df, tad_id=tad, p=p
+            )
+
+            if random_tad_id not in restrict_list:
+                pass_restrict = False
+
         simulated_tad_list.append(random_tad_id)
         if not with_replacement:
-            similarity_matrix_df = similarity_matrix_df.drop(
-                random_tad_id, axis="rows"
-            ).copy()
+            try:
+                similarity_matrix_df = similarity_matrix_df.drop(
+                    random_tad_id, axis="rows"
+                ).copy()
+            except KeyError:
+                continue
+
+        pass_restrict = True
 
     return simulated_tad_list
 
@@ -182,6 +198,7 @@ def simulate_tad_genelist(
     p=0.2,
     with_replacement=False,
     return_full_dataframe=False,
+    restrict_list="None"
 ):
     """
     Randomly sample similarity matched TADs. Wrapper for `simulate_tad_list()`. Will
@@ -201,6 +218,7 @@ def simulate_tad_genelist(
                        replacement. Sampling with replacement means TADs can be
                        sampled more than once.
     return_full_dataframe - a boolean if the full TAD index data should be returned
+    restrict_list - a list of TADs that cannot be selected to sample
 
     Output:
     Either a genelist or a subsetted TAD index of similarity matched random TADs.
@@ -214,6 +232,7 @@ def simulate_tad_genelist(
         similarity_matrix_df=similarity_matrix_df,
         p=p,
         with_replacement=with_replacement,
+        restrict_list=restrict_list
     )
 
     tad_df = tad_df.query("TAD_id in @simulated_tad_list")
