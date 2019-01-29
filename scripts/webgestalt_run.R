@@ -115,7 +115,3 @@ if (!is.null(webgestalt_df)) {
   write.table(p_val, output_pval_file, sep = "\t", row.names = FALSE)
   write.table(webgestalt_df, output_path_file, sep = "\t", row.names = FALSE)
 }
-
-
-
-
