@@ -56,6 +56,9 @@ pathway <- opt$pathway
 topten <- opt$topten
 output_dir <- opt$output_directory
 
+# Create folder
+dir.create(output_dir)
+
 output_pval_file <- file.path(output_dir, paste0(output_name, "_pvals.tsv"))
 output_path_file <- file.path(output_dir, paste0(output_name, "_gestalt.tsv"))
 
@@ -68,32 +71,51 @@ if (topten) {
   sigMethod <- "fdr"
 }
 
-webgestalt_output <- WebGestaltR(enrichMethod = "ORA",
-                                 enrichDatabase = pathway,
-                                 organism = "hsapiens",
-                                 interestGene = genes,
-                                 interestGeneType = "genesymbol",
-                                 minNum = 4,
-                                 sigMethod = sigMethod,
-                                 fdrMethod = "BH",
-                                 is.output = TRUE,
-                                 outputDirectory = output_dir,
-                                 referenceSet = "genome",
-                                 projectName = output_name)
+webgestalt_df <- WebGestaltR(enrichMethod = "ORA",
+                             organism = "hsapiens",
+                             enrichDatabase = pathway,
+                             interestGene = genes,
+                             interestGeneType = "genesymbol",
+                             minNum = 4,
+                             sigMethod = sigMethod,
+                             fdrMethod = "BH",
+                             isOutput = TRUE,
+                             outputDirectory = output_dir,
+                             referenceSet = "genome",
+                             referenceGeneType = "genename",
+                             projectName = output_name)
+
+# Load ID mapping
+id_map_file <- file.path(output_dir,
+                         paste0("Project_", output_name),
+                         paste0("interestingID_mappingTable_", output_name, ".txt"))
+id_df <- readr::read_tsv(id_map_file,
+                         col_types = readr::cols(.default = readr::col_character(),
+                                                 entrezgene = readr::col_character()))
 
 # Process output files
-if (!is.null(webgestalt_output)) {
-  webgestalt_output <- webgestalt_output %>%
-    tidyr::separate_rows(overlapGene, OverlapGene_UserID, sep = ";")
-  p_val <- webgestalt_output %>% dplyr::select(description, PValue, FDR)
+if (!is.null(webgestalt_df)) {
+  webgestalt_df <- webgestalt_df %>%
+    tidyr::separate_rows(overlapId, sep = ";")
+  
+  p_val <- webgestalt_df %>% dplyr::select(description, pValue, FDR)
   p_val <- p_val[!duplicated(p_val), ]
 
-  colnames(webgestalt_output) <- c("id", "term", "link", "count",
-                                   "observed", "expected", "R", "pval",
-                                   "adjP", "overlapGene", "symbol")
   colnames(p_val) <- c("id", "pval", "adjP")
 
+  webgestalt_df <- webgestalt_df %>%
+      dplyr::left_join(id_df, by = c("overlapId" = "entrezgene")) %>%
+      dplyr::select(-userId)
+  
+  colnames(webgestalt_df) <- c("id", "term", "link", "count",
+                               "observed", "expected", "R", "pval",
+                               "adjP", "entrezgene", "symbol",
+                               "genename", "genelink")
+  
   write.table(p_val, output_pval_file, sep = "\t", row.names = FALSE)
-  write.table(webgestalt_output, output_path_file, sep = "\t", row.names = FALSE)
-
+  write.table(webgestalt_df, output_path_file, sep = "\t", row.names = FALSE)
 }
+
+
+
+
