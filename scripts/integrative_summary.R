@@ -14,12 +14,32 @@
 # Venn diagram of trait specific evidence overlaps
 
 # Load in command arguments
-args <- commandArgs(trailingOnly = T)
+option_list <- list(
+  optparse::make_option(c("-e", "--evidence_file"),
+                        type = "character",
+                        help = "TAD gene evidence"),
+  optparse::make_option(c("-t", "--trait"),
+                        type = "character",
+                        help = "the trait that we're focusing on"),
+  optparse::make_option(c("-d", "--output_directory"),
+                        type = "character",
+                        help = "Directory to save results",
+                        default = "results")
+)
 
-# Parse command argumentsx
-evidence_file <- args[1]
-trait <- args[2]
-venn_output_file <- file.path("results", paste0("venn_", trait, ".tiff"))
+opt_parser <- optparse::OptionParser(option_list = option_list);
+opt <- optparse::parse_args(opt_parser);
+
+# Parse command arguments
+evidence_file <- opt$evidence_file
+trait <- opt$trait
+output_dir <- opt$output_directory
+
+# Create directory
+dir.create(output_dir, showWarnings = FALSE)
+
+# Create output file name
+venn_output_file <- file.path(output_dir, paste0("venn_", trait, ".tiff"))
 
 # Read in Data
 evidence_genes <- readr::read_csv(evidence_file)
