@@ -68,17 +68,14 @@ if pathway == "significant":
     pathway_results_df = pathway_results_df[
         pathway_results_df["adjP"] < cutoff
     ]
-    trait = "{}_all-sig-pathways".format(trait)
 elif pathway == "top":
     pathway_results_df = pathway_results_df.sort_values(by='adjP', ascending=True)
     top_pathway = pathway_results_df.id.tolist()[0]
     pathway_results_df = pathway_results_df.query("id == @top_pathway")
-    trait = "{}_top-pathway".format(trait)
 elif pathway == "all":
     next
 else:
     pathway_results_df = pathway_results_df.query("term == @pathway")
-    trait = "{}_{}".format(trait, pathway)
 
 # Setup ouput files
 output_file = os.path.join(output_dir, "{}_gene_evidence.csv".format(trait))
@@ -115,8 +112,9 @@ evidence_df = pd.DataFrame([all_genes, all_assignments]).T
 evidence_df.columns = ["gene", "evidence"]
 
 # Collect output and write to file
-evidence_df = (
-    evidence_df.merge(pathway_results_df, how="left", left_on="gene", right_on="symbol")
+(
+    evidence_df
+    .merge(pathway_results_df, how="left", left_on="gene", right_on="symbol")
     .merge(gwas_genes_df, how="left", left_on="gene", right_on="MAPPED_GENE")
     .set_index("gene")
     .drop(["MAPPED_GENE"], axis="columns")
