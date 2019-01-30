@@ -37,6 +37,10 @@ opt <- optparse::parse_args(opt_parser);
 snp_file <- opt$snp_file
 output_file <- opt$output_file
 
+# Create folder
+output_dir <- dirname(output_file)
+dir.create(output_dir)
+
 # Map rsids to genomic location
 snps <- readr::read_csv(snp_file)
 snp <- biomaRt::useEnsembl(biomart = "snp", GRCh = 37,
@@ -44,18 +48,26 @@ snp <- biomaRt::useEnsembl(biomart = "snp", GRCh = 37,
 
 results_full <- list()
 for (group in 1:ncol(snps)) {
-  results <- biomaRt::getBM(attributes = c("refsnp_id", "refsnp_source",
-                                           "chr_name", "chrom_start",
-                                           "chrom_end", "minor_allele"),
-                            filters = "snp_filter", values = snps[, group],
+  results <- biomaRt::getBM(attributes = c("refsnp_id",
+                                           "refsnp_source",
+                                           "chr_name",
+                                           "chrom_start",
+                                           "chrom_end",
+                                           "minor_allele"),
+                            filters = "snp_filter",
+                            values = snps[, group],
                             mart = snp)
-  results <- results %>% dplyr::filter(!duplicated(refsnp_id))
+  results <- results %>%
+    dplyr::arrange(chr_name) %>%
+    dplyr::filter(!grepl("PATCH", chr_name)) %>%
+    dplyr::filter(!duplicated(refsnp_id))
   results$Group <- colnames(snps)[group]
   results_full[[group]] <- results
 }
 
 # Process results and write to file
 results_full <- do.call(rbind, results_full)
+results_full$chr_name[results_full$chr_name == "HG1425_PATCH"] = "X"
 results_full$chr_name <- paste0("chr", results_full$chr_name)
 results_full <- results_full %>% dplyr::filter(!is.na(chr_name))
 colnames(results_full) <- c("snp", "refsnp_source", "chrom", "position",
