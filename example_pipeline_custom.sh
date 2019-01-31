@@ -15,9 +15,9 @@ pathway_name='skeletal_system_development'
 candidate_snp_file='custom_example.csv'
 
 # Set output file names
-candidate_snp_location_file=$custom_dir'custom_example_location.tsv'
-candidate_snp_tad_file=$custom_dir'custom_example_tad_results.tsv'
-nearest_gene_file=$custom_dir'custom_example_tad_results_nearest_gene.tsv'
+candidate_snp_location_file=$custom_dir'/custom_example_location.tsv'
+candidate_snp_tad_file=$custom_dir'/custom_example_tad_results.tsv'
+nearest_gene_file=$custom_dir'/custom_example_tad_results_nearest_gene.tsv'
 pathway_file=$custom_dir'/'$trait'_gestalt.tsv'
 evidence_file=$custom_dir'/'$trait'_gene_evidence.csv'
 summary_file=$custom_dir'/'$trait'_gene_evidence_summary.tsv'
