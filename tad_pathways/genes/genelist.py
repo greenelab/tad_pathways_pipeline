@@ -45,7 +45,7 @@ class TADGeneList:
         """
 
         try:
-            self.snp = pd.read_table(snp, sep='\t')
+            self.snp = pd.read_table(snp, sep="\t")
         except FileNotFoundError:
             self.snp = snp
         self.remove_hla_tad = remove_hla_tad
@@ -68,9 +68,9 @@ class TADGeneList:
         snp_loc = int(snp_signal.position)
 
         tad = tad_boundary_df.loc[
-            (tad_boundary_df.chromosome == chrom) &
-            (tad_boundary_df.TAD_start <= snp_loc) &
-            (tad_boundary_df.TAD_end > snp_loc)
+            (tad_boundary_df.chromosome == chrom)
+            & (tad_boundary_df.TAD_start <= snp_loc)
+            & (tad_boundary_df.TAD_end > snp_loc)
         ]
 
         return tad.reset_index(drop=True)
@@ -83,22 +83,22 @@ class TADGeneList:
 
         # Initialize empty objects to store info
         self.tad_genes_df = pd.DataFrame(
-            columns=self.tad_genes_df.columns.tolist() + ['group']
-            )
+            columns=self.tad_genes_df.columns.tolist() + ["group"]
+        )
         nearest_gene_list = []
         for group in self.snp.group.unique():
-            snp_sub_df = self.snp.query('group == @group')
+            snp_sub_df = self.snp.query("group == @group")
             for snp, snp_series in snp_sub_df.iterrows():
                 # Find TAD that the SNP resides in and all genes that are in the TAD
                 tad_assign_df = self.assign_snp_to_tad(snp_series, self.tad_genes_df)
-                tad_id = tad_assign_df.loc[:, 'TAD_id']
+                tad_id = tad_assign_df.loc[:, "TAD_id"]
 
                 # Check to see if we should continue considering TAD genes
                 if len(tad_id) == 0:
                     continue
 
                 if remove_hla_tad or self.remove_hla_tad:
-                    if tad_id[0] == '1198':
+                    if tad_id[0] == "1198":
                         continue
 
                 # Only collect genes if the SNP actually resides in a TAD
@@ -111,52 +111,57 @@ class TADGeneList:
                 # Find nearest gene
                 # Closest to the start of the gene
                 near_start_df = pd.DataFrame(
-                    (protein_coding.start - snp_series['position'])
-                    .abs()
-                    .sort_values()
-                    )
+                    (protein_coding.start - snp_series["position"]).abs().sort_values()
+                )
 
                 near_end_df = pd.DataFrame(
-                    (protein_coding.stop - snp_series['position'])
-                    .abs()
-                    .sort_values()
-                    )
+                    (protein_coding.stop - snp_series["position"]).abs().sort_values()
+                )
 
                 # Closest to the end of a the gene
                 dist_df = near_start_df.join(near_end_df)
 
                 # Find the minimum distance and the index of a protein coding gene
                 min_dist = dist_df.min().min()
-                near_gene_idx = (
-                    dist_df[dist_df == min_dist]
-                    .dropna(thresh=1)
-                    .index
-                    )
+                near_gene_idx = dist_df[dist_df == min_dist].dropna(thresh=1).index
 
                 # If gene falls in TAD without protein coding gene return empty
                 if len(near_gene_idx) == 0:
-                    nearest_gene = ''
+                    nearest_gene = ""
                 else:
                     near_gene_idx = near_gene_idx.tolist()[0]
-                    nearest_gene = tad_assign_df.iloc[near_gene_idx, ].gene_name
+                    nearest_gene = tad_assign_df.iloc[near_gene_idx,].gene_name
 
                 # Append to nearest_gene_df
-                nearest_gene_return = (
-                    pd.DataFrame([nearest_gene, snp_series.snp, group]).T
-                    )
+                nearest_gene_return = pd.DataFrame(
+                    [nearest_gene, snp_series.snp, group]
+                ).T
                 nearest_gene_list.append(nearest_gene_return)
 
                 # Assign new columns to each TAD assignment for the RSid and group
-                tad_assign_df = tad_assign_df.assign(custom_snp=snp_series.snp,
-                                                     group=group)
-                self.tad_genes_df = self.tad_genes_df.append(tad_assign_df,
-                                                             ignore_index=True,
-                                                             sort=True)
+                tad_assign_df = tad_assign_df.assign(
+                    custom_snp=snp_series.snp, group=group
+                )
+                self.tad_genes_df = self.tad_genes_df.append(
+                    tad_assign_df, ignore_index=True, sort=True
+                )
 
         # Output results
-        nearest_columns = ['MAPPED_GENE', 'snp', 'group']
+        nearest_columns = ["MAPPED_GENE", "snp", "group"]
         self.nearest_gene_df = pd.concat(nearest_gene_list)
         self.nearest_gene_df.columns = nearest_columns
-        self.tad_genes_df.columns = ['TADEnd', 'TADidx', 'TADStart', 'chrom',
-                                     'custom_snp', 'db', 'gene_name', 'gene_type',
-                                     'group', 'start', 'stop', 'strand', 'type']
+        self.tad_genes_df.columns = [
+            "TADEnd",
+            "TADidx",
+            "TADStart",
+            "chrom",
+            "custom_snp",
+            "db",
+            "gene_name",
+            "gene_type",
+            "group",
+            "start",
+            "stop",
+            "strand",
+            "type",
+        ]

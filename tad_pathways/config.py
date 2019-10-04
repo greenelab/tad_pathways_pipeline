@@ -25,7 +25,7 @@ def config_yaml(config_file):
     """
 
     # Load configuration
-    with open(config_file, 'r') as stream:
+    with open(config_file, "r") as stream:
         config = yaml.load(stream)
 
     return config

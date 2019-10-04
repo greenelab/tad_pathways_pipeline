@@ -16,12 +16,19 @@ import subprocess
 from tad_pathways.genes.genelist import TADGeneList
 
 
-class TadPathways():
+class TadPathways:
     """
     Class methods to perform a tad_pathways analysis
     """
-    def __init__(self, snp_list_name, snp_list_location, base_dir,
-                 remove_hla=False, all_pathways=False):
+
+    def __init__(
+        self,
+        snp_list_name,
+        snp_list_location,
+        base_dir,
+        remove_hla=False,
+        all_pathways=False,
+    ):
         """
         Arguments:
         snp_list_name - the name of the input snp list
@@ -44,80 +51,88 @@ class TadPathways():
             os.makedirs(self.base_dir)
 
         # File to compile RSid lookup results
-        self.snp_location_file = (
-            os.path.join(self.base_dir, '{}_location.tsv'
-                         .format(self.snp_list_name))
+        self.snp_location_file = os.path.join(
+            self.base_dir, "{}_location.tsv".format(self.snp_list_name)
         )
 
         # Files for TAD based genesets - all genes that fall in candidate variant TADs
-        self.genelist_file = (
-            os.path.join(self.base_dir, '{}_tad_genelist.tsv'
-                         .format(self.snp_list_name))
+        self.genelist_file = os.path.join(
+            self.base_dir, "{}_tad_genelist.tsv".format(self.snp_list_name)
         )
 
         # Files from WebGestalt output
-        self.pathway_p_values_file= (
-            os.path.join(self.base_dir, '{}_pvals.tsv'
-                         .format(self.snp_list_name))
+        self.pathway_p_values_file = os.path.join(
+            self.base_dir, "{}_pvals.tsv".format(self.snp_list_name)
         )
 
         # Files used to summarize results
-        self.nearest_gene_file = (
-            os.path.join(self.base_dir,
-                         '{}_tad_genelist_nearest_gene.tsv'
-                         .format(self.snp_list_name))
+        self.nearest_gene_file = os.path.join(
+            self.base_dir, "{}_tad_genelist_nearest_gene.tsv".format(self.snp_list_name)
         )
 
-        self.gene_evidence_file = (
-            os.path.join(self.base_dir,
-                         '{}_gene_evidence.csv'
-                         .format(self.snp_list_name))
+        self.gene_evidence_file = os.path.join(
+            self.base_dir, "{}_gene_evidence.csv".format(self.snp_list_name)
         )
 
-        self.evidence_summary_file = (
-            os.path.join(self.base_dir,
-                         '{}_gene_evidence_summary.tsv'
-                         .format(self.snp_list_name))
+        self.evidence_summary_file = os.path.join(
+            self.base_dir, "{}_gene_evidence_summary.tsv".format(self.snp_list_name)
         )
 
-        self.all_pathways_evidence = (
-            os.path.join(self.base_dir,
-                         '{}_all-sig-pathways_gene_evidence.csv'
-                         .format(self.snp_list_name))
+        self.all_pathways_evidence = os.path.join(
+            self.base_dir,
+            "{}_all-sig-pathways_gene_evidence.csv".format(self.snp_list_name),
         )
 
-        self.all_pathways_summary = (
-            os.path.join(self.base_dir,
-                         '{}_all-sig-pathways_gene_evidence_summary.tsv'
-                         .format(self.snp_list_name))
+        self.all_pathways_summary = os.path.join(
+            self.base_dir,
+            "{}_all-sig-pathways_gene_evidence_summary.tsv".format(self.snp_list_name),
         )
 
     def build_snp_list(self):
-        command_list = ['Rscript', '--vanilla', 'scripts/build_snp_list.R',
-                        '--snp_file', self.snp_list_location,
-                        '--output_file', self.snp_location_file]
+        command_list = [
+            "Rscript",
+            "--vanilla",
+            "scripts/build_snp_list.R",
+            "--snp_file",
+            self.snp_list_location,
+            "--output_file",
+            self.snp_location_file,
+        ]
         subprocess.call(command_list)
 
     def build_custom_tad_genelist(self):
-        command_list = ['python', 'scripts/build_custom_tad_genelist.py',
-                        '--snp_data_file', self.snp_location_file,
-                        '--output_file', self.genelist_file]
+        command_list = [
+            "python",
+            "scripts/build_custom_tad_genelist.py",
+            "--snp_data_file",
+            self.snp_location_file,
+            "--output_file",
+            self.genelist_file,
+        ]
 
         if self.remove_hla:
-            command_list += ['--remove_hla_tad']
+            command_list += ["--remove_hla_tad"]
 
         subprocess.call(command_list)
 
     def webgestalt_run(self):
-        command_list = ['Rscript', '--vanilla', 'scripts/webgestalt_run.R',
-                        '--tad_genelist_file', self.genelist_file,
-                        '--output_name', self.snp_list_name,
-                        '--output_directory', self.base_dir]
+        command_list = [
+            "Rscript",
+            "--vanilla",
+            "scripts/webgestalt_run.R",
+            "--tad_genelist_file",
+            self.genelist_file,
+            "--output_name",
+            self.snp_list_name,
+            "--output_directory",
+            self.base_dir,
+        ]
         subprocess.call(command_list)
 
     def check_webgestalt(self):
-        output_pval_file = os.path.join(self.base_dir,
-                                        '{}_pvals.tsv'.format(self.snp_list_name))
+        output_pval_file = os.path.join(
+            self.base_dir, "{}_pvals.tsv".format(self.snp_list_name)
+        )
         if os.path.exists(output_pval_file):
             return True
         else:
@@ -125,14 +140,22 @@ class TadPathways():
 
     def get_evidence(self):
         # The first command builds the evidence
-        command_list = ['python', 'scripts/construct_evidence.py',
-                        '--trait', self.snp_list_name,
-                        '--gwas', self.nearest_gene_file,
-                        '--pathway', self.pathway_p_values_file,
-                        '--results_directory', self.base_dir,
-                        '--gestalt_directory', self.base_dir]
+        command_list = [
+            "python",
+            "scripts/construct_evidence.py",
+            "--trait",
+            self.snp_list_name,
+            "--gwas",
+            self.nearest_gene_file,
+            "--pathway",
+            self.pathway_p_values_file,
+            "--results_directory",
+            self.base_dir,
+            "--gestalt_directory",
+            self.base_dir,
+        ]
         if self.all_pathways:
-            command_list += ['--all_pathways']
+            command_list += ["--all_pathways"]
             evidence_file = self.all_pathways_evidence
             output_file = self.all_pathways_summary
         else:
@@ -142,10 +165,16 @@ class TadPathways():
         subprocess.call(command_list)
 
         # The second command summarizes this evidence
-        command_list = ['python', 'scripts/summarize_evidence.py',
-                        '--evidence', evidence_file,
-                        '--snps', self.genelist_file,
-                        '--output_file', output_file]
+        command_list = [
+            "python",
+            "scripts/summarize_evidence.py",
+            "--evidence",
+            evidence_file,
+            "--snps",
+            self.genelist_file,
+            "--output_file",
+            output_file,
+        ]
         subprocess.call(command_list)
 
     def compile_results(self):
