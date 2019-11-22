@@ -1,5 +1,5 @@
 """
-Gregory Way 2018
+Gregory Way 2019
 tad_pathways/tad.py
 
 Description:
@@ -13,12 +13,10 @@ Usage: Import only
 import os
 import subprocess
 
-from tad_pathways.genes.genelist import TADGeneList
-
 
 class TadPathways:
     """
-    Class methods to perform a tad_pathways analysis
+    Class to perform a tad_pathways analysis
     """
 
     def __init__(
@@ -32,8 +30,10 @@ class TadPathways:
         """
         Arguments:
         snp_list_name - the name of the input snp list
+        snp_list_location - the file path pointing to the location of the snp list
         base_dir - the root directory of where to save files
         remove_hla - boolean if HLA TAD should be removed
+        all_pathways - boolean if consider all pathways, instead of just top pathway
         """
         self.snp_list_name = snp_list_name
         self.snp_list_location = snp_list_location
@@ -133,10 +133,7 @@ class TadPathways:
         output_pval_file = os.path.join(
             self.base_dir, "{}_pvals.tsv".format(self.snp_list_name)
         )
-        if os.path.exists(output_pval_file):
-            return True
-        else:
-            return False
+        return os.path.exists(output_pval_file)
 
     def get_evidence(self):
         # The first command builds the evidence
@@ -147,7 +144,7 @@ class TadPathways:
             self.snp_list_name,
             "--gwas",
             self.nearest_gene_file,
-            "--pathway",
+            "--pathway_file",
             self.pathway_p_values_file,
             "--results_directory",
             self.base_dir,
@@ -155,7 +152,7 @@ class TadPathways:
             self.base_dir,
         ]
         if self.all_pathways:
-            command_list += ["--all_pathways"]
+            command_list += ["--pathways", "all"]
             evidence_file = self.all_pathways_evidence
             output_file = self.all_pathways_summary
         else:
@@ -184,6 +181,3 @@ class TadPathways:
         webgestalt_exists = self.check_webgestalt()
         if webgestalt_exists:
             self.get_evidence()
-            return 1
-        else:
-            return 0
