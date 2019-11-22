@@ -1,5 +1,5 @@
 """
-Gregory Way 2018
+Gregory Way 2019
 tad_pathways/config.py
 
 Description:
