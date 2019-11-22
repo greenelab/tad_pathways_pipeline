@@ -19,15 +19,16 @@ Command line: python scripts/construct_evidence.py
 
       --pathway                 a string of pathways to summarize.
                                 To investigate multiple pathways input a comma
-                                separated string. Defaults to "top".
+                                separated string.
+                                [default: "top"].
                         For example:
                         --pathway 'skeletal system development'
                         --pathway 'skeletal system development,ossification'
-      --gwas_group              The group to subset the SNP file
-      --all_sig_pathways        will subset to all significant pathways
-                                and not just consider the top pathway
+      --gwas_group              The group to subset the SNP file [default: None]
       --pathway_sig_cutoff      the alpha value to consider pathway significant
+                                [default: 0.05]
       --output_directory        the directory of where to save results
+                                [default: "results"]
 
 Output:
 a .csv evidence file determining if the gene is located in the TAD or is the
@@ -42,11 +43,11 @@ import pandas as pd
 parser = argparse.ArgumentParser()
 parser.add_argument("-t", "--trait", help="symbol for trait data")
 parser.add_argument("-g", "--gwas_file", help="location of gwas genelist")
-parser.add_argument("-r", "--gwas_group", help="Group to subset evidence file",
-                    default=None)
 parser.add_argument("-f", "--pathway_file",
                     help="file storing results of the pathway analysis")
 parser.add_argument("-p", "--pathway", help="pathway of interest", default="top")
+parser.add_argument("-r", "--gwas_group", help="Group to subset evidence file",
+                    default=None)
 parser.add_argument("-c", "--pathway_sig_cutoff", default=0.05,
                     help="Adjusted p-value cutoff for enrichment significance")
 parser.add_argument("-o", "--output_directory", help="where to save results",
@@ -56,9 +57,9 @@ args = parser.parse_args()
 # Load Constants
 trait = args.trait
 gwas_file = args.gwas_file
-gwas_group = args.gwas_group
 pathway_file = args.pathway_file
 pathway = args.pathway
+gwas_group = args.gwas_group
 cutoff = args.pathway_sig_cutoff
 output_dir = args.output_directory
 
@@ -83,7 +84,11 @@ output_file = os.path.join(output_dir, "{}_gene_evidence.csv".format(trait))
 # Get all the pathway genes of interest
 pathway_genes = pathway_results_df.symbol.tolist()
 
-gwas_genes_df = pd.read_table(gwas_file)
+gwas_genes_df = (
+    pd.read_table(gwas_file)
+    .rename({'SNPS': 'snp', 'DISEASE/TRAIT': 'group'}, axis='columns')
+    )
+
 if gwas_group:
     gwas_genes_df = gwas_genes_df.query("group == @gwas_group")
 gwas_genes = gwas_genes_df.MAPPED_GENE
