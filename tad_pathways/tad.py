@@ -102,7 +102,7 @@ class TadPathways:
 
     def build_custom_tad_genelist(self):
         command_list = [
-            "python",
+            "python3",
             "scripts/build_custom_tad_genelist.py",
             "--snp_data_file",
             self.snp_location_file,
@@ -138,7 +138,7 @@ class TadPathways:
     def get_evidence(self):
         # The first command builds the evidence
         command_list = [
-            "python",
+            "python3",
             "scripts/construct_evidence.py",
             "--trait",
             self.snp_list_name,
@@ -163,7 +163,7 @@ class TadPathways:
 
         # The second command summarizes this evidence
         command_list = [
-            "python",
+            "python3",
             "scripts/summarize_evidence.py",
             "--evidence",
             evidence_file,
