@@ -71,8 +71,8 @@ if pathway == "significant":
     ]
 elif pathway == "top":
     pathway_results_df = pathway_results_df.sort_values(by='adjP', ascending=True)
-    top_pathway = pathway_results_df.id.tolist()[0]
-    pathway_results_df = pathway_results_df.query("id == @top_pathway")
+    top_pathway = pathway_results_df.go_name.tolist()[0]
+    pathway_results_df = pathway_results_df.query("go_name == @top_pathway")
 elif pathway == "all":
     next
 else:
