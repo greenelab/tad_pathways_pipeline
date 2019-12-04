@@ -62,7 +62,7 @@ class TadPathways:
 
         # Files from WebGestalt output
         self.pathway_p_values_file = os.path.join(
-            self.base_dir, "{}_pvals.tsv".format(self.snp_list_name)
+            self.base_dir, "{}_gestalt.tsv".format(self.snp_list_name)
         )
 
         # Files used to summarize results
@@ -142,17 +142,15 @@ class TadPathways:
             "scripts/construct_evidence.py",
             "--trait",
             self.snp_list_name,
-            "--gwas",
+            "--gwas_file",
             self.nearest_gene_file,
             "--pathway_file",
             self.pathway_p_values_file,
-            "--results_directory",
-            self.base_dir,
-            "--gestalt_directory",
-            self.base_dir,
+            "--output_directory",
+            self.base_dir
         ]
         if self.all_pathways:
-            command_list += ["--pathways", "all"]
+            command_list += ["--pathway", "all"]
             evidence_file = self.all_pathways_evidence
             output_file = self.all_pathways_summary
         else:
