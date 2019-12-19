@@ -97,21 +97,20 @@ id_df <- readr::read_tsv(id_map_file,
 if (!is.null(webgestalt_df)) {
   webgestalt_df <- webgestalt_df %>%
     tidyr::separate_rows(overlapId, sep = ";")
-  
+
   p_val <- webgestalt_df %>% dplyr::select(description, pValue, FDR)
   p_val <- p_val[!duplicated(p_val), ]
 
   colnames(p_val) <- c("id", "pval", "adjP")
 
   webgestalt_df <- webgestalt_df %>%
-      dplyr::left_join(id_df, by = c("overlapId" = "entrezgene")) %>%
-      dplyr::select(-userId)
-  
+      dplyr::left_join(id_df, by = c("overlapId" = "entrezgene"))
+
   colnames(webgestalt_df) <- c("id", "term", "link", "count",
                                "observed", "expected", "R", "pval",
                                "adjP", "entrezgene", "symbol",
                                "genename", "genelink")
-  
-  write.table(p_val, output_pval_file, sep = "\t", row.names = FALSE)
-  write.table(webgestalt_df, output_path_file, sep = "\t", row.names = FALSE)
+
+  readr::write_tsv(p_val, output_pval_file)
+  readr::write_tsv(webgestalt_df, output_path_file)
 }

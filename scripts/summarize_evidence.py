@@ -51,8 +51,12 @@ tad_gwas_df = (
     pd.read_csv(snp_file, sep='\t')
     .dropna(subset=['TADidx'])
     .reset_index(drop=True)
-    .drop_duplicates('custom_snp')
     )
+
+try:
+    tad_gwas_df = tad_gwas_df.drop_duplicates('custom_snp')
+except KeyError:
+    next
 
 if snp_group:
     tad_gwas_df = tad_gwas_df.query('group == @snp_group')
